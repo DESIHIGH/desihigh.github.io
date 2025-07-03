@@ -21,8 +21,8 @@ en: &DEFAULT_EN
       section: contact
     - title: "About us"
       section: about
-    - title: "Theme Source"
-      url: https://github.com/raviriley/agency-jekyll-theme/
+    - title: "Desihigh Source"
+      url: https://github.com/DESIHIGH/desihigh
 en-US:
   <<: *DEFAULT_EN
 en-CA:
