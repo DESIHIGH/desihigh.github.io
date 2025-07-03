@@ -18,7 +18,9 @@ en: &DEFAULT_EN
 
   services:
     title: "Our Program"
-    text: "Welcome to DESI High!  🎒 You've found introductory notebooks to the Dark Energy Spectroscopic Instrument (DESI) for high schoolers, kindly hosted by Binder. Here you can join us and run your own experiments with hot-off-the-telescope DESI data 🔭 For a great introduction to the DESI project, start with this video, try our website and sign up to our Twitter feed! "
+    text: "Welcome to DESI High!  🎒 You've found introductory notebooks to the Dark Energy Spectroscopic Instrument (DESI) for high schoolers, kindly hosted by Binder."
+    text: "Here you can join us and run your own experiments with hot-off-the-telescope DESI data 🔭 "
+    text: "For a great introduction to the DESI project, start with this video, try our website and sign up to our Twitter feed! "
     section: services
     list:
       - title: "Full Curriculum"
