@@ -11,8 +11,8 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: Welcome to DESI High
-    text: An introduction to DESI & Dark Energy for high schoolers with hot-off-the-telescope data!
+    title: 
+    text: Welcome to DESI High!
     button: Tell Me More
     buttonlink: "#services"
 
@@ -21,11 +21,11 @@ en: &DEFAULT_EN
     text: " "
     section: services
     list:
-      - title: "E-Commerce"
+      - title: "Introductory Notebooks"
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
         icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Responsive Design"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      - title: "Advanced Notebooks"
+        desc: "Other languages"
         icon: fas fa-laptop
       - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
         desc: "Your description here, full **Markdown** support"
