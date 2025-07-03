@@ -17,15 +17,15 @@ en: &DEFAULT_EN
     buttonlink: "#services"
 
   services:
-    title: "Curriculum"
-    text: " "
+    title: "Our Materials"
+    text: "Welcome to DESI High! 🎒 You've found introductory notebooks to the Dark Energy Spectroscopic Instrument (DESI) for high schoolers, kindly hosted by Binder. Here you can join us and run your own experiments with hot-off-the-telescope DESI data 🔭 For a great introduction to the DESI project, start with this video, try our website and sign up to our Twitter feed! "
     section: services
     list:
-      - title: "Introductory Notebooks"
+      - title: "Full Curriculum"
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
         icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Advanced Notebooks"
-        desc: "Other languages"
+      - title: "Introductory Notebooks"
+        desc: "Advanced Notebooks"
         icon: fas fa-laptop
       - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
         desc: "Your description here, full **Markdown** support"
