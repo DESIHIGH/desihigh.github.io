@@ -24,6 +24,8 @@ en: &DEFAULT_EN
       - title: "Full Curriculum"
         desc: "Check out the program we have designed for you to take full advantage of our program. "
         icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+        button: go
+        buttonlink: "#services"
       - title: "Introductory Notebooks"
         desc: "A good starting point if you are new to programing in python and/or to DESI"
         icon: fas fa-laptop
