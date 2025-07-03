@@ -12,7 +12,7 @@
 en: &DEFAULT_EN
   nav:
     - title: "Quick Start"
-      section: quick start
+      section: quickstart
     - title: "Curriculum"
       section: curriculum
     - title: "Team"
