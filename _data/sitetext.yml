@@ -11,14 +11,14 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: Welcome to our Studio!
-    text: It's Nice To Meet You
+    title: Welcome to DESI High
+    text: An introduction to DESI & Dark Energy for high schoolers with hot-off-the-telescope data!
     button: Tell Me More
     buttonlink: "#services"
 
   services:
-    title: "Services"
-    text: "Lorem ipsum"
+    title: "Curriculum"
+    text: " "
     section: services
     list:
       - title: "E-Commerce"
