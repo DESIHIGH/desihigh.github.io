@@ -1,0 +1,15 @@
+.navbar {
+    --bulma-navbar-burger-color: var(--bulma-warning);
+    --bulma-navbar-dropdown-arrow: var(--bulma-warning);
+}
+
+.navbar-brand .navbar-item {
+    height: auto !important;
+    padding: 0 !important;
+}
+
+.navbar-logo {
+    width: 50px !important;
+    height: 50px !important;
+    max-height: 50px !important;
+}
