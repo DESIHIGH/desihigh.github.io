@@ -1,0 +1,10 @@
+- name: FAQ
+  url: /faq.html
+- name: Teachers
+  url: /teachers.html
+- name: Partners
+  url: /partners
+- name: About
+  url: /about.html
+- name: Code of Conduct
+  url: /terms.html

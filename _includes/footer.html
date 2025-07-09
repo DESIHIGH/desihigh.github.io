@@ -1,0 +1,43 @@
+
+<footer class="footer">
+    <!-- <div class="container"> -->
+        <div class="level">
+            <div class="level-left">
+                <div class="level-item">
+                    <a href="https://www.desi.lbl.gov/" target="_blank">
+                        <img src="/assets/img/desi_logo_dark.png" alt="Desi Logo" width="150px">
+                    </a>
+                    <p class="subtitle is-7">© 2023 Desi Collaboration. All rights reserved.</p>
+                </div>
+            </div>
+
+            <div class="level-item" id="social-icons">
+                {% for item in site.data.social %}
+                <div class="level-item"> 
+                    <span class="icon is-medium">
+                        <a class="has-text-text" href="{{ item.url }}" target="_blank">
+                            <i class="fa-brands fa-lg {{ item.icon }}"></i>
+                        </a>
+                    </span>    
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="level-right">
+                <div class="level-item">
+                    <nav class="level"> 
+                        {% for item in site.data.footer_nav %}                 
+                        <div class="level-item">
+                            <a class="has-text-text" href="{{ item.url }}">{{ item.name }}</a>
+                        </div>
+                        {% endfor %}
+                    </nav>
+                </div>
+                <span class="is-hidden-touch"> &nbsp;</span>
+                <a href="https://opensource.org/license/bsd-3-clause" target="_blank" class="level-item">
+                    <img src="/assets/img/copyright.png" alt="BSD 3-Clause License" width="100px">
+                </a>
+            </div>
+        </div>
+    <!-- </div> -->
+</footer>

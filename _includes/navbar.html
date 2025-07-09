@@ -1,0 +1,56 @@
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item is-family-monospace has-text-weight-bold is-size-5" href="/">
+                <img class="navbar-logo" src="/assets/img/logo_dark.png" alt="DesiHigh Logo">
+                DESI High &nbsp;
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-divider"></div>
+
+        <div class="navbar-menu" id="navbarMenu">
+            <div class="navbar-start">
+                {% for item in site.data.header_nav %}
+                <a class="navbar-item {% if page.url == item.url %} has-text-warning {% endif %}" href="{{ item.url }}">
+                    {{ item.name }}
+                </a>
+                {% endfor %}
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-warning" href="/quickstart.html">Let's start !</a>
+                        <a class="button is-light" href="https://github.com/DESIHIGH/desihigh/discussions">Forum</a>
+                    </div>
+                </div> 
+                <!-- Language selection menu (done later) -->
+                <hr class="is-hidden-desktop">
+                <div class="navbar-item has-dropdown is-hoverable is-hidden">
+                    <a class="navbar-link">
+                        <span class="icon-text">
+                            <span class="icon">
+                                <i class="fa-solid fa-lg fa-language"></i> 
+                            </span>
+                            <span class="is-hidden-desktop">
+                                &nbsp; Language
+                            </span>
+                        </span>
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="/en">English</a>
+                        <a class="navbar-item" href="/fr">Français</a>
+                        <a class="navbar-item" href="/es">Español</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
