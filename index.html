@@ -2,53 +2,37 @@
 title: "School of the Dark Universe"
 layout: default
 ---
-<!-- https://github.com/jgthms/bulma/issues/1007#issuecomment-1722779908 -->
-<div class="hero is-large" style="background-image: url('https://raw.githubusercontent.com/DESIHIGH/desihigh/refs/heads/main/desihigh/images/Mayall-Star-Trails.jpg'); background-position: center top; background-size: contain;">
-    <div class="hero-body">
-        <div class="container has-text-centered has-text-top">
-            <h1 class="title is-2 has-text-warning">Welcome to DESI High !</h1>
-            <h2 class="subtitle is-3">School of the Dark Universe</h2>
-        </div>
-    </div>
-    <div class="hero-foot">
-        <nav class="tabs is-boxed">
-            <div class="container">
-                <ul>
-                    <li><a href="/curriculum.html">Courses</a></li>
-                    <li><a href="/news">News</a></li>
-                    <li><a href="/events">Events</a></li>
-                    <li><a href="/resources">Resources</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-</div>
+
+{% include welcome_hero.html hero_size="is-large" %}
 
 <!-- <section class="section"> -->
     <div class="container">
         <div class="content">
             <div class="notification is-warning">
-                <strong>Welcome to DESI High !</strong>
+                <div class="content" data-i18n="Welcome intro">
+                    <strong>Welcome to DESI High !</strong>
+                    <p>
+                        You've found the landing page of the the Dark Energy Spectroscopic Instrument (DESI) for high schoolers.
+                        Here you can join us and run your own experiments with hot-off-the-telescope DESI data 🔭 
+                        For a great introduction to the DESI project, start with this 
+                        <a href="https://www.youtube.com/watch?v=kPXx9tqyzYg" target="_blank">video</a>, 
+                        try our <a href="https://www.desi.lbl.gov/" target="_blank">website</a>,
+                        and follow us on our <a href="#social-icons">social media channels</a> !
+                    </p>
+                    <p>
+                        If you're new to python 🐍, don't worry! You'll pick it up quickly. 
+                        We will provide you with introductory notebooks
+                        to help you learn the basics.
+                        Everything here is written in <a href="https://jupyter.org"  target="_blank">Jupyter notebooks</a>, 
+                        which makes all things easy when it comes python and data science.
+                    </p>
+                    <p>
+                        <strong>Ready to dive in?</strong>
+                    </p>
+                </div>
+
                 <p>
-                    You've found the landing page of the the Dark Energy Spectroscopic Instrument (DESI) for high schoolers.
-                    Here you can join us and run your own experiments with hot-off-the-telescope DESI data 🔭 
-                    For a great introduction to the DESI project, start with this 
-                    <a href="https://www.youtube.com/watch?v=kPXx9tqyzYg" target="_blank">video</a>, 
-                    try our <a href="https://www.desi.lbl.gov/" target="_blank">website</a>,
-                    and follow us on our <a href="#social-icons">social media channels</a> !
-                </p>
-                <p>
-                    If you're new to python 🐍, don't worry! You'll pick it up quickly. 
-                    We will provide you with introductory notebooks
-                    to help you learn the basics of python and data analysis.
-                    Everything here is written in <a href="https://jupyter.org"  target="_blank">Jupyter notebooks</a>, 
-                    which makes all things easy when it comes python and data science.
-                </p>
-                <p>
-                    <strong>Ready to dive in?</strong>
-                </p>
-                <p>
-                    <a class="button is-light is-outlined" href="/quickstart.html">Let's start !</a>
+                    <a class="button is-light is-outlined" href="/quickstart.html" data-i18n="Let's start !">Let's start !</a>
                 </p>
             </div>
         </div>
@@ -59,19 +43,22 @@ layout: default
     <div class="container">
         <div class="content">
             <div class="notification is-info">
+                <div class="content" data-i18n="Teachers intro">
+                    <strong>Teachers</strong>
+                    <p>
+                        🏫 Have a classroom full of students potentially interested in DESI High? 
+                        We have an elite team of scientists from across the globe ready to get things started for you! 
+                    </p>
+                </div>
                 <p>
-                    <strong>Teachers</strong><br>
-                    🏫 Have a classroom full of students potentially interested in DESI High? 
-                    We have an elite team of scientists from across the globe ready to get things started for you! 
+                    <a class="button is-light is-outlined" href="/contact.html" data-i18n="Contact us !">Contact us !</a>
                 </p>
 
-                <p>
-                    <a class="button is-light is-outlined" href="/contact.html">Contact us !</a>
-                </p>
-
-                <p>
-                    📎Or, check our ressources and teachers pages to find out how to get started with your class.
-                </p>
+                <div class="content" data-i18n="Teachers intro 2">
+                    <p>
+                        📎Or, check our ressources and teachers pages to find out how to get started with your class.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -80,7 +67,7 @@ layout: default
 <!-- News carousel -->
 <section class="section">
     <div class="container">
-        <h2 class="title">Latest News</h2>
+        <h2 class="title" data-i18n="Latest News">Latest News</h2>
         <div class="columns ismultiline">
             <div class="column is-one-third">
                 <div class="card">
@@ -97,7 +84,7 @@ layout: default
 <!-- Events carousel -->
 <section class="section">
     <div class="container">
-        <h2 class="title">Upcoming Events</h2>
+        <h2 class="title" data-i18n="Upcoming Events">Upcoming Events</h2>
         <div class="columns is-multiline">
             <div class="column is-one-third">
                 <div class="card">

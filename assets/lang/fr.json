@@ -1,0 +1,40 @@
+{
+    "FAQ": "FAQ",
+    "Teachers": "Enseignants",
+    "Partners": "Partenaires",
+    "About": "À propos",
+    "Code of Conduct": "Code de conduite",
+    "Let's start !": "C'est parti !",
+    "Forum": "Forum",
+    "Language": "Langue",
+
+    "Terms & Privacy": "Conditions & Confidentialité",
+    "Contact": "Contact",
+    "Credits": "Crédits",
+
+    "Welcome to DESI High !": "Bienvenue à DESI High !",
+    "School of the Dark Universe": "L'école de l'Univers Sombre",
+    "Courses": "Cours",
+    "News": "Actualités",
+    "Events": "Événements",
+    "Resources": "Ressources",
+    "Contact us !": "Contactez-nous !",
+
+    "Latest News": "Dernières nouvelles",
+    "Upcoming Events": "Événements à venir",
+
+    "Welcome intro": "<strong>Bienvenue à DESI High !</strong>\n<p>Vous avez trouvé la page d'accueil du Dark Energy Spectroscopic Instrument (DESI) pour les lycéens. Rejoignez-nous pour réaliser vos propres expériences avec les données sorties tout droit du télescope 🔭 Pour découvrir DESI, regardez cette <a href=\"https://www.youtube.com/watch?v=kPXx9tqyzY\" target=\"_blank\">vidéo</a>, visitez notre <a href=\"https://www.desi.lbl.gov/\" target=\"_blank\">site web</a>, et rejoignez-nous sur nos <a href=\"#social-icons\">réseaux sociaux</a> !</p>\n<p>Si vous ne conaissez pas Python 🐍, pas d'inquiétude ! Vous vous ferez la main rapidement. Nous vous fournirons des nootebooks d'introduction pour vous aider à comprendre les bases. Tout notre cointenu est écrit dans des <a href=\"https://jupyter.org\"  target=\"_blank\">Jupyter notebooks</a>, qui rendent Python et l'analyse de données plus abordables.</p>\n<p><strong>Prêts à commencer ?</strong></p>",
+
+    "Teachers intro":"<strong>Enseignants</strong>\n<p>🏫 Vous avez une classe pleine d'élèves intéressés par DESI High ? Nous avons une équipe de scientifiques d'élite aux quatre coins du monde prête à vous aider à démarrer !</p>",
+    "Teachers intro 2":"<p>📎Ou, consultez nos ressources et pages pour enseignants pour découvrir comment commencer avec votre classe.</p>",
+
+    "Contact intro": "<p>Nous adorerions avoir de vos nouvelles ! Que vous ayez des questions, des suggestions ou que vous souhaitiez simplement dire bonjour, n'hésitez pas à nous contacter.</p>",
+    "Contact content": "Si vous avez des questions ou avez besoin d'aide, veuillez nous contacter via le formulaire ci-dessous.",
+    "disabled": "Ce formulaire de contact est actuellement désactivé. Veuillez utiliser le forum pour toute question ou suggestion.",
+    "From": "De",
+    "Subject": "Sujet",
+    "Message": "Message",
+    "Send": "Envoyer",
+    "Cancel": "Annuler",
+    "Contact warning": "<strong>Note :</strong> Pour les questions, suggestions ou problèmes, veillez nous contacter via le forum. Nous répondrons dès que possible."
+}

@@ -7,6 +7,7 @@
                     <a href="https://www.desi.lbl.gov/" target="_blank">
                         <img src="/assets/img/desi_logo_dark.png" alt="Desi Logo" width="150px">
                     </a>
+                    <!-- Not translated on purpose ? -->
                     <p class="subtitle is-7">© 2023 Desi Collaboration. All rights reserved.</p>
                 </div>
             </div>
@@ -28,7 +29,7 @@
                     <nav class="level"> 
                         {% for item in site.data.footer_nav %}                 
                         <div class="level-item">
-                            <a class="has-text-text" href="{{ item.url }}">{{ item.name }}</a>
+                            <a class="has-text-text" href="{{ item.url }}" data-i18n="{{ item.name }}">{{ item.name }}</a>
                         </div>
                         {% endfor %}
                     </nav>
