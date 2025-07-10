@@ -17,8 +17,10 @@
 
         <div class="navbar-menu" id="navbarMenu">
             <div class="navbar-start">
+                <!-- Quick fix for relative URLs - Remove first / -->
+                {% assign url = page.url | remove_first: '/' %} 
                 {% for item in site.data.header_nav %}
-                <a class="navbar-item {% if page.url == item.url %} has-text-warning {% endif %}" href="{{ item.url }}" data-i18n="{{ item.name }}">
+                <a class="navbar-item {% if url == item.url %} has-text-warning {% endif %}" href="{{ item.url }}" data-i18n="{{ item.name }}">
                     {{ item.name }}
                 </a>
                 {% endfor %}

@@ -10,9 +10,11 @@
         <nav class="tabs is-boxed">
             <div class="container">
                 <ul>
+                    <!-- Quick fix for relative URLs - Remove first / -->
+                    {% assign url = page.url | remove_first: '/' %} 
                     {% for item in site.data.home_tabs %}
-                    <li {% if page.url == item.url %} class="is-active"{% endif %}>
-                        <a href="{{ item.url }}" {% if page.url == item.url %} style="color: var(--bulma-warning);"{% endif %}> 
+                    <li {% if url == item.url %} class="is-active"{% endif %}>
+                        <a href="{{ item.url }}" {% if url == item.url %} style="color: var(--bulma-warning);"{% endif %}> 
                         <!-- TODO : override active tab link color in CSS instead ? -->
                             <span class="icon is-small">
                                 <i class="{{ item.icon }}"></i>
