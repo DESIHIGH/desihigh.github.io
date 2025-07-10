@@ -1,0 +1,12 @@
+- name: Courses
+  url: /curriculum.html
+  icon: fas fa-book
+- name: News
+  url: /news
+  icon: fas fa-newspaper
+- name: Events
+  url: /events
+  icon: fas fa-calendar-alt
+- name: Resources
+  url: /resources
+  icon: fas fa-tools
