@@ -9,7 +9,7 @@ defaults:
       path: ""
       type: "partners"
     values:
-      layout: "markdown"
+      layout: "partner"
   - scope:
       path: ""
     values:

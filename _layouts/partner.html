@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+
+<div class="section">
+    {% include breadcrumbs.html breadcrumbs=true home=true size="medium" %}
+</div>
+
+
+<div class="content">
+    <div class="section">
+        <div class="container">
+            {{ content | markdownify }}
+        </div>
+    </div>
+</div>
