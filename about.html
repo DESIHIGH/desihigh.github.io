@@ -2,3 +2,57 @@
 title: "About"
 layout: default
 ---
+
+<section class="section">
+    <div class="container">
+        <div class="content">
+            <h1>About DESI High</h1>
+            <p>DESI High is a free online platform designed to help high school students learn about astronomy and data science through hands-on experience with real astronomical data.</p>
+            <p>Our goal is to make astronomy accessible and engaging for students, providing them with the tools and resources they need to explore the universe.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="content">
+            <h2>Meet the team !</h2>
+
+            {% assign placeholder_img = "https://bulma.io/assets/images/placeholders/128x128.png" %}
+            {% assign sorted_team = site.data.team | sort: "name" %}
+            {% for member in sorted_team %}
+            <hr>
+            <article class="media">
+                <div class="media-left">
+                    <figure class="image is-64x64">
+                        <img class="is-rounded" src="{{ member.image | default: placeholder_img }}" alt="{{ member.name }}">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <div class="content">
+                        <h3>{{ member.name }}</h3>
+                        <p data-i18n="team/{{ member.name | slugify }}">{{ member.bio }}</p>
+                    </div>
+                    <div class="subtitle is-7">
+                        <a href="mailto:{{ member.email }}">{{ member.email }}</a>
+                    </div>
+                </div>
+                <div class="media-right">
+                    <nav class="level is-mobile">
+                        <div class="level-right">
+                            {% for social in member.social %}
+                            <span class="icon is-medium">
+                                <a class="has-text-text" href="{{ social.url }}" target="_blank">
+                                    <i class="fa-brands fa-lg fa-{{ social.name }}"></i>
+                                </a>
+                            </span>    
+                            {% endfor %}
+                        </div>
+                    </nav>
+                </div>
+            </article>
+            {% endfor %}
+            <hr>
+        </div>
+    </div>
+</section>
