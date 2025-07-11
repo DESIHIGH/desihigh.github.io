@@ -1,5 +1,6 @@
 <div class="level">
-<nav class="breadcrumb is-small">
+{% assign size = include.size | default: "small" %}
+<nav class="breadcrumb is-{{ size }}">
     <ul>
         <!-- Quick-fix for markdown layout that includes content in a "content" div which moves stuff around -->
         {% if include.is_md %}
@@ -9,7 +10,7 @@
         {% if include.back %}
         <li>
             <a href="{{ page.url }}/.."  style="align-items: center;">
-                <span class="icon is-small">
+                <span class="icon is-{{ size }}">
                     <i class="fas fa-arrow-left"></i>
                 </span>
                 Back
@@ -20,7 +21,7 @@
         {% if include.home %}
         <li>
             <a href="#">
-                <span class="icon is-small">
+                <span class="icon is-{{ size }}">
                     <i class="fas fa-home"></i>
                 </span>
             </a>
