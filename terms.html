@@ -2,3 +2,27 @@
 title: Terms & Privacy
 layout: default
 ---
+
+<section class="section">
+    <div class="container">
+        <div class="content">
+            <h1>Terms & Privacy</h1>
+            <p class="subtitle is-7">Last updated: {{ site.time | date: "%B %d, %Y" }}</p>
+        </div>
+        
+        <hr>
+        
+        <div class="content">
+            {% capture code_of_conduct %}{% include Code_of_Conduct.md %}{% endcapture %}
+            {{ code_of_conduct | markdownify }}
+        </div>
+        
+        <hr>
+
+        <div class="content">
+            <h2>Privacy Policy</h2>
+            {% capture privacy_policy %}{% include Privacy_Policy.md %}{% endcapture %}
+            {{ privacy_policy | markdownify }}
+        </div>
+    </div>
+</section>

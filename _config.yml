@@ -1,0 +1,16 @@
+collections:
+  faq:
+  team:
+  partners:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "partners"
+    values:
+      layout: "markdown"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

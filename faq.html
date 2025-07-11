@@ -10,18 +10,16 @@ layout: default
             <p>Here you can find answers to common questions about DESI High.</p>
         </div>
 
-        {% for faq in site.data.faq %}
+        {% for faq in site.faq %}
         <hr>
         <a class="level js-modal-trigger" data-target="modal-{{ forloop.index }}">
-            <div class="level">
-                <div class="level-left">
-                    <div class="level-item">
-                        <p class="title is-4" data-i18n="{{ faq.tag }}/question">{{ faq.question }}</p>
-                    
-                        <span class="icon is-large is-hidden-desktop">
-                            <i class="fas fa-lg fa-chevron-right"></i>
-                        </span>
-                    </div>
+            <div class="level-left">
+                <div class="level-item">
+                    <p class="title is-4" data-i18n="{{ faq.tag }}/question">{{ faq.question }}</p>
+                
+                    <span class="icon is-large is-hidden-desktop">
+                        <i class="fas fa-lg fa-chevron-right"></i>
+                    </span>
                 </div>
             </div>
             <div class="level-right is-hidden-mobile">
@@ -44,7 +42,7 @@ layout: default
     </div>
 </section>
 
-{% for faq in site.data.faq %}
+{% for faq in site.faq %}
  <div class="modal" id="modal-{{ forloop.index }}">
     <div class="modal-background"></div>
     <div class="modal-card">
@@ -53,7 +51,9 @@ layout: default
             <button class="delete" aria-label="close"></button>
         </header>
         <section class="modal-card-body">
-            <p data-i18n="{{ faq.tag }}/answer">{{ faq.answer }}</p>
+            <div data-i18n="{{ faq.tag }}/answer">
+                {{ faq.content | markdownify }}
+            </div>
         </section>
     </div>
 </div>

@@ -31,6 +31,7 @@ function updateContent(langData) {
             }
             // If no slashes, modify the innerHTML or textContent of the element
             else {
+                // console.log(`Updating element with key "${element.innerHTML}" to "${newElement}".`);
                 element.innerHTML = newElement;
             }
             

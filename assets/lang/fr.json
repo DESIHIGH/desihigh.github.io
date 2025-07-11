@@ -43,16 +43,17 @@
 
     "FAQ intro": "<h1>Questions Fréquemment Posées (FAQ)</h1>\n<p>Vous trouverez ici des réponses aux questions courantes sur DESI High.</p>",
     "Ask a question": "Poser une question",
-    "FAQ 1": {
+    "faq_1": {
         "question": "Qu'est-ce que DESI High ?",
         "answer": "DESI High est une plateforme en ligne gratuite conçue pour aider les lycéens à apprendre l'astronomie et la science des données grâce à une expérience pratique avec de vraies données astronomiques."
     },
-    "FAQ 2": {
+    "faq_2": {
         "question": "Comment puis-je m'inscrire ?",
         "answer": "Vous pouvez vous inscrire en remplissant le formulaire d'inscription sur notre page d'accueil. Une fois inscrit, vous aurez accès à tous nos cours et ressources."
     },
 
     "team": {
+        "bao-ban": "Bao Ban est un éducateur passionné et un défenseur de la communication scientifique. Fort d'une formation en physique et d'un vif intérêt pour la vulgarisation, Bao a consacré sa carrière à rendre accessibles au public des concepts scientifiques complexes. Son objectif principal est de mobiliser les jeunes apprenants et d'inspirer la prochaine génération de scientifiques.",
         "simon-bouchard": "Salut ! Je suis Simon, un doctorant au LPNHE à Paris. Je travaille sur le clustering des galaxies et l'analyse de l'échantillon BGS de DESI. J'adore partager mes connaissances en astronomie et en science des données avec les étudiants. En dehors de la science, je suis également magicien 🃏."
     }
 }

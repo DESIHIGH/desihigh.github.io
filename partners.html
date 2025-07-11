@@ -1,0 +1,47 @@
+---
+title: Partners
+layout: default
+---
+
+<section class="section">
+    <div class="container">
+        <div class="content">
+            <h1>Partners</h1>
+            <p>Meet one of our existing partner schools ! 🌍</p>
+        </div>
+    
+        <hr>
+
+        <div class="columns is-multiline">
+            {% for partner in site.partners %}
+            <div class="column is-one-third">
+                <a class="card" href="{{ partner.url }}">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="level">
+                            <div class="level-left">
+                                <h2 class="title">{{ partner.name }}</h2>
+                            </div>
+                            <div class="level-right">
+                                <img src="assets/img/lang/{{ partner.lang }}.png" alt="language flag" style="width: 20px;">
+                            </div>
+                        </div>
+
+                        <p>{{ partner.description }}</p>
+                        <p><strong>Location:</strong> {{ partner.location }}</p>
+                        <p><strong>Contact:</strong> <a href="mailto:{{ partner.contact }}">{{ partner.contact }}</a></p>
+                    </div>
+                </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+
+        <hr>
+
+        <div class="content">
+            <p>If you are interested in becoming a partner, please <a href="contact.html">contact us</a> for more information.</p>
+        </div>
+
+    </div>
+</section>
