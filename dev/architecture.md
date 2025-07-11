@@ -12,7 +12,7 @@ This document outlines the structure and organization of the DESIHIGH website.
 
 ## Main Pages (in the website header)
 
-- <span class="tag is-success">Design</span> 
+- <span class="tag is-danger">Design</span> 
   <span class="tag is-success">Content</span>
   **Home Page**: The landing page of the website, providing an overview of DESIHIGH, the last news and events.
 - <span class="tag is-success">Design</span>
@@ -24,7 +24,7 @@ This document outlines the structure and organization of the DESIHIGH website.
 - <span class="tag is-danger">Design</span>
   <span class="tag is-danger">Content</span>
   **Partners section**: Information about the partners involved with DESIHIGH. --> One page per partner ?
-- <span class="tag is-danger">Design</span>
+- <span class="tag is-success">Design</span>
   <span class="tag is-danger">Content</span>
   **About Page**: Details about the DESIHIGH initiative, its goals, and its team.
 - <span class="tag is-success">Design</span>
@@ -86,3 +86,31 @@ To add a new language to the DESIHIGH website, follow these steps:
    - Check the existing language files to figure out the keys to use.
 3. Ensure that the new language file follows the same structure as the existing language files.
 4. Update the `_data/lang.yml` file to include the new language to the list of available languages.
+
+
+## Collections
+The website uses Jekyll collections to manage different types of content. The main collections are:
+- **_faq**: Contains frequently asked questions and their answers.
+  - Each FAQ is represented by a Markdown file in the `_faq/` directory.
+  - The front matter of each file includes fields `tag` and `question`. The answer is stored in the content of the file.
+  - The `tag` field is used to categorize the FAQ and is used in the translation keys. 
+  
+- **_team**: Contains information about the DESIHIGH team members, including their names, images, and bios.
+  - Each team member is represented by a Markdown file in the `_team/` directory.
+  - The front matter of each file includes fields `name`, `image`, `email`, and `social` links.
+    - Any field is optional and will not be displayed if not provided.
+    - The `image` field should contain the filename of the team member's image, which should be stored in the `assets/img/team/` directory.
+    - The `social` field is a yaml object containing links to the team member's social media profiles, such as GitHub, Twitter, and LinkedIn. The `name` key should be provided if the icon is included in font-awesome brand icons. Otherwise, provide the `icon` key with the font-awesome class of the icon to use.
+  - The team members are displayed on the About page, sorted by name.
+  - Translation of the team members' bios is handled through the `assets/lang/` files, in the `team` key with slugified keys for each member.
+
+- **_partners**: Contains information about the partners involved with DESIHIGH.
+  - Each partner is represented by a Markdown file in the `_partners/` directory.
+  - The front matter of each file includes field `name`.
+  - The partners are displayed on the Partners page, sorted by name.
+
+- **_events**: Contains information about upcoming events related to DESIHIGH.
+  - TBD
+  
+- **_news**: Contains news and updates related to DESIHIGH.
+  - TBD
