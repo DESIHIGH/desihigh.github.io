@@ -13,7 +13,8 @@ layout: default
         <hr>
 
         <div class="columns is-multiline">
-            {% for partner in site.partners %}
+            {% assign sorted_partners = site.partners | sort: "name" %}
+            {% for partner in sorted_partners %}
             {% assign url = partner.url | remove_first: "/" %}
             <div class="column is-one-third">
                 <a class="card" href="{{ url }}">
