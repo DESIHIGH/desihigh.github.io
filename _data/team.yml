@@ -1,5 +1,5 @@
 - name: Simon Bouchard
-  image: /assets/img/team/simon_bouchard.jpg
+  image: assets/img/team/simon_bouchard.jpg
   email: simon.bouchard@lpnhe.in2p3.fr
   social:
     - name: github
