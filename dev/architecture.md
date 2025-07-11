@@ -21,8 +21,8 @@ This document outlines the structure and organization of the DESIHIGH website.
 - <span class="tag is-danger">Design</span>
   <span class="tag is-danger">Content</span>
   **Teachers Page**: A dedicated section for teachers, offering resources and information.
-- <span class="tag is-danger">Design</span>
-  <span class="tag is-danger">Content</span>
+- <span class="tag is-success">Design</span>
+  <span class="tag is-success">Content</span>
   **Partners section**: Information about the partners involved with DESIHIGH. --> One page per partner ?
 - <span class="tag is-success">Design</span>
   <span class="tag is-danger">Content</span>
@@ -71,21 +71,27 @@ This document outlines the structure and organization of the DESIHIGH website.
 - **Default Page**: A default page template used for various sections of the website. Default layout and styling for new pages is defined here and will be copied to all pages once fixed.
 
 # Languages
-- [ ] **English**: The primary language of the website.
+- **English**: The primary language of the website.
   - The English content is encoded in the website itself, as the default language and therefore does not require a specific language file.
   - Other languages content have to be stored in a .json file in the `assets/lang/` directory, with the filename corresponding to the language code (e.g., `en.json` for English, `fr.json` for French, etc.).
   - If a translation key is not found in the language file, the English version will be used as a fallback.
-- [ ] **French**: A translated version of the website for French-speaking users.
-- [ ] **Spanish**: A translated version of the website for Spanish-speaking users.
-- [ ] **Other languages**: Consider adding support for additional languages in the future.
+- **French**: A translated version of the website for French-speaking users.
+- **Spanish**: A translated version of the website for Spanish-speaking users.
+- **Other languages**: Consider adding support for additional languages in the future.
+
+> For practical reasons, the big markdown-rendered files trough the collections will *not* have a translation.
+> This includes the News, Events, and Partners pages. To prevent confusion, the cards linking these pages will display a flag icon representing the language of the page.
+> The cards themselves can be translated : e.g. *The partners description and location can be translated trough the `name/description` and `name/location` keys in the language files.*
 
 ### Adding a new language
 To add a new language to the DESIHIGH website, follow these steps:
 1. Create a new JSON file in the `assets/lang/` directory with the language code as the filename (e.g., `de.json` for German).
 2. Populate the JSON file with the translation keys and their corresponding values in the new language.
    - Check the existing language files to figure out the keys to use.
+   - Be careful to respect the HTML structure in the translation values, as it is used to render the content correctly.
 3. Ensure that the new language file follows the same structure as the existing language files.
 4. Update the `_data/lang.yml` file to include the new language to the list of available languages.
+5. Add a flag (from the [Twemoji cheatsheet website](https://twemoji-cheatsheet.vercel.app/)) to represent the new language in `assets/img/lang/`. This has to be a PNG file with the same name as the language code (e.g., `de.png` for German).
 
 
 ## Collections
@@ -106,7 +112,9 @@ The website uses Jekyll collections to manage different types of content. The ma
 
 - **_partners**: Contains information about the partners involved with DESIHIGH.
   - Each partner is represented by a Markdown file in the `_partners/` directory.
-  - The front matter of each file includes field `name`.
+  - The front matter of each file includes field `name`, `description`, `location` and `lang`.
+  - The `lang` field is used to specify the language of the partner's page.
+  - The `description` field and the `location` fields can be translated through the `assets/lang/` files.
   - The partners are displayed on the Partners page, sorted by name.
 
 - **_events**: Contains information about upcoming events related to DESIHIGH.
