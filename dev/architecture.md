@@ -3,6 +3,8 @@ title: "DESIHIGH Site Architecture"
 layout: markdown
 ---
 
+{% include breadcrumbs.html breadcrumbs=true is_md=true %}
+
 # Site architecture and organization
 <p class="subtitle">Last updated: 2025-07-08</p>
 
@@ -10,41 +12,77 @@ This document outlines the structure and organization of the DESIHIGH website.
 
 ## Main Pages (in the website header)
 
-- [ ] **Home Page**: The landing page of the website, providing an overview of DESIHIGH, the last news and events.
-- [ ] **FAQ Page**: Frequently asked questions about DESIHIGH and its resources.
-- [ ] **Teachers Page**: A dedicated section for teachers, offering resources and information.
-- [ ] **Partners section**: Information about the partners involved with DESIHIGH. --> One page per partner ?
-- [ ] **About Page**: Details about the DESIHIGH initiative, its goals, and its team.
-- [ ] **Terms Page**: The code of conduct and terms of use for the website and its resources. Also includes the privacy policy.
-- [ ] **Quickstart Page**: A guide to help users get started with DESIHIGH, linking to the curriculum and other resources.
+- <span class="tag is-success">Design</span> 
+  <span class="tag is-success">Content</span>
+  **Home Page**: The landing page of the website, providing an overview of DESIHIGH, the last news and events.
+- <span class="tag is-success">Design</span>
+  <span class="tag is-danger">Content</span>
+  **FAQ Page**: Frequently asked questions about DESIHIGH and its resources.
+- <span class="tag is-danger">Design</span>
+  <span class="tag is-danger">Content</span>
+  **Teachers Page**: A dedicated section for teachers, offering resources and information.
+- <span class="tag is-danger">Design</span>
+  <span class="tag is-danger">Content</span>
+  **Partners section**: Information about the partners involved with DESIHIGH. --> One page per partner ?
+- <span class="tag is-danger">Design</span>
+  <span class="tag is-danger">Content</span>
+  **About Page**: Details about the DESIHIGH initiative, its goals, and its team.
+- <span class="tag is-success">Design</span>
+  <span class="tag is-danger">Content</span>
+  **Terms Page**: The code of conduct and terms of use for the website and its resources. Also includes the privacy policy.
+- <span class="tag is-danger">Design</span>
+  <span class="tag is-danger">Content</span>
+  **Quickstart Page**: A guide to help users get started with DESIHIGH, linking to the curriculum and other resources.
     - Include Saul Perlmutter's letter here !!
 
 ## Secondary Pages (in the website footer if not in the header)
 
-- [ ] **Credits Page**: Acknowledgments and credits for contributions to the DESIHIGH website.
-- [ ] **Contact Page**: A page for users to get in touch with the DESIHIGH team. Includes a contact form and a link to the GitHub forum.
+- <span class="tag is-danger">Design</span>
+  <span class="tag is-danger">Content</span>
+  **Credits Page**: Acknowledgments and credits for contributions to the DESIHIGH website.
+- <span class="tag is-success">Design</span>
+  <span class="tag is-success">Content</span>
+  **Contact Page**: A page for users to get in touch with the DESIHIGH team. Includes a contact form and a link to the GitHub forum.
   - [x] Frontend contact form: A form for users to submit questions, suggestions, or issues.
   - [ ] Backend contact form: A form that sends the user's message to the DESIHIGH team via email.
 
 
 ## Other Pages
-- [ ] **Curriculum Page**: The main page for the curriculum, providing an overview and links to the notebooks.
-- [ ] **News section**: A section for news and updates related to DESIHIGH, including blog posts and announcements.
-- [ ] **Events section**: A section dedicated to upcoming events related to DESIHIGH, such as workshops and webinars.
-- [ ] **Resources section**: A collection of resources, including notebooks, videos, and other educational materials.
+- <span class="tag is-danger">Design</span>
+  <span class="tag is-danger">Content</span>
+  **Curriculum Page**: The main page for the curriculum, providing an overview and links to the notebooks.
+- <span class="tag is-danger">Design</span>
+  <span class="tag is-danger">Content</span>
+  **News section**: A section for news and updates related to DESIHIGH, including blog posts and announcements.
+- <span class="tag is-danger">Design</span>
+  <span class="tag is-danger">Content</span>
+  **Events section**: A section dedicated to upcoming events related to DESIHIGH, such as workshops and webinars.
+- <span class="tag is-danger">Design</span>
+  <span class="tag is-danger">Content</span>
+  **Resources section**: A collection of resources, including notebooks, videos, and other educational materials.
     - Link with DESI outreach resources ?
 
 ## Utilities (dev) Pages
-- [x] **404 Page**: A custom 404 error page that provides a friendly message when a page is not found.
-- [ ] **Style Page**: A page that stores recommendations and ideas for the website styles.
-- [ ] **Architecture Page**: This page, which outlines the structure and organization of the DESIHIGH website.
-- [x] **Default Page**: A default page template used for various sections of the website. Default layout and styling for new pages is defined here and will be copied to all pages once fixed.
+- <span class="tag is-success">Design</span>
+  <span class="tag is-success">Content</span>
+  **404 Page**: A custom 404 error page that provides a friendly message when a page is not found.
+- **Style Page**: A page that stores recommendations and ideas for the website styles.
+- **Architecture Page**: This page, which outlines the structure and organization of the DESIHIGH website.
+- **Default Page**: A default page template used for various sections of the website. Default layout and styling for new pages is defined here and will be copied to all pages once fixed.
 
-## Jekyll elements
-- [ ] **Layouts**: The Jekyll layouts used for the website, including the default layout and any custom layouts.
-  - [x] *default.html*: The main layout file that defines the structure of the website pages.
-  - [x] *markdown.html*: A layout file for pages that use Markdown content.
-  - [ ] Other layouts ?
-- [x] **Includes**: The repeated elements used in the website, such as the header and footer.
-  - [x] *navbar.html*: The navigation bar included in the website header.
-  - [x] *footer.html*: The footer included in the website.
+# Languages
+- [ ] **English**: The primary language of the website.
+  - The English content is encoded in the website itself, as the default language and therefore does not require a specific language file.
+  - Other languages content have to be stored in a .json file in the `assets/lang/` directory, with the filename corresponding to the language code (e.g., `en.json` for English, `fr.json` for French, etc.).
+  - If a translation key is not found in the language file, the English version will be used as a fallback.
+- [ ] **French**: A translated version of the website for French-speaking users.
+- [ ] **Spanish**: A translated version of the website for Spanish-speaking users.
+- [ ] **Other languages**: Consider adding support for additional languages in the future.
+
+### Adding a new language
+To add a new language to the DESIHIGH website, follow these steps:
+1. Create a new JSON file in the `assets/lang/` directory with the language code as the filename (e.g., `de.json` for German).
+2. Populate the JSON file with the translation keys and their corresponding values in the new language.
+   - Check the existing language files to figure out the keys to use.
+3. Ensure that the new language file follows the same structure as the existing language files.
+4. Update the `_data/lang.yml` file to include the new language to the list of available languages.
