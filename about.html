@@ -37,7 +37,7 @@ layout: default
             <article class="media">
                 <div class="media-left">
                     <figure class="image is-64x64">
-                        <img class="is-rounded" src="{{ member.image | default: placeholder_img }}" alt="{{ member.name }}">
+                        <img class="is-rounded" src="{{ member.image | default: placeholder_img }}" alt="{{ member.name }}" style="max-width: 64px; max-height: 64px; object-fit: cover; ">
                     </figure>
                 </div>
                 <div class="media-content">
