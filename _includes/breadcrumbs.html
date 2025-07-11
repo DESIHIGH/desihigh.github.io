@@ -1,0 +1,49 @@
+<div class="level">
+<nav class="breadcrumb is-small">
+    <ul>
+        <!-- Quick-fix for markdown layout that includes content in a "content" div which moves stuff around -->
+        {% if include.is_md %}
+        <li></li>
+        {% endif %}
+
+        {% if include.back %}
+        <li>
+            <a href="{{ page.url }}/.."  style="align-items: center;">
+                <span class="icon is-small">
+                    <i class="fas fa-arrow-left"></i>
+                </span>
+                Back
+            </a>
+        </li>
+        {% endif %}
+
+        {% if include.home %}
+        <li>
+            <a href="#">
+                <span class="icon is-small">
+                    <i class="fas fa-home"></i>
+                </span>
+            </a>
+        </li>
+        {% endif %}
+        {% if include.breadcrumbs %}
+            {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+            {% for crumb in crumbs  offset: 1 %}
+                {% if forloop.last %}
+                <li class="is-active">
+                    <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}" aria-current="page">
+                        {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
+                    </a>
+                </li>
+                {% else %}
+                <li>
+                    <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">
+                        {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
+                    </a>
+                </li>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    </ul>
+</nav>
+</div>
