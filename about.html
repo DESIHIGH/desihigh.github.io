@@ -6,6 +6,18 @@ layout: default
 <section class="section">
     <div class="container">
         <div class="content">
+            <h1>About DESI </h1>
+            <p>
+                DESI (Dark Energy Spectroscopic Instrument) is a revolutionary astronomical survey that aims to map the large-scale structure of the universe and understand the nature of dark energy. 
+                By measuring the spectra of millions of galaxies and quasars, DESI will provide unprecedented insights into the expansion history of the universe and the distribution of dark matter.
+            </p>    
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="content">
             <h1>About DESI High</h1>
             <p>DESI High is a free online platform designed to help high school students learn about astronomy and data science through hands-on experience with real astronomical data.</p>
             <p>Our goal is to make astronomy accessible and engaging for students, providing them with the tools and resources they need to explore the universe.</p>
@@ -19,7 +31,7 @@ layout: default
             <h2>Meet the team !</h2>
 
             {% assign placeholder_img = "https://bulma.io/assets/images/placeholders/128x128.png" %}
-            {% assign sorted_team = site.data.team | sort: "name" %}
+            {% assign sorted_team = site.team | sort: "name" %}
             {% for member in sorted_team %}
             <hr>
             <article class="media">
@@ -31,7 +43,9 @@ layout: default
                 <div class="media-content">
                     <div class="content">
                         <h3>{{ member.name }}</h3>
-                        <p data-i18n="team/{{ member.name | slugify }}">{{ member.bio }}</p>
+                        <div data-i18n="team/{{ member.name | slugify }}">
+                            {{ member.content | markdownify }}
+                        </div>
                     </div>
                     <div class="subtitle is-7">
                         <a href="mailto:{{ member.email }}">{{ member.email }}</a>
@@ -43,7 +57,9 @@ layout: default
                             {% for social in member.social %}
                             <span class="icon is-medium">
                                 <a class="has-text-text" href="{{ social.url }}" target="_blank">
-                                    <i class="fa-brands fa-lg fa-{{ social.name }}"></i>
+                                    {% assign brand_icon = "fa-brands fa-" | append: social.name %}
+                                    {% assign fa_icon = social.icon | default: brand_icon %}
+                                    <i class="fa-lg {{ fa_icon }}"></i>
                                 </a>
                             </span>    
                             {% endfor %}
