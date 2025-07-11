@@ -55,5 +55,12 @@
     "team": {
         "bao-ban": "Bao Ban est un éducateur passionné et un défenseur de la communication scientifique. Fort d'une formation en physique et d'un vif intérêt pour la vulgarisation, Bao a consacré sa carrière à rendre accessibles au public des concepts scientifiques complexes. Son objectif principal est de mobiliser les jeunes apprenants et d'inspirer la prochaine génération de scientifiques.",
         "simon-bouchard": "Salut ! Je suis Simon, un doctorant au LPNHE à Paris. Je travaille sur le clustering des galaxies et l'analyse de l'échantillon BGS de DESI. J'adore partager mes connaissances en astronomie et en science des données avec les étudiants. En dehors de la science, je suis également magicien 🃏."
+    },
+
+    "Partners intro": "<h1>Nos Partenaires</h1>\n<p>Découvrez nos établissements partenaires ! 🌍 Nous sommes fiers de collaborer avec des institutions qui partagent notre passion pour l'éducation et la science à travers le monde.</p>",
+    "Location": "Localisation",
+    "Lowell":{
+        "location": "Lowell, Massachusetts, USA",
+        "description": "Située à San Francisco, Lowell High School est la plus ancienne école publique secondaire à l'ouest du fleuve Mississippi."
     }
 }

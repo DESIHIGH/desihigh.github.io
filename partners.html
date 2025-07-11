@@ -5,17 +5,18 @@ layout: default
 
 <section class="section">
     <div class="container">
-        <div class="content">
+        <div class="content" data-i18n="Partners intro">
             <h1>Partners</h1>
-            <p>Meet one of our existing partner schools ! 🌍</p>
+            <p>Meet one of our existing partner schools ! 🌍 We are proud to collaborate with institutions that share our passion for education and science all around the globe.</p>
         </div>
     
         <hr>
 
         <div class="columns is-multiline">
             {% for partner in site.partners %}
+            {% assign url = partner.url | remove_first: "/" %}
             <div class="column is-one-third">
-                <a class="card" href="{{ partner.url }}">
+                <a class="card" href="{{ url }}">
                 <div class="card">
                     <div class="card-content">
                         <div class="level">
@@ -27,9 +28,12 @@ layout: default
                             </div>
                         </div>
 
-                        <p>{{ partner.description }}</p>
-                        <p><strong>Location:</strong> {{ partner.location }}</p>
-                        <p><strong>Contact:</strong> <a href="mailto:{{ partner.contact }}">{{ partner.contact }}</a></p>
+                        <div class="content">
+                            <p data-i18n="{{ partner.name }}/description">{{ partner.description }}</p>
+                        </div>
+                        
+                        <p><strong><span data-i18n="Location">Location</span>:</strong> <span data-i18n="{{ partner.name }}/location">{{ partner.location }}</span></p>
+                        <p><strong><span data-i18n="Contact">Contact</span>:</strong> <a href="mailto:{{ partner.contact }}">{{ partner.contact }}</a></p>
                     </div>
                 </div>
                 </a>
