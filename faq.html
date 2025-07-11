@@ -13,12 +13,18 @@ layout: default
         {% for faq in site.data.faq %}
         <hr>
         <a class="level js-modal-trigger" data-target="modal-{{ forloop.index }}">
-            <div class="level-left">
-                <div class="level-item">
-                    <p class="title is-4" data-i18n="{{ faq.tag }}/question">{{ faq.question }}</p>
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <p class="title is-4" data-i18n="{{ faq.tag }}/question">{{ faq.question }}</p>
+                    
+                        <span class="icon is-large is-hidden-desktop">
+                            <i class="fas fa-lg fa-chevron-right"></i>
+                        </span>
+                    </div>
                 </div>
             </div>
-            <div class="level-right">
+            <div class="level-right is-hidden-mobile">
                 <div class="level-item">
                     <span class="icon is-large">
                         <i class="fas fa-lg fa-chevron-right"></i>
