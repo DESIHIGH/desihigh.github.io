@@ -1,0 +1,28 @@
+---
+layout: default
+---
+{% include welcome_hero.html page_number=paginator.page %}
+<section class="section">
+    <div class="container">
+        <div class="level">
+            <div class="level-left">
+                <div class="content">
+                    <h1 data-i18n="Events">Events</h1>
+                    <p data-i18n="Events intro">Our events section provides insights into ongoing projects, upcoming events of DESI High.</p>
+                </div>
+            </div>
+            <div class="level-right">
+                {% include language_selector.html page_number=paginator.page %}
+            </div>
+        </div>
+        
+        <div class="content">
+            <hr>
+                {% include paginator_posts.html %}
+            <hr>
+        </div>
+
+        {% include pagination.html display_number=5 size="small" %}
+
+    </div>
+</section>

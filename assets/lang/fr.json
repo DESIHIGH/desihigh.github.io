@@ -8,6 +8,11 @@
     "Forum": "Forum",
     "Language": "Langue",
 
+    "Filter": "Filtrer",
+
+    "Previous": "Précédent",
+    "Next": "Suivant",
+
     "Terms & Privacy": "Conditions & Confidentialité",
     "Contact": "Contact",
     "Credits": "Crédits",
@@ -21,7 +26,10 @@
     "Contact us !": "Contactez-nous !",
 
     "Latest News": "Dernières nouvelles",
+    "See more": "Voir plus",
     "Upcoming Events": "Événements à venir",
+
+    "Read more": "Lire la suite",
 
     "Welcome intro": "<strong>Bienvenue à DESI High !</strong>\n<p>Vous avez trouvé la page d'accueil du Dark Energy Spectroscopic Instrument (DESI) pour les lycéens. Rejoignez-nous pour réaliser vos propres expériences avec les données sorties tout droit du télescope 🔭 Pour découvrir DESI, regardez cette <a href=\"https://www.youtube.com/watch?v=kPXx9tqyzY\" target=\"_blank\">vidéo</a>, visitez notre <a href=\"https://www.desi.lbl.gov/\" target=\"_blank\">site web</a>, et rejoignez-nous sur nos <a href=\"#social-icons\">réseaux sociaux</a> !</p>\n<p>Si vous ne conaissez pas Python 🐍, pas d'inquiétude ! Vous vous ferez la main rapidement. Nous vous fournirons des nootebooks d'introduction pour vous aider à comprendre les bases. Tout notre cointenu est écrit dans des <a href=\"https://jupyter.org\"  target=\"_blank\">Jupyter notebooks</a>, qui rendent Python et l'analyse de données plus abordables.</p>\n<p><strong>Prêts à commencer ?</strong></p>",
 
@@ -52,6 +60,9 @@
         "answer": "Vous pouvez vous inscrire en remplissant le formulaire d'inscription sur notre page d'accueil. Une fois inscrit, vous aurez accès à tous nos cours et ressources."
     },
 
+    "About DESI": "À propos de DESI",
+    "About DESI High": "À propos de DESI High",
+    "Meet the team !": "Rencontrez l'équipe !",
     "team": {
         "bao-ban": "Bao Ban est un éducateur passionné et un défenseur de la communication scientifique. Fort d'une formation en physique et d'un vif intérêt pour la vulgarisation, Bao a consacré sa carrière à rendre accessibles au public des concepts scientifiques complexes. Son objectif principal est de mobiliser les jeunes apprenants et d'inspirer la prochaine génération de scientifiques.",
         "simon-bouchard": "Salut ! Je suis Simon, un doctorant au LPNHE à Paris. Je travaille sur le clustering des galaxies et l'analyse de l'échantillon BGS de DESI. J'adore partager mes connaissances en astronomie et en science des données avec les étudiants. En dehors de la science, je suis également magicien 🃏."
@@ -61,6 +72,10 @@
     "Location": "Localisation",
     "Lowell":{
         "location": "Lowell, Massachusetts, USA",
-        "description": "Située à San Francisco, Lowell High School est la plus ancienne école publique secondaire à l'ouest du fleuve Mississippi."
-    }
+        "summary": "Située à San Francisco, Lowell High School est la plus ancienne école publique secondaire à l'ouest du fleuve Mississippi."
+    },
+    "Become partner": "Si vous souhaitez devenir partenaire de DESI High, veuillez nous <a href=\"contact.html\">contacter</a> pour plus d'informations.",
+
+    "News intro": "Restez à jour avec les dernières actualités de DESI High ! Pour plus d'actualités de DESI, suivez-nous sur les <a href=\"#social-icons\">réseaux sociaux</a> !",
+    "Events intro": "Cette section contient les informations sur les projets en cours et les évènements à venir dans DESI High."
 }

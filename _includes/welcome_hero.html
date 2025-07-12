@@ -1,5 +1,17 @@
+{% assign hero_size = include.hero_size | default: is-large %}
+{% assign hero_image = include.hero_image | default: "assets/img/Mayall-Star-Trails.jpg" %}
+{% assign url = page.url | remove_first: '/' | remove: "index.html" %}
+{% if include.page_number %}
+    {% assign to_remove = include.page_number | append: "/" %}
+    {% assign url = url | replace: to_remove, "" %}
+{% endif %}
+{% for lang in site.data.lang %}
+    {% assign to_remove = lang.code | append: "/" %}
+    {% assign url = url | replace: to_remove, "" %}
+{% endfor %}
+
 <!-- https://github.com/jgthms/bulma/issues/1007#issuecomment-1722779908 -->
-<div class="hero {{ include.hero_size | default: is-large }}" style="background-image: url('https://raw.githubusercontent.com/DESIHIGH/desihigh/refs/heads/main/desihigh/images/Mayall-Star-Trails.jpg'); background-position: center top; background-size: auto 100%">
+<div class="hero {{ hero_size }}" style="background-image: url('{{ hero_image }}'); background-position: center top; background-size: auto 100%">
     <div class="hero-body">
         <div class="container has-text-centered has-text-top">
             <h1 class="title is-2 has-text-warning" data-i18n="Welcome to DESI High !">Welcome to DESI High !</h1>
@@ -10,8 +22,6 @@
         <nav class="tabs is-boxed">
             <div class="container">
                 <ul>
-                    <!-- Quick fix for relative URLs - Remove first / -->
-                    {% assign url = page.url | remove_first: '/' %} 
                     {% for item in site.data.home_tabs %}
                     <li {% if url == item.url %} class="is-active"{% endif %}>
                         <a href="{{ item.url }}" {% if url == item.url %} style="color: var(--bulma-warning);"{% endif %}> 

@@ -3,6 +3,12 @@ collections:
   team:
   partners:
     output: true
+  events:
+    output: true
+    permalink: events/:path/
+  news:
+    output: true
+    permalink: news/:path/
 
 defaults:
   - scope:
@@ -12,5 +18,25 @@ defaults:
       layout: "partner"
   - scope:
       path: ""
+      type: "events"
+    values:
+      layout: "event"
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "news"
+  - scope:
+      path: ""
     values:
       layout: "default"
+
+plugins:
+  - jekyll-paginate-v2
+
+pagination:
+  enabled: true
+  per_page: 5
+  sort_reverse: true
+  permalink: /:num/
+  title: ':title - page :num of :max'
