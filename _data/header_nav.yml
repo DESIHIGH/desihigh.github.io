@@ -3,7 +3,7 @@
 - name: Teachers
   url: teachers.html
 - name: Partners
-  url: partners.html
+  url: partners/
 - name: About
   url: about.html
 - name: Code of Conduct
