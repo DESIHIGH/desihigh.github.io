@@ -1,6 +1,6 @@
 ---
 name: Lowell
-description: Located in San Francisco, Lowell High School is the oldest public high school west of the Mississippi river.
+summary: Located in San Francisco, Lowell High School is the oldest public high school west of the Mississippi river.
 location: USA
 contact: lowellastroclub@gmail.com
 lang: en

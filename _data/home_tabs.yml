@@ -2,11 +2,11 @@
   url: curriculum.html
   icon: fas fa-book
 - name: News
-  url: news
+  url: news/
   icon: fas fa-newspaper
 - name: Events
-  url: events
+  url: events/
   icon: fas fa-calendar-alt
 - name: Resources
-  url: resources
+  url: resources.html
   icon: fas fa-tools

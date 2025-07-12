@@ -68,16 +68,55 @@ layout: default
 <section class="section">
     <div class="container">
         <h2 class="title" data-i18n="Latest News">Latest News</h2>
-        <div class="columns ismultiline">
+        <div class="columns hidden-scroll is-flex-wrap-nowrap is-vcentered" style="overflow-x: scroll">
+
+            {% assign sorted_news = site.news | sort: "date" | reverse %}
+            {% for news in sorted_news limit:5 %}
+            {% assign url = news.url | remove_first: "/" %}
             <div class="column is-one-third">
                 <div class="card">
                     <div class="card-content">
-                        <p class="title">New Course: Dark Matter Physics</p>
-                        <p class="subtitle">Join our latest course on the mysteries of dark matter and its implications in the universe.</p>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="title is-4">{{ news.title }}</p>
+                            </div>
+                            <div class="column is-narrow">
+                                {% if news.lang %}
+                                <img src="assets/img/lang/{{ news.lang }}.png" alt="language flag" style="width: 20px;">
+                                {% endif %}
+                            </div>
+                        </div>
+                        <p class="subtitle is-6">{{ news.date | date_to_string }} - {{ news.author }}</p>
+                        <p class="content">{{ news.excerpt }}</p>
                     </div>
+                    <a href="{{ url }}">
+                        <div class="card-footer has-text-link">
+                            <span class="card-footer-item" data-i18n="Read more">Read more</span>
+                        </div>
+                    </a>
                 </div>
             </div>
+            {% endfor %}
+
+            <div class="column is-one-fifth">
+                <a class="card" href="news.html">
+                    <div class="card">
+                        <div class="card-content has-text-centered">
+                            <div class="content">
+                                <p class="has-text-link has-background-dark" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%;">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </p>
+                                <p class="title is-5" data-i18n="See more">See more</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
         </div>
+
+        <progress class="progress is-small  is-hidden-mobile" value="100" max="100"></progress>
+
     </div>
 </section>
 
@@ -85,17 +124,55 @@ layout: default
 <section class="section">
     <div class="container">
         <h2 class="title" data-i18n="Upcoming Events">Upcoming Events</h2>
-        <div class="columns is-multiline">
+        <div class="columns hidden-scroll is-flex-wrap-nowrap is-vcentered" style="overflow-x: scroll">
+
+            {% assign sorted_events = site.events | sort: "date" | reverse %}
+            {% for event in sorted_events limit:5 %}
+            {% assign url = event.url | remove_first: "/" %}
             <div class="column is-one-third">
                 <div class="card">
                     <div class="card-content">
-                        <p class="title">Dark Universe Symposium</p>
-                        <p class="subtitle">
-                            Join us for a symposium discussing the latest research in dark universe studies.</p>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="title is-4">{{ event.title }}</p>
+                            </div>
+                            <div class="column is-narrow">
+                                {% if event.lang %}
+                                <img src="assets/img/lang/{{ event.lang }}.png" alt="language flag" style="width: 20px;">
+                                {% endif %}
+                            </div>
+                        </div>
+                        <p class="subtitle is-6">{{ event.date | date_to_string }} - {{ event.author }}</p>
+                        <p class="content">{{ event.excerpt }}</p>
                     </div>
+                    <a href="{{ url }}">
+                        <div class="card-footer has-text-link">
+                            <span class="card-footer-item" data-i18n="Read more">Read more</span>
+                        </div>
+                    </a>
                 </div>
             </div>
+            {% endfor %}
+        
+            <div class="column is-one-fifth">
+                <a class="card" href="events.html">
+                    <div class="card">
+                        <div class="card-content has-text-centered">
+                            <div class="content">
+                                <p class="has-text-link has-background-dark" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%;">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </p>
+                                <p class="title is-5" data-i18n="See more">See more</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
         </div>
+
+        <progress class="progress is-small is-hidden-mobile" value="100" max="100"></progress>
+
     </div>
 </section>
 
@@ -108,7 +185,7 @@ layout: default
             <p>👉 Click here to read the welcome letter to DESI High students.</p>
         </div>
         <div style="display: flex; justify-content: center;">
-            <a class="button is-dark" href="quickstart.html" data-i18n="Read">✉️ Read</a>
+            <a class="button is-dark" href="quickstart.html/#letter" data-i18n="Read">✉️ Read</a>
         </div>
     </div>
 </div>
