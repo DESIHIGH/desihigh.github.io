@@ -30,6 +30,8 @@
         {% if include.breadcrumbs %}
             {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
             {% for crumb in crumbs offset: 1 %}
+
+                <!-- Figure out the path of each crumb -->
                 {% assign crumb_limit = forloop.index | plus: 1 %}
                 {% assign goto = "" %}
                 {% for crumb_loop in crumbs limit: crumb_limit %}
@@ -37,6 +39,7 @@
                 {% endfor %}
                 {% assign goto = goto | remove_first: '/' %}
                 {% assign goto = goto | replace: '.html/', '.html' %}
+
                 {% if forloop.last %}
                 <li class="is-active">
                     <a href="{{ goto }}" aria-current="page">

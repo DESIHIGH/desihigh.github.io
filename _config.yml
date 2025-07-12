@@ -3,6 +3,7 @@ collections:
   team:
   partners:
     output: true
+    permalink: partners/:path/
   events:
     output: true
     permalink: events/:path/
