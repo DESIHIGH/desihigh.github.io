@@ -30,7 +30,6 @@ This document provides a style guide for the DESI High website, including design
 - Use [panels](https://bulma.io/documentation/components/panel/) for curriculum sections & notebooks
   - Left side icons : Book for notebooks, wrench for cheatsheets, etc.
   - Use tags for complexity in notebooks ([link](https://bulma.io/documentation/elements/tag/)) on the right side ?
-- Add carrousels (w/ [cards](https://bulma.io/documentation/components/card/)) from collections for events & news + create blog page
 - Contact form : see [form subscription tools](https://stackoverflow.com/questions/24348223/send-email-from-static-page-hosted-on-github-pages)
   - [x] Create form style
   - [x] Add notification message for forum link
@@ -39,9 +38,8 @@ This document provides a style guide for the DESI High website, including design
   - [ ] Confirmation message to be displayed after successful form submission.
   - [ ] Add backend form processing to handle form submissions and send emails.
 - Fancy stuff:
-  - Move hardcoded links to a config file (forum, ?)
-  - Search bar
-  - Dark mode toggle (not optimal)
+  - Move regular hardcoded links to a config file (forum, ?)
+  - Add an evaluation form ? (Would need backend and anonymous identification to avoid spam --> Google forms allow this)
 
 
 # Style guide for DESI High Notebooks

@@ -12,7 +12,7 @@ This document outlines the structure and organization of the DESIHIGH website.
 
 ## Main Pages (in the website header)
 
-- <span class="tag is-danger">Design</span> 
+- <span class="tag is-success">Design</span> 
   <span class="tag is-success">Content</span>
   **Home Page**: The landing page of the website, providing an overview of DESIHIGH, the last news and events.
 - <span class="tag is-success">Design</span>
@@ -43,18 +43,18 @@ This document outlines the structure and organization of the DESIHIGH website.
 - <span class="tag is-success">Design</span>
   <span class="tag is-success">Content</span>
   **Contact Page**: A page for users to get in touch with the DESIHIGH team. Includes a contact form and a link to the GitHub forum.
-  - [x] Frontend contact form: A form for users to submit questions, suggestions, or issues.
-  - [ ] Backend contact form: A form that sends the user's message to the DESIHIGH team via email.
+  - <span class="tag is-success">Frontend&nbsp;</span> A form for users to submit questions, suggestions, or issues.
+  - <span class="tag is-danger">Backend &nbsp;</span> A form that sends the user's message to the DESIHIGH team via email.
 
 
 ## Other Pages
 - <span class="tag is-danger">Design</span>
   <span class="tag is-danger">Content</span>
   **Curriculum Page**: The main page for the curriculum, providing an overview and links to the notebooks.
-- <span class="tag is-danger">Design</span>
+- <span class="tag is-success">Design</span>
   <span class="tag is-danger">Content</span>
   **News section**: A section for news and updates related to DESIHIGH, including blog posts and announcements.
-- <span class="tag is-danger">Design</span>
+- <span class="tag is-success">Design</span>
   <span class="tag is-danger">Content</span>
   **Events section**: A section dedicated to upcoming events related to DESIHIGH, such as workshops and webinars.
 - <span class="tag is-danger">Design</span>
@@ -92,7 +92,17 @@ To add a new language to the DESIHIGH website, follow these steps:
 3. Ensure that the new language file follows the same structure as the existing language files.
 4. Update the `_data/lang.yml` file to include the new language to the list of available languages.
 5. Add a flag (from the [Twemoji cheatsheet website](https://twemoji-cheatsheet.vercel.app/)) to represent the new language in `assets/img/lang/`. This has to be a PNG file with the same name as the language code (e.g., `de.png` for German).
-
+6. (optional) If you plan on adding events or news in the new language, create a folder in the `events/` or `news/` directory with the language code as the name (e.g., `de/` for German) with the following `init.html` (here for News) file to allow the filters to render a page with only the posts in the new language:
+```html
+---
+layout: news_index
+title: News <!-- Can be translated --> 
+pagination: 
+    enabled: true
+    collection: news
+    category: <!-- language code -->
+---
+```
 
 ## Collections
 The website uses Jekyll collections to manage different types of content. The main collections are:
@@ -105,20 +115,31 @@ The website uses Jekyll collections to manage different types of content. The ma
   - Each team member is represented by a Markdown file in the `_team/` directory.
   - The front matter of each file includes fields `name`, `image`, `email`, and `social` links.
     - Any field is optional and will not be displayed if not provided.
-    - The `image` field should contain the filename of the team member's image, which should be stored in the `assets/img/team/` directory.
+    - The `image` field should contain the filename of the team member's image, which should be stored in the `assets/img/team/` directory. For display consistency, the image should be a square PNG file.
     - The `social` field is a yaml object containing links to the team member's social media profiles, such as GitHub, Twitter, and LinkedIn. The `name` key should be provided if the icon is included in font-awesome brand icons. Otherwise, provide the `icon` key with the font-awesome class of the icon to use.
   - The team members are displayed on the About page, sorted by name.
   - Translation of the team members' bios is handled through the `assets/lang/` files, in the `team` key with slugified keys for each member.
 
 - **_partners**: Contains information about the partners involved with DESIHIGH.
   - Each partner is represented by a Markdown file in the `_partners/` directory.
-  - The front matter of each file includes field `name`, `description`, `location` and `lang`.
+  - The front matter of each file includes field `name`, `summary`, `location` and `lang`.
   - The `lang` field is used to specify the language of the partner's page.
-  - The `description` field and the `location` fields can be translated through the `assets/lang/` files.
+  - The `summary` field and the `location` fields can be translated through the `assets/lang/` files. under the partner's name tag.
+    - If not provided, the `summary` field will default to the first paragraph of the content.
   - The partners are displayed on the Partners page, sorted by name.
 
 - **_events**: Contains information about upcoming events related to DESIHIGH.
-  - TBD
+  - Each event is represented by a Markdown file in the `_events/` directory.
+  - The file needs to follow a naming convention of `YYYY-MM-DD-event-name.md` to ensure correct sorting by date.
+  - The front matter of each file includes fields `title`, `author`, `summary`, `lang` and `categories`.
+  - The `lang` field is used to specify the language of the event page and display the correct flag icon.
+  - The `categories` field is used to filter events by language, such as `fr` for French events or `en` for English events.
+  - The `summary` field is used to provide a brief description of the event, which is displayed on the Events page.
+    - If not provided, the first paragraph of the content will be used as the summary.
+  - The events are displayed on the Events page, sorted by date.
+  - The first 5 events are displayed on the Home page, sorted by date.
+  
+> For practical reasons, the events are not translated. The content of the event pages is written in the language specified in the front matter, and the flag icon is displayed accordingly.
   
 - **_news**: Contains news and updates related to DESIHIGH.
-  - TBD
+  - Same as events
