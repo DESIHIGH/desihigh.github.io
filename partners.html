@@ -20,17 +20,18 @@ layout: default
                 <a class="card" href="{{ url }}">
                 <div class="card">
                     <div class="card-content">
-                        <div class="level">
-                            <div class="level-left">
+                        <div class="columns">
+                            <div class="column">
                                 <h2 class="title">{{ partner.name }}</h2>
                             </div>
-                            <div class="level-right">
+                            <div class="column is-narrow">
                                 <img src="assets/img/lang/{{ partner.lang }}.png" alt="language flag" style="width: 20px;">
                             </div>
                         </div>
 
                         <div class="content">
-                            <p data-i18n="{{ partner.name }}/description">{{ partner.description }}</p>
+                            {% assign summary = partner.summary | default: partner.excerpt %}
+                            <p data-i18n="{{ partner.name }}/summary">{{ summary }}</p>
                         </div>
                         
                         <p><strong><span data-i18n="Location">Location</span>:</strong> <span data-i18n="{{ partner.name }}/location">{{ partner.location }}</span></p>
@@ -45,7 +46,7 @@ layout: default
         <hr>
 
         <div class="content">
-            <p>If you are interested in becoming a partner, please <a href="contact.html">contact us</a> for more information.</p>
+            <p data-i18n="Become partner">If you are interested in becoming a partner, please <a href="contact.html">contact us</a> for more information.</p>
         </div>
 
     </div>
