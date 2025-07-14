@@ -1,3 +1,9 @@
+{% assign url = page.url | remove_first: '/' | remove: "index.html" %}
+{% if include.page_number %}
+    {% assign to_remove = include.page_number | append: "/" %}
+    {% assign url = url | replace: to_remove, "" %}
+{% endif %}
+
 <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="container">
         <div class="navbar-brand">
@@ -17,8 +23,6 @@
 
         <div class="navbar-menu" id="navbarMenu">
             <div class="navbar-start">
-                <!-- Quick fix for relative URLs - Remove first / -->
-                {% assign url = page.url | remove_first: '/' %} 
                 {% for item in site.data.header_nav %}
                 <a class="navbar-item {% if url == item.url %} has-text-warning {% endif %}" href="{{ item.url }}" data-i18n="{{ item.name }}">
                     {{ item.name }}
@@ -30,7 +34,7 @@
                 <div class="navbar-item">
                     <div class="buttons">
                         <a class="button is-warning" href="quickstart.html" data-i18n="Let's start !">Let's start !</a>
-                        <a class="button is-light" href="https://github.com/DESIHIGH/desihigh/discussions" data-i18n="Forum">Forum</a>
+                        <a class="button is-light" href="{{ site.links.forum }}" data-i18n="Forum">Forum</a>
                     </div>
                 </div> 
                 <!-- Language selection menu (done later) -->
