@@ -27,9 +27,6 @@ This document provides a style guide for the DESI High website, including design
 ## Ideas
 - "You've got mail !": A notification that shows up on the home page with a link to Saul's letter.
   - Link to fix
-- Use [panels](https://bulma.io/documentation/components/panel/) for curriculum sections & notebooks
-  - Left side icons : Book for notebooks, wrench for cheatsheets, etc.
-  - Use tags for complexity in notebooks ([link](https://bulma.io/documentation/elements/tag/)) on the right side ?
 - Contact form : see [form subscription tools](https://stackoverflow.com/questions/24348223/send-email-from-static-page-hosted-on-github-pages)
   - [x] Create form style
   - [x] Add notification message for forum link
@@ -37,9 +34,14 @@ This document provides a style guide for the DESI High website, including design
   - [ ] Which email to send the form to ?
   - [ ] Confirmation message to be displayed after successful form submission.
   - [ ] Add backend form processing to handle form submissions and send emails.
-- Fancy stuff:
-  - Move regular hardcoded links to a config file (forum, ?)
-  - Add an evaluation form ? (Would need backend and anonymous identification to avoid spam --> Google forms allow this)
+
+## Open questions
+- What order for the team members ?
+  - Alphabetical order by first name
+  - Alphabetical order by last name
+- Add an evaluation form ? 
+  - Would need backend and anonymous identification to avoid spam 
+    - Google forms might allow this
 
 
 # Style guide for DESI High Notebooks
