@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DESI High - {{ page.title }}</title>
 
-    <base href="/desihigh_website/"> <!-- Use this if you deploy to a subdirectory, e.g. /desihigh_website/ -->
+    <base href="{{ site.base_homepage }}"> 
     <link rel="icon" type="image/png" href="assets/img/logo_dark.png">
     <link rel="shortcut icon" type="image/png" href="assets/img/logo_dark.png">
+    <link rel="apple-touch-icon" type="image/png" href="assets/img/logo_dark.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
@@ -19,7 +20,7 @@
 </head>
 
 <body>
-{% include navbar.html %}
+{% include navbar.html page_number=paginator.page %}
 
 {{ content }}
 
