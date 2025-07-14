@@ -33,7 +33,7 @@ defaults:
       layout: "default"
 
 # Use this if you deploy to a subdirectory, e.g. /desihigh_website/
-base_homepage: /desigigh_website/ 
+base_homepage: /desihigh_website/ 
 
 # Set to true to show notebooks that are not translated in the selected language in the curriculum page.
 show_untranslated_notebooks: true 
