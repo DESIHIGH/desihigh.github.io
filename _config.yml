@@ -32,6 +32,17 @@ defaults:
     values:
       layout: "default"
 
+# Use this if you deploy to a subdirectory, e.g. /desihigh_website/
+base_homepage: /desigigh_website/ 
+
+# Set to true to show notebooks that are not translated in the selected language in the curriculum page.
+show_untranslated_notebooks: true 
+
+# Useful links
+links:
+  forum: https://github.com/DESIHIGH/desihigh/discussions
+  github: https://github.com/desihigh/desihigh
+
 plugins:
   - jekyll-paginate-v2
 

@@ -3,7 +3,7 @@ title: "School of the Dark Universe"
 layout: default
 ---
 
-{% include welcome_hero.html hero_size="is-large" %}
+{% include welcome_hero.html hero_size="is-large" title="Welcome to DESI High !" subtitle="School of the Dark Universe" %}
 
 <!-- <section class="section"> -->
     <div class="container">
@@ -43,9 +43,9 @@ layout: default
     <div class="container">
         <div class="content">
             <div class="notification is-info">
-                <div class="content" data-i18n="Teachers intro">
+                <div class="content">
                     <strong>Teachers</strong>
-                    <p>
+                    <p data-i18n="Teachers intro">
                         🏫 Have a classroom full of students potentially interested in DESI High? 
                         We have an elite team of scientists from across the globe ready to get things started for you! 
                     </p>
@@ -54,8 +54,8 @@ layout: default
                     <a class="button is-light is-outlined" href="contact.html" data-i18n="Contact us !">Contact us !</a>
                 </p>
 
-                <div class="content" data-i18n="Teachers intro 2">
-                    <p>
+                <div class="content">
+                    <p data-i18n="Teachers intro 2">
                         📎Or, check our ressources and teachers pages to find out how to get started with your class.
                     </p>
                 </div>
@@ -64,125 +64,16 @@ layout: default
     </div>
 </section>
 
-<!-- News carousel -->
-<section class="section">
-    <div class="container">
-        <h2 class="title" data-i18n="Latest News">Latest News</h2>
-        <div class="columns hidden-scroll is-flex-wrap-nowrap is-vcentered" style="overflow-x: scroll">
+{% include post_carousel.html posts=site.news title="Latest News" reverse=true permalink="news/" %}
 
-            {% assign sorted_news = site.news | sort: "date" | reverse %}
-            {% for news in sorted_news limit:5 %}
-            {% assign url = news.url | remove_first: "/" %}
-            <div class="column is-one-third">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="columns">
-                            <div class="column">
-                                <p class="title is-4">{{ news.title }}</p>
-                            </div>
-                            <div class="column is-narrow">
-                                {% if news.lang %}
-                                <img src="assets/img/lang/{{ news.lang }}.png" alt="language flag" style="width: 20px;">
-                                {% endif %}
-                            </div>
-                        </div>
-                        <p class="subtitle is-6">{{ news.date | date_to_string }} - {{ news.author }}</p>
-                        <p class="content">{{ news.excerpt }}</p>
-                    </div>
-                    <a href="{{ url }}">
-                        <div class="card-footer has-text-link">
-                            <span class="card-footer-item" data-i18n="Read more">Read more</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            {% endfor %}
-
-            <div class="column is-one-fifth">
-                <a class="card" href="news/">
-                    <div class="card">
-                        <div class="card-content has-text-centered">
-                            <div class="content">
-                                <p class="has-text-link has-background-dark" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%;">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </p>
-                                <p class="title is-5" data-i18n="See more">See more</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-        </div>
-
-        <progress class="progress is-small  is-hidden-mobile" value="100" max="100"></progress>
-
-    </div>
-</section>
-
-<!-- Events carousel -->
-<section class="section">
-    <div class="container">
-        <h2 class="title" data-i18n="Upcoming Events">Upcoming Events</h2>
-        <div class="columns hidden-scroll is-flex-wrap-nowrap is-vcentered" style="overflow-x: scroll">
-
-            {% assign sorted_events = site.events | sort: "date" | reverse %}
-            {% for event in sorted_events limit:5 %}
-            {% assign url = event.url | remove_first: "/" %}
-            <div class="column is-one-third">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="columns">
-                            <div class="column">
-                                <p class="title is-4">{{ event.title }}</p>
-                            </div>
-                            <div class="column is-narrow">
-                                {% if event.lang %}
-                                <img src="assets/img/lang/{{ event.lang }}.png" alt="language flag" style="width: 20px;">
-                                {% endif %}
-                            </div>
-                        </div>
-                        <p class="subtitle is-6">{{ event.date | date_to_string }} - {{ event.author }}</p>
-                        <p class="content">{{ event.excerpt }}</p>
-                    </div>
-                    <a href="{{ url }}">
-                        <div class="card-footer has-text-link">
-                            <span class="card-footer-item" data-i18n="Read more">Read more</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            {% endfor %}
-        
-            <div class="column is-one-fifth">
-                <a class="card" href="events/">
-                    <div class="card">
-                        <div class="card-content has-text-centered">
-                            <div class="content">
-                                <p class="has-text-link has-background-dark" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%;">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </p>
-                                <p class="title is-5" data-i18n="See more">See more</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-        </div>
-
-        <progress class="progress is-small is-hidden-mobile" value="100" max="100"></progress>
-
-    </div>
-</section>
-
+{% include post_carousel.html posts=site.events title="Upcoming Events" reverse=true permalink="events/" %}
 
 <div style="position: fixed; bottom: 2%; right: 1%; z-index: 1000; max-width: 450px;">
     <div class="notification is-warning is-light">
         <button class="delete"></button>
-        <div class="content" data-i18n="Mail info">
-            <p>📬 <strong>You've got mail!</strong></p>
-            <p>👉 Click here to read the welcome letter to DESI High students.</p>
+        <div class="content">
+            <p><strong data-i18n="Mail info 1"> 📬 You've got mail!</strong></p>
+            <p data-i18n="Mail info 2">👉 Click here to read the welcome letter to DESI High students.</p>
         </div>
         <div style="display: flex; justify-content: center;">
             <a class="button is-dark" href="quickstart#letter" data-i18n="Read">✉️ Read</a>
