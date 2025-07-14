@@ -3,8 +3,8 @@
 - name: Teachers
   url: teachers.html
 - name: Partners
-  url: partners/
+  url: partners
 - name: About
-  url: about.html
+  url: about
 - name: Code of Conduct
   url: terms.html

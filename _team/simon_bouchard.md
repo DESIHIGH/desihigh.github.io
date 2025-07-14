@@ -10,5 +10,6 @@ social:
       url: https://github.com/sbouchard01
     - name: orcid
       url: https://orcid.org/0000-0002-5955-3254
+tags: active
 ---
 Hi ! I'm Simon, a PhD student at LPNHE in Paris. I work on galaxy clustering and the analysis of the BGS sample ine DESI. I love to share my knowledge of astronomy and data science with students. Outside of science, I'm also a magician 🃏.

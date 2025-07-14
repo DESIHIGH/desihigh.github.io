@@ -11,6 +11,6 @@ social:
     url: https://www.facebook.com/desisurvey/
   - name: instagram
     url: https://www.instagram.com/desisurvey/
-
+tags: active
 ---
 Bao Ban is a passionate educator and advocate for science communication. With a background in physics and a keen interest in outreach, Bao has dedicated their career to making complex scientific concepts accessible to the public. They are particularly focused on engaging young learners and inspiring the next generation of scientists.

@@ -1,16 +1,29 @@
 ---
 title: "About"
 layout: default
+permalink: about/
+pagination: 
+    enabled: true
+    collection: team
+    tag: active
+    sort_reverse: false
+    sort_field: 'name'
 ---
 
 <section class="section">
     <div class="container">
         <div class="content">
             <h1 data-i18n="About DESI">About DESI</h1>
-            <p>
-                DESI (Dark Energy Spectroscopic Instrument) is a revolutionary astronomical survey that aims to map the large-scale structure of the universe and understand the nature of dark energy. 
-                By measuring the spectra of millions of galaxies and quasars, DESI will provide unprecedented insights into the expansion history of the universe and the distribution of dark matter.
+            <p data-i18n="About DESI 1">
+                The Dark Energy Spectroscopic Instrument (DESI) is a cosmological survey that aims to map the large-scale structure of the universe and understand the nature of dark energy. 
+                It will measure the spectra of millions of galaxies and quasars, that the DESI scientists will analyse to constrain the cosmological models that describe the evolution of the universe.
             </p>    
+            <p data-i18n="About DESI 2">
+                DESI is a collaboration of scientists and engineers from around the world, working together to build and operate a state-of-the-art spectrograph at the Mayall Telescope in Arizona.
+            </p>
+            <p>
+                <a href="https://desi.lbl.gov/" target="_blank" data-i18n="Learn more about DESI">Learn more about DESI</a>
+            </p>
         </div>
     </div>
 </section>
@@ -19,20 +32,31 @@ layout: default
     <div class="container">
         <div class="content">
             <h1 data-i18n="About DESI High">About DESI High</h1>
-            <p>DESI High is a free online platform designed to help high school students learn about astronomy and data science through hands-on experience with real astronomical data.</p>
-            <p>Our goal is to make astronomy accessible and engaging for students, providing them with the tools and resources they need to explore the universe.</p>
+            <p data-i18n="About DESI High 1">
+                DESI High is an outreach initiative that aims to bring the excitement of cosmology and astrophysics to high school students (and older). 
+                It provides a set of resources, including notebooks, videos, and other educational materials, to help students learn about the universe and the science behind DESI.
+                By using real DESI data, students can explore the universe, learn how to analyse astronomical data, and develop programming skills.
+            </p>
         </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
+    
         <div class="content">
-            <h2 data-i18n="Meet the team !">Meet the team !</h2>
-
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <h2 data-i18n="Meet the team !">Meet the team !</h2>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <p>
+                            <a href="legacy/" class="button is-primary is-outlined is-small" data-i18n="Legacy members">Legacy members</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
             {% assign placeholder_img = "https://bulma.io/assets/images/placeholders/128x128.png" %}
-            {% assign sorted_team = site.team | sort: "name" %}
-            {% for member in sorted_team %}
+            {% for member in paginator.posts %}
             <hr>
             <article class="media">
                 <div class="media-left">
@@ -70,5 +94,6 @@ layout: default
             {% endfor %}
             <hr>
         </div>
+        {% include pagination.html hide_1=true %}
     </div>
 </section>
