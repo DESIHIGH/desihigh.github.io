@@ -1,15 +1,17 @@
-{% assign size = include.size | default: "small" %}
+{% assign size = include.size | default: "is-small" %}
+{% assign hide_1 = include.hide_1 | default: false %}
 
+{% unless paginator.total_pages == 1 and hide_1 %}
 {% if paginator.total_pages %}
-<nav class="pagination is-centered is-{{ size }}" role="navigation">
+<nav class="pagination is-centered {{ size }}" role="navigation">
     {% if paginator.previous_page %}
         <a class="pagination-previous" href="{{ paginator.previous_page_path }}">
-            <span class="icon is-{{ size }}"><i class="fas fa-chevron-left"></i></span>
+            <span class="icon {{ size }}"><i class="fas fa-chevron-left"></i></span>
             <span data-i18n="Previous">Previous</span>
         </a>
     {% else %}
         <span class="pagination-previous is-disabled" aria-disabled="true">
-            <span class="icon is-{{ size }}"><i class="fas fa-chevron-left"></i></span>
+            <span class="icon {{ size }}"><i class="fas fa-chevron-left"></i></span>
             <span data-i18n="Previous">Previous</span>
         </span>
     {% endif %}
@@ -17,12 +19,12 @@
     {% if paginator.next_page %}
         <a class="pagination-next" href="{{ paginator.next_page_path }}">
             <span data-i18n="Next">Next</span>
-            <span class="icon is-{{ size }}"><i class="fas fa-chevron-right"></i></span>
+            <span class="icon {{ size }}"><i class="fas fa-chevron-right"></i></span>
         </a>
     {% else %}
         <span class="pagination-next is-disabled">
             <span data-i18n="Next">Next</span>
-            <span class="icon is-{{ size }}"><i class="fas fa-chevron-right"></i></span>
+            <span class="icon {{ size }}"><i class="fas fa-chevron-right"></i></span>
         </span>
     {% endif %}
 
@@ -106,3 +108,4 @@
     </ul>
 </nav>
 {% endif %}
+{% endunless %}
