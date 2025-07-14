@@ -1,0 +1,51 @@
+introduction-to-python:
+  en:
+    name: Introduction to Python
+    url: 
+      github: https://github.com/DESIHIGH/desihigh/blob/minimal/notebooks/English/PythonTutorial.ipynb
+      binder: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/English/PythonTutorial.ipynb
+  fr:
+    name: Introduction à Python
+    url:
+      github: https://github.com/DESIHIGH/desihigh/notebooks/French/
+      binder: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/French/
+
+introduction-to-numpy:
+  en:
+    name: Introduction to Numpy
+    url:
+
+distance-measurements:
+  en:
+    name: Distance Measurements
+    url:
+      github: https://github.com/DESIHIGH/desihigh/blob/minimal/notebooks/English/DistanceMeasures.ipynb
+      binder: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/English/DistanceMeasures.ipynb
+
+observations-of-our-universe-and-dark-energy:
+  en:
+    name: Observations of Our Universe and Dark Energy
+    url:
+
+cosmological-models:
+  en:
+    name: Cosmological Models
+    url:
+
+cosmological-inference:
+  en:
+    name: Cosmological Inference
+    url:
+      github: https://github.com/DESIHIGH/desihigh/blob/minimal/notebooks/English/CosmologicalInference.ipynb
+      binder: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/English/CosmologicalInference.ipynb
+
+desi-survey-overview:
+  en:
+    name: DESI Survey Overview
+    url:
+
+redshift-and-distance:
+  en:
+    name: Redshift and Distance
+    url:
+

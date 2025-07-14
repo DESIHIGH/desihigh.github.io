@@ -1,0 +1,29 @@
+- name: Code 101
+  color: "is-gray"
+  notebooks:
+    - tag: Introduction to Python
+      icon: fa-solid fa-wrench
+      level: Easy
+    - tag: Introduction to Numpy
+      icon: fa-solid fa-wrench
+      level: Easy
+
+- name: Cosmology Crash Course 
+  color: "is-info"
+  notebooks:
+    - tag: Distance measurements
+      level: Medium
+    - tag: Observations of Our Universe and Dark Energy
+      level: Medium
+    - tag: Cosmological Models
+      level: Medium
+    - tag: Cosmological Inference
+      level: Medium
+
+- name: The DESI Survey
+  color: "is-success"
+  notebooks:
+    - tag: DESI Survey Overview
+      level: Easy
+    - tag: Redshift and Distance
+      level: Medium

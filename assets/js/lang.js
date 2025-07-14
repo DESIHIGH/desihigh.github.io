@@ -67,3 +67,26 @@ window.addEventListener('DOMContentLoaded', async () => {
     const langData = await fetchLanguageData(userPreferredLanguage);
     updateContent(langData);
 });
+
+// Function to un-hide elements on click
+async function unhideElement(ParentClass, elementId, elementHideID) {
+    // First, hide all elements with the 'is-hidden' class in the specified parent class
+    const parentElement = document.querySelector(`[id=${ParentClass}]`);
+    if (!parentElement) {
+        console.warn(`Parent element with class "${ParentClass}" not found.`);
+        return;
+    }
+    var elements = parentElement.querySelectorAll('[id^="' + elementHideID + '"]');
+    elements.forEach(el => {
+        el.classList.add('is-hidden');
+        console.log(`Element with ID "${el.id}" is now hidden.`);
+    });
+    const element = parentElement.querySelector(`[id=${elementId}]`);
+    if (element) {
+        element.classList.remove('is-hidden');
+        console.log(`Element with ID "${elementId}" is now visible.`);
+    }
+    else {
+        console.warn(`Element with ID "${elementId}" not found.`);
+    }
+}
