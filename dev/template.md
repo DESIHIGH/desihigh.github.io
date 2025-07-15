@@ -232,19 +232,38 @@ How to add
 tags
 
 ## Translations
-The data in the website is translated in 3 different ways :
-TODO
+The data in the website is translated in 2 different ways :
+- For usual HTML content, the website is written in english with data-i18n keys in the translated HTML elements. A javascript function will then replace the HTML content with the translation from the associated keys in the `assets/lang/` JSON files.
+  - This function allows nested keys, separated by slashes, such as `home_tabs/tab1/title` to access the `title` key of the `tab1` object in the `home_tabs` object in the language file.
+  - If a translation key is not found in the language file, the English version (HTML-encoded) will be used as a fallback.
+  - The design tries to avoid html in the json file. It works but is not really readable.
+  - Usually only done for paragraphs with links or special formatting. Otherwise, use keys and nested keys to keep the translation readable.
+
+- For the term files, the translations are stored in separate Markdown files in the `_terms/` directory, with the filename format `Code_of_Conduct_<lang_code>.md` and `Privacy_Policy_<lang_code>.md`. As they are collections, they are rendered in the website with the `lang` field in the front matter.
+> This was done to avoid having huge translation strings, as the JSON format forbids newlines and paragraphs.
+
+Posts, such as News and Events or Partners, are *not* translated, but can be filtered by language using the `lang` field in the front matter. The language selector will display a flag icon representing the language of the post.
+- To prevent confusion, the cards linking these pages will display a flag icon representing the language of the page.
+- The Partners cards can be translated: the partners description and location can be translated through the `name/description` and `name/location` keys in the language files.
+
 
 ### Adding a new language
 To add a new language to the website, follow these steps:
-1. Create a new JSON file in the `assets/lang/` directory with the language code as the filename (e.g., `de.json` for German).
-2. Populate the JSON file with the translation keys and their corresponding values in the new language.
+1. Update the `_data/lang.yml` file to include the new language to the list of available languages:
+```yaml
+- code: <lang_code> # e.g. "fr" for French, "de" for German, etc.
+  name: <language_name> # e.g. "French", "German", etc.
+```
+2. Create a new JSON file in the `assets/lang/` directory with the language code as the filename (e.g., `de.json` for German).
+3. Populate the JSON file with the translation keys and their corresponding values in the new language.
    - Check the existing language files to figure out the keys to use.
    - Be careful to respect the HTML structure in the translation values, as it is used to render the content correctly.
-3. Ensure that the new language file follows the same structure as the existing language files.
-4. Update the `_data/lang.yml` file to include the new language to the list of available languages.
+4. Ensure that the new language file follows the same structure as the existing language files.
 5. Add a flag (from the [Twemoji cheatsheet website](https://twemoji-cheatsheet.vercel.app/)) to represent the new language in `assets/img/lang/`. This has to be a PNG file with the same name as the language code (e.g., `de.png` for German).
-6. (optional) If you plan on adding events or news in the new language, create a folder in the `events/` or `news/` directory with the language code as the name (e.g., `de/` for German) with the following `init.html` (here for News) file to allow the filters to render a page with only the posts in the new language:
+6. (optional) Add the translations of the code of conduct and privacy policy in the new language to the `_terms/` directory.
+   - Copy the existing `Code_of_Conduct.md` and `Privacy_Policy.md` files, rename them to `Code_of_Conduct_<lang_code>.md` and `Privacy_Policy_<lang_code>.md`, and translate their content.
+   - Ensure that the front matter includes the correct language code in the `lang` field.
+8. (optional) If you plan on adding events or news in the new language, create a folder in the `events/` or `news/` directory with the language code as the name (e.g., `de/` for German) with the following `init.html` (here for News) file to allow the filters to render a page with only the posts in the new language:
 ```html
 ---
 layout: news_index
@@ -256,20 +275,5 @@ pagination:
 ---
 ```
 
-# Languages
-- **English**: The primary language of the website.
-  - The English content is encoded in the website itself, as the default language and therefore does not require a specific language file.
-  - Other languages content have to be stored in a .json file in the `assets/lang/` directory, with the filename corresponding to the language code (e.g., `en.json` for English, `fr.json` for French, etc.).
-  - If a translation key is not found in the language file, the English version will be used as a fallback.
-- **French**: A translated version of the website for French-speaking users.
-- **Spanish**: A translated version of the website for Spanish-speaking users.
-- **Other languages**: Consider adding support for additional languages in the future.
-
-> For practical reasons, the big markdown-rendered files trough the collections will *not* have a translation.
-> This includes the News, Events, and Partners pages. To prevent confusion, the cards linking these pages will display a flag icon representing the language of the page.
-> The cards themselves can be translated : e.g. *The partners description and location can be translated trough the `name/description` and `name/location` keys in the language files.*
 
 
-
-- Design tries to avoid html in the json file. It works but is not really readable.
-- Usually only done for paragraphs with links or special formatting.
