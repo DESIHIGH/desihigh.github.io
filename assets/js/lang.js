@@ -39,6 +39,20 @@ function updateContent(langData) {
     });
 }
 
+function hideLanguageClasses(lang) {
+    // Hide elements with id starting with 'hide-' if the language is not lang
+    document.querySelectorAll('[id^="hide-"]').forEach(element => {
+        const hideLang = element.id.split('-')[1]; // Get the language code from the id
+        if (hideLang && hideLang !== lang) {
+            element.classList.add('is-hidden');
+            console.log(`Element with ID "${element.id}" is hidden for language "${hideLang}".`);
+        } else {
+            element.classList.remove('is-hidden');
+            console.log(`Element with ID "${element.id}" is visible for language "${lang}".`);
+        }
+    });
+}
+
 // Function to set the language preference
 function setLanguagePreference(lang) {
     localStorage.setItem('language', lang);
@@ -59,6 +73,7 @@ async function changeLanguage(lang) {
     const langData = await fetchLanguageData(lang);
     console.log(`Language data for ${lang} loaded successfully.`);
     updateContent(langData);
+    hideLanguageClasses(lang);
 }
 
 // Call updateContent() on page load
@@ -66,6 +81,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     const userPreferredLanguage = localStorage.getItem('language') || 'en';
     const langData = await fetchLanguageData(userPreferredLanguage);
     updateContent(langData);
+    hideLanguageClasses(userPreferredLanguage);
 });
 
 // Function to un-hide elements on click

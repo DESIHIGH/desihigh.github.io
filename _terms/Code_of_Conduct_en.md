@@ -1,3 +1,8 @@
+---
+lang: en
+type: code
+---
+
 ## Code of Conduct
 
 ### 1. Purpose

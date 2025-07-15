@@ -1,6 +1,8 @@
 collections:
   faq:
   team:
+  terms:
+    sort_by: lang
   partners:
     output: true
     permalink: partners/:path/
