@@ -32,8 +32,9 @@ This document outlines the structure and organization of the DESIHIGH website.
   **About Page**: Details about the DESIHIGH initiative, its goals, and its team.
   <span class="tag is-danger">sections</span>
 - <span class="tag is-success">Design</span>
-  <span class="tag is-info">Content</span>
+  <span class="tag is-success">Content</span>
   **Terms Page**: The code of conduct and terms of use for the website and its resources. Also includes the privacy policy.
+    - <span class="tag is-danger">Content</span> Privacy Policy
 - <span class="tag is-danger">Design</span>
   <span class="tag is-danger">Content</span>
   **Quickstart Page**: A guide to help users get started with DESIHIGH, linking to the curriculum and other resources.

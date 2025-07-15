@@ -36,12 +36,22 @@ This document provides a style guide for the DESI High website, including design
   - [ ] Add backend form processing to handle form submissions and send emails.
 
 ## Open questions
+- Add Curriculum descriptions ?
+  - 1 sentence max
 - What order for the team members ?
   - Alphabetical order by first name
-  - Alphabetical order by last name
-- Add an evaluation form ? 
-  - Would need backend and anonymous identification to avoid spam 
+  - Alphabetical order by last name (Need new fields and tweak the template)
+- Add an evaluation form ?
+  - Would need backend and anonymous identification to avoid spam
     - Google forms might allow this
+- Add a newsletter subscription form ?
+  - Sends an update when a new post is made on the website (here, Event or News)
+  - Can be done trough GitHub Worksflows and gmail API
+    - How to check the update and only send the body of the new post files ?
+    - How to store the email addresses ?
+    - How to handle unsubscribe requests ?
+  - Can be done trough third-party services, I guess ?
+    - Which ones ? (free and open source preferred)
 
 
 # Style guide for DESI High Notebooks
