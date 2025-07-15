@@ -222,6 +222,14 @@ categories: <language_code> # The language code to filter the event or news item
 <content> # The content of the event or news item
 ```
 
+### Terms
+Contains the Code of Conduct and Privacy Policy. This collection is used to allow the translation of big markdown files.
+- Each term is represented by a Markdown file in the `_terms/` directory.
+- The file needs to follow a naming convention of `Code_of_Conduct_<lang_code>.md` or `Privacy_Policy_<lang_code>.md`.
+- The front matter of each file includes fields `lang` and `type`.
+  - The `lang` field is used to specify the language code of the term, such as `en` for English or `fr` for French.
+  - The `type` field is used to specify the type of term, such as `code` for Code of Conduct or `privacy` for Privacy Policy.
+
 <hr>
 
 ## Curriculums
