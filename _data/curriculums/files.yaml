@@ -3,53 +3,53 @@ introduction-to-python:
     name: Introduction to Python
     url: 
       github: https://github.com/DESIHIGH/desihigh/blob/minimal/notebooks/English/PythonTutorial.ipynb
-      binder: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/English/PythonTutorial.ipynb
+      open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/English/PythonTutorial.ipynb
   fr:
     name: Introduction à Python
     url:
       github: https://github.com/DESIHIGH/desihigh/notebooks/French/
-      binder: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/French/
+      open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/French/
 
 python-cheatsheet:
   en:
     name: Python Cheatsheet
     url:
       github: https://github.com/DESIHIGH/desihigh/tree/minimal/notebooks/English/cheatsheets/Python.pdf
-      binder: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/English/cheatsheets/Python.pdf
+      open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/English/cheatsheets/Python.pdf
   fr:
     name: Cheatsheet Python
     url:
       github: https://github.com/DESIHIGH/desihigh/tree/minimal/notebooks/French/cheatsheets/Python.pdf
-      binder: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/French/cheatsheets/Python.pdf
+      open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/French/cheatsheets/Python.pdf
 
 numpy-cheatsheet:
   en:
     name: Numpy Cheatsheet
     url:
       github: https://github.com/DESIHIGH/desihigh/tree/minimal/notebooks/English/cheatsheets/Numpy.pdf
-      binder: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/English/cheatsheets/Numpy.pdf
+      open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/English/cheatsheets/Numpy.pdf
   fr:
     name: Cheatsheet Numpy
     url:
       github: https://github.com/DESIHIGH/desihigh/tree/minimal/notebooks/French/cheatsheets/Numpy.pdf
-      binder: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/French/cheatsheets/Numpy.pdf
+      open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/French/cheatsheets/Numpy.pdf
 
 jupyter-cheatsheet:
   en:
     name: Jupyter Cheatsheet
     url:
       github: https://github.com/DESIHIGH/desihigh/tree/minimal/notebooks/English/cheatsheets/Jupyter.pdf
-      binder: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/English/cheatsheets/Jupyter.pdf
+      open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/English/cheatsheets/Jupyter.pdf
 
 matplotlib-cheatsheet:
   en:
     name: Matplotlib Cheatsheet
     url:
-      binder: https://matplotlib.org/cheatsheets/
+      open: https://matplotlib.org/cheatsheets/
   fr:
     name: Cheatsheet Matplotlib
     url:
-      binder: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/French/cheatsheets/Matplotlib.pdf
+      open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/French/cheatsheets/Matplotlib.pdf
 
 introduction-to-numpy:
   en:
@@ -61,7 +61,7 @@ distance-measurements:
     name: Distance Measurements
     url:
       github: https://github.com/DESIHIGH/desihigh/blob/minimal/notebooks/English/DistanceMeasures.ipynb
-      binder: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/English/DistanceMeasures.ipynb
+      open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/English/DistanceMeasures.ipynb
 
 observations-of-our-universe-and-dark-energy:
   en:
@@ -78,7 +78,7 @@ cosmological-inference:
     name: Cosmological Inference
     url:
       github: https://github.com/DESIHIGH/desihigh/blob/minimal/notebooks/English/CosmologicalInference.ipynb
-      binder: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/English/CosmologicalInference.ipynb
+      open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/English/CosmologicalInference.ipynb
 
 desi-survey-overview:
   en:

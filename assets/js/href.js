@@ -13,19 +13,19 @@ document.addEventListener("click", function(event) {
     }
 });
 
-async function openBinder(binderUrl) {
+async function openFile(fileUrl) {
     // Do not open if the URL is empty or undefined
-    if (!binderUrl || binderUrl.trim() === "") {
-        console.error("Binder URL is empty or undefined.");
+    if (!fileUrl || fileUrl.trim() === "") {
+        console.error("File URL is empty or undefined.");
         return;
     }
     // Check if the URL is valid
     try {
-        new URL(binderUrl);
+        new URL(fileUrl);
     } catch (error) {
-        console.error("Invalid Binder URL: ", error);
+        console.error("Invalid File URL: ", error);
         return;
     }
-    console.log("Opening Binder URL: ", binderUrl);
-    window.open(binderUrl, '_blank');
+    console.log("Opening File URL: ", fileUrl);
+    window.open(fileUrl, '_blank');
 }
