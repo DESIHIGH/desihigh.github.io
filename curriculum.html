@@ -110,7 +110,15 @@ layout: default
                                                     </span>
                                                     {{ nb_lang.name }} 
                                                 </div>
+                                                {% if nb_lang == default_nb_lang and active_lang.code != "en" %}
+                                                <div class="level-item">
+                                                    <img src="/assets/img/lang/en.png" alt="Translated notebook" class="is-hidden-mobile" style="height: 1em;">
+                                                </div>
+                                                {% endif %}
                                             </div>
+                                            
+
+                                            <div class="level-right">
                                             {% if nb.level %}
                                                 {% assign level_class = "" %}
                                                 {% if nb.level == "Easy" %}
@@ -120,11 +128,10 @@ layout: default
                                                 {% elsif nb.level == "Hard" %}
                                                     {% assign level_class = "is-danger" %}
                                                 {% endif %}
-                                                <div class="level-right">
-                                                    <div class="level-item">
-                                                        <span class="tag {{ level_class }}" data-i18n="{{ nb.level }}">{{ nb.level }}</span>
-                                                    </div>
+                                                <div class="level-item">
+                                                    <span class="tag {{ level_class }}" data-i18n="{{ nb.level }}">{{ nb.level }}</span>
                                                 </div>
+                                            </div>
                                             {% endif %}
                                         </nav>
 
