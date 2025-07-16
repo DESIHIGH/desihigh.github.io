@@ -16,6 +16,11 @@ python-cheatsheet:
     url:
       github: https://github.com/DESIHIGH/desihigh/tree/minimal/notebooks/English/cheatsheets/Python.pdf
       binder: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/English/cheatsheets/Python.pdf
+  fr:
+    name: Cheatsheet Python
+    url:
+      github: https://github.com/DESIHIGH/desihigh/tree/minimal/notebooks/French/cheatsheets/Python.pdf
+      binder: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/French/cheatsheets/Python.pdf
 
 numpy-cheatsheet:
   en:
@@ -23,6 +28,11 @@ numpy-cheatsheet:
     url:
       github: https://github.com/DESIHIGH/desihigh/tree/minimal/notebooks/English/cheatsheets/Numpy.pdf
       binder: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/English/cheatsheets/Numpy.pdf
+  fr:
+    name: Cheatsheet Numpy
+    url:
+      github: https://github.com/DESIHIGH/desihigh/tree/minimal/notebooks/French/cheatsheets/Numpy.pdf
+      binder: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/French/cheatsheets/Numpy.pdf
 
 jupyter-cheatsheet:
   en:
@@ -36,6 +46,10 @@ matplotlib-cheatsheet:
     name: Matplotlib Cheatsheet
     url:
       binder: https://matplotlib.org/cheatsheets/
+  fr:
+    name: Cheatsheet Matplotlib
+    url:
+      binder: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/French/cheatsheets/Matplotlib.pdf
 
 introduction-to-numpy:
   en:
