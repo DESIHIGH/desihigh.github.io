@@ -10,6 +10,33 @@ introduction-to-python:
       github: https://github.com/DESIHIGH/desihigh/notebooks/French/
       binder: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/French/
 
+python-cheatsheet:
+  en:
+    name: Python Cheatsheet
+    url:
+      github: https://github.com/DESIHIGH/desihigh/tree/minimal/notebooks/English/cheatsheets/Python.pdf
+      binder: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/English/cheatsheets/Python.pdf
+
+numpy-cheatsheet:
+  en:
+    name: Numpy Cheatsheet
+    url:
+      github: https://github.com/DESIHIGH/desihigh/tree/minimal/notebooks/English/cheatsheets/Numpy.pdf
+      binder: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/English/cheatsheets/Numpy.pdf
+
+jupyter-cheatsheet:
+  en:
+    name: Jupyter Cheatsheet
+    url:
+      github: https://github.com/DESIHIGH/desihigh/tree/minimal/notebooks/English/cheatsheets/Jupyter.pdf
+      binder: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/English/cheatsheets/Jupyter.pdf
+
+matplotlib-cheatsheet:
+  en:
+    name: Matplotlib Cheatsheet
+    url:
+      binder: https://matplotlib.org/cheatsheets/
+
 introduction-to-numpy:
   en:
     name: Introduction to Numpy

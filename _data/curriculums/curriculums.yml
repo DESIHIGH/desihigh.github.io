@@ -7,6 +7,14 @@
     - tag: Introduction to Numpy
       icon: fa-solid fa-wrench
       level: Easy
+    - tag: Python Cheatsheet
+      icon: fa-solid fa-file-pdf
+    - tag: Numpy Cheatsheet
+      icon: fa-solid fa-file-pdf
+    - tag: Jupyter Cheatsheet
+      icon: fa-solid fa-file-pdf
+    - tag: Matplotlib Cheatsheet
+      icon: fa-solid fa-file-pdf
 
 - name: Cosmology Crash Course 
   color: "is-info"
