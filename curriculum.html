@@ -27,8 +27,7 @@ layout: default
 
         <div class="content" data-i18n="Curriculums intro">
             <h1>Curriculums</h1>
-            <p>Welcome to the DESI High curriculums! </p>
-            <p>Here, you will find a structured path to explore our notebooks trough various topics related to the DESI project and the study of the universe.
+            <p>Curriculums are structured paths to explore our notebooks through various topics related to the DESI project and the study of the universe.
             Each curriculum is designed to provide a comprehensive overview of a specific topic, with hands-on exercises and practical applications.</p>
             <p>Each curriculum is composed of a series of notebooks, which are interactive documents that combine code, text, and visualizations. 
             You can run the code directly in your browser using <a href="https://mybinder.org/" target="_blank">Binder</a>: just click on the notebook, and it will open.</p>
@@ -41,7 +40,7 @@ layout: default
         <hr>
 
         <div class="content">
-            <h2 data-i18n="Curriculums Overview">Curriculums Overview</h2>
+            <h2 id="curriculums-overview" data-i18n="Curriculums Overview">Curriculums Overview</h2>
             <ul>
                 {% for curriculum in site.data.curriculums.curriculums %}
                 <li><a href="#{{ curriculum.name | slugify }}" data-i18n="Curriculums/{{ curriculum.name }}">{{ curriculum.name }}</a></li>
@@ -108,6 +107,7 @@ layout: default
                                                     <span class="panel-icon">
                                                     <i class="{{ icon }}" aria-hidden="true"></i>
                                                     </span>
+                                                    
                                                     {{ nb_lang.name }} 
                                                     
                                                     <!-- If untranslated notebook, display english language flag besides -->
