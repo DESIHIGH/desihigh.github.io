@@ -76,4 +76,4 @@ Nous attendons de tous les participants de la communauté (contributeurs, rémun
 
 Ce code de conduite et ses procédures connexes s'appliquent également aux comportements inacceptables survenant en dehors du cadre des activités communautaires lorsque ces comportements ont le potentiel d'affecter négativement la sécurité et le bien-être des membres de la communauté.
 
-<small>Traduit à l'aide de ChatGPT</small>
+<small class="is-size-7">Traduit à l'aide de ChatGPT, des erreurs peuvent subsister. - Le texte officiel s'appliquant est disponible en anglais.</small>
