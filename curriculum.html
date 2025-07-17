@@ -109,12 +109,13 @@ layout: default
                                                     <i class="{{ icon }}" aria-hidden="true"></i>
                                                     </span>
                                                     {{ nb_lang.name }} 
+                                                    
+                                                    <!-- If untranslated notebook, display english language flag besides -->
+                                                    {% if nb_lang == default_nb_lang and active_lang.code != "en" %}
+                                                        &nbsp; <img src="/assets/img/lang/en.png" alt="Translated notebook" style="height: 1em;">
+                                                    {% endif %}
                                                 </div>
-                                                {% if nb_lang == default_nb_lang and active_lang.code != "en" %}
-                                                <div class="level-item">
-                                                    <img src="/assets/img/lang/en.png" alt="Translated notebook" class="is-hidden-mobile" style="height: 1em;">
-                                                </div>
-                                                {% endif %}
+                                                
                                             </div>
                                             
 
