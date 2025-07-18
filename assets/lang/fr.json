@@ -88,14 +88,17 @@
     "News intro": "Restez à jour avec les dernières actualités de DESI High ! Pour plus d'actualités de DESI, suivez-nous sur les <a href=\"#social-icons\">réseaux sociaux</a> !",
     "Events intro": "Cette section contient les informations sur les projets en cours et les évènements à venir dans DESI High.",
 
-    "Curriculums intro": "<h1>Curriculums</h1>\n<p>Les curriculums sont des parcours structurés pour explorer nos notebooks à travers divers sujets liés au projet DESI et à l'étude de l'univers. Chaque curriculum est conçu pour fournir un aperçu complet d'un sujet spécifique, avec des exercices pratiques et des applications concrètes.</p>\n<p>Chaque curriculum est composé d'une série de notebooks Jupyter, qui sont des documents interactifs contenant du code, des visualisations et des explications. Vous pouvez exécuter le code dans votre navigateur, grâce à <a href=\"https://mybinder.org/\" target=\"_blank\">Binder</a>: cliquez simplement sur le notebook ,et il s'ouvrira.</p>\n<p>Chaque curriculum est conçu pour être suivi de manière autonome, mais vous pouvez également choisir de suivre les curriculums dans l'ordre qui vous convient le mieux, ou simplement choisir le notebook qui vous intéresse le plus. Un niveau de difficulté est indiqué pour chaque notebook, vous permettant de choisir ceux qui correspondent à votre niveau et vos compétences.</p>\n<p>Si vous suivez ce cours avec un enseignant ou un mentor de DESI High, suivez leurs instructions sur la façon de procéder. N'hésitez pas à poser des questions et à demander de l'aide si nécessaire !</p>",
+    "Curriculums intro": "<h1>Curriculums</h1>\n<p>Les curriculums sont des parcours structurés pour explorer nos notebooks à travers divers sujets liés au projet DESI et à l'étude de l'univers. Chaque curriculum est conçu pour fournir un aperçu complet d'un sujet spécifique, avec des exercices pratiques et des applications concrètes.</p>\n<p>Chaque curriculum est composé d'une série de notebooks Jupyter, qui sont des documents interactifs contenant du code, des visualisations et des explications. Vous pouvez exécuter le code dans votre navigateur, grâce à <a href=\"https://mybinder.org/\" target=\"_blank\">Binder</a>: cliquez simplement sur le notebook et il s'ouvrira dans un nouvel onglet, où vous pourrez lire son contenu et exécuter le code. Ces notebooks sont conçus pour être interactifs, vous permettant d'expérimenter avec le code et de voir comment il fonctionne !</p>\n<p>Chaque curriculum peut être suivi de manière autonome, mais vous pouvez également choisir de suivre les curriculums dans l'ordre qui vous convient le mieux, ou simplement choisir le notebook qui vous intéresse le plus. Un niveau de difficulté est indiqué pour chaque notebook, vous permettant de choisir ceux qui correspondent à votre niveau et vos compétences.</p>",
     "Curriculums Overview": "Liste des curriculums",
     "Curriculums update": "⚠️ <strong>Note:</strong> Nos curriculums sont en cours de développements. N'hésitez pas à revenir régulièrement pour découvrir les nouveautés !",
     "Curriculums lost": "<strong>🤔 Vous êtes perdus ?</strong> Consultez <a href=\"intro.html\">l'introduction</a> pour savoir par où commencer.",
     "Curriculums": {
         "Code 101": "Introduction au code",
+        "Code 101-excerpt": "Apprenez les bases de Python et Numpy, des outils essentiels pour l'analyse de données en astronomie.",
         "Cosmology Crash Course": "Introduction à la cosmologie",
-        "The DESI Survey": "Le relevé DESI"
+        "Cosmology Crash Course-excerpt": "Plongez dans les modèles cosmologiques, l'énergie noire et l'expansion de l'univers.",
+        "The DESI Survey": "Le relevé DESI",
+        "The DESI Survey-excerpt": "Explorez le relevé DESI, ses objectifs et comment il cartographie l'univers."
     },
 
     "Easy": "Facile",
@@ -112,5 +115,7 @@
         "Multi-language": "Site web multilingue inspiré par",
         "Cache bug fix": "Correction du bug de cache de Jekyll Paginate V2",
         "Cache bug quick-fix": "Correction rapide du bug de cache de Jekyll Paginate V2"
-    }
+    },
+
+    "(tmp) For later": "\n<p>Si vous suivez ce cours avec un enseignant ou un mentor de DESI High, suivez leurs instructions sur la façon de procéder. N'hésitez pas à poser des questions et à demander de l'aide si nécessaire !</p>"
 }
