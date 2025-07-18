@@ -101,11 +101,10 @@ layout: default
                         <!-- Finally, loop over the files to fill the panel-tabs -->
                         {% for nb in curriculum.files %}
                             {% assign icon = nb.icon | default: "fas fa-book" %}
-                            {% assign slug_name = nb.tag | slugify %}
                             {% if site.show_untranslated_notebooks%}
-                                {% assign default_nb_lang = site.data.curriculums.files[slug_name]['en'] %}
+                                {% assign default_nb_lang = site.data.curriculums.files[nb.tag]['en'] %}
                             {% endif %}
-                            {% assign nb_lang = site.data.curriculums.files[slug_name][active_lang.code] | default: default_nb_lang %}
+                            {% assign nb_lang = site.data.curriculums.files[nb.tag][active_lang.code] | default: default_nb_lang %}
                             {% if nb_lang %}
                                 <a class="panel-block is-block" onclick="openFile('{{ nb_lang.url.open }}')">
                                     <div class="container">

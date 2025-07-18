@@ -1,11 +1,16 @@
-introduction-to-python:
+Introduction to Python:
   en:
     name: Introduction to Python
     url: 
       github: https://github.com/DESIHIGH/desihigh/blob/minimal/notebooks/English/PythonTutorial.ipynb
       open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/English/PythonTutorial.ipynb
 
-python-cheatsheet:
+Introduction to Numpy:
+  en:
+    name: Introduction to Numpy
+    url:
+
+Python Cheatsheet:
   en:
     name: Python Cheatsheet
     url:
@@ -17,7 +22,7 @@ python-cheatsheet:
       github: https://github.com/DESIHIGH/desihigh/tree/minimal/notebooks/French/cheatsheets/Python.pdf
       open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/French/cheatsheets/Python.pdf
 
-numpy-cheatsheet:
+Numpy Cheatsheet:
   en:
     name: Numpy Cheatsheet
     url:
@@ -29,14 +34,14 @@ numpy-cheatsheet:
       github: https://github.com/DESIHIGH/desihigh/tree/minimal/notebooks/French/cheatsheets/Numpy.pdf
       open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/French/cheatsheets/Numpy.pdf
 
-jupyter-cheatsheet:
+Jupyter Cheatsheet:
   en:
     name: Jupyter Cheatsheet
     url:
       github: https://github.com/DESIHIGH/desihigh/tree/minimal/notebooks/English/cheatsheets/Jupyter.pdf
       open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/English/cheatsheets/Jupyter.pdf
 
-matplotlib-cheatsheet:
+Matplotlib Cheatsheet:
   en:
     name: Matplotlib Cheatsheet
     url:
@@ -47,49 +52,44 @@ matplotlib-cheatsheet:
       github: https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/French/cheatsheets/Matplotlib.pdf
       open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/French/cheatsheets/Matplotlib.pdf
 
-introduction-to-numpy:
-  en:
-    name: Introduction to Numpy
-    url:
-
-desi-survey-overview:
+DESI Survey Overview:
   en:
     name: DESI Survey Overview
 
-galaxy-spectra:
+Galaxy Spectra:
   en:
     name: Galaxy Spectra
 
-redshift-and-distance:
+Redshift and Distance:
   en:
     name: Redshift and Distance
 
-mapping-the-universe:
+Mapping the Universe:
   en:
     name: Mapping the Universe
 
-dark-energy:
+Dark Energy:
   en:
     name: Dark Energy
 
-observations-of-our-universe:
+Observations of Our Universe:
   en:
     name: Observations of Our Universe
 
-cosmological-models:
+Cosmological Models:
   en:
     name: Cosmological Models
     url:
 
 
-distance-measurements:
+Distance Measurements:
   en:
     name: Distance Measurements
     url:
       github: https://github.com/DESIHIGH/desihigh/blob/minimal/notebooks/English/DistanceMeasures.ipynb
       open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/English/DistanceMeasures.ipynb
 
-cosmological-inference:
+Cosmological Inference:
   en:
     name: Cosmological Inference
     url:
