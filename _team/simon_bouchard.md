@@ -2,6 +2,7 @@
 name: Simon Bouchard
 image: assets/img/team/simon_bouchard.jpg
 email: simon.bouchard@lpnhe.in2p3.fr
+location: Paris, France
 social:
     - name: globe
       icon: fa-solid fa-globe

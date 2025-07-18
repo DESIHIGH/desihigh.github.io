@@ -33,9 +33,21 @@ pagination:
                 </div>
                 <div class="media-content">
                     <div class="content">
-                        <h3>{{ member.name }}</h3>
+                        {% if member.content.size > member.excerpt.size %}
+                        <h3>    
+                            <a href="{{ member.url }}" class="underlined_on_hover">
+                                <p class="title is-4">{{ member.name }}</p>
+                            </a>
+                            <p class="subtitle is-7">{{ member.location }}</p>
+                        </h3>
+                        {% else %}
+                            <h3>
+                                <p class="title is-4">{{ member.name }}</p>
+                                <p class="subtitle is-7">{{ member.location }}</p>
+                            </h3>
+                        {% endif %}
                         <div data-i18n="team/{{ member.name | slugify }}">
-                            {{ member.content | markdownify }}
+                            {{ member.excerpt | markdownify }}
                         </div>
                     </div>
                     <div class="subtitle is-7">

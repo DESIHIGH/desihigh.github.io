@@ -1,6 +1,8 @@
 collections:
   faq:
   team:
+    output: true
+    permalink: team/:path/
   terms:
     sort_by: lang
   partners:
@@ -19,6 +21,11 @@ defaults:
       type: "partners"
     values:
       layout: "partner"
+  - scope:
+      path: ""
+      type: "team"
+    values:
+      layout: "team"
   - scope:
       path: ""
       type: "events"
