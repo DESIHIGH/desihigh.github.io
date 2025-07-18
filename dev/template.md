@@ -81,9 +81,9 @@ You can include the navigation bar in your files with the following options :
 ### Breadcrumbs
 You can include breadcrumbs in your files with the following options :
 - `size`: The size of the breadcrumbs font
-- `back`: Do you want to display a "Back" button before the breadcrumbs ?
-- `home`: Do you want to display a "Home" icon ? (otherwise the home does not appear in the breadcrumbs)
-- `breadcrumbs`: Do you want to display the breadcrumbs ?
+- `back`: Do you want to display a "Back" button before the breadcrumbs?
+- `home`: Do you want to display a "Home" icon? (otherwise the home does not appear in the breadcrumbs)
+- `breadcrumbs`: Do you want to display the breadcrumbs?
 - `is_md`: If called in a markdown file, add a leading empty breadcrumb to fix an offset
 
 > Do not call this is a div such as `section`, `content` or `container`, as it will offset the first crumb. (or call it with `is_md=true`)
