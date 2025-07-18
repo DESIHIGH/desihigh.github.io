@@ -16,8 +16,7 @@
             </div>
         </div>
 
-        {% assign summary = post.summary | default: post.excerpt %}
-        <p class="content">{{ summary }}</p>
+        <p class="content">{{ post.excerpt }}</p>
 
         {% if forloop.index < forloop.length %}<hr>{% endif %}
 

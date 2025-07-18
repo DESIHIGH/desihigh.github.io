@@ -36,8 +36,7 @@ pagination:
                         </div>
 
                         <div class="content">
-                            {% assign summary = partner.summary | default: partner.excerpt %}
-                            <p data-i18n="{{ partner.name }}/summary">{{ summary }}</p>
+                            <p data-i18n="{{ partner.name }}/excerpt">{{ partner.excerpt }}</p>
                         </div>
                         
                         <p><strong><span data-i18n="Location">Location</span>:</strong> <span data-i18n="{{ partner.name }}/location">{{ partner.location }}</span></p>

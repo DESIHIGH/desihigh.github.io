@@ -125,7 +125,7 @@ Only works if the page it is called in uses the `paginator` object to display th
 
 If the posts have a `lang` field in their front matter, the posts will be displayed with a flag icon representing the language of the post (see [Translations](#translations)). If the posts have a `categories` field including the language code, they can be filtered by language trough the [Language selector](#language-selector).
 
-If the posts have a `summary` field in their front matter, it will be displayed as a short description of the post. If not provided, the first paragraph of the content will be used as the summary.
+If the posts have a `excerpt` field in their front matter, it will be displayed as a short description of the post. If not provided, the first paragraph of the content will be used as the excerpt.
 
 ### Pagination
 Include a pagination bar that displays the page navigation links, a previous and next button, and the current page number.
@@ -185,17 +185,17 @@ social: # A yaml object containing links to the team member's social media profi
 ### Partners
 Contains information about the partners.
 - Each partner is represented by a Markdown file in the `_partners/` directory.
-- The front matter of each file includes field `name`, `summary`, `location` and `lang`.
+- The front matter of each file includes field `name`, `excerpt`, `location` and `lang`.
 - The `lang` field is used to specify the language of the partner's page.
-- The `summary` field and the `location` fields can be translated through the `assets/lang/` files. under the partner's name tag.
-  - If not provided, the `summary` field will default to the first paragraph of the content. (Not recommended)
+- The `excerpt` field and the `location` fields can be translated through the `assets/lang/` files. under the partner's name tag.
+  - If not provided, the `excerpt` field will default to the first paragraph of the content. (Not recommended)
 - The partners are displayed on the Partners page, sorted by name.
 
 To add a new partner, create a new Markdown file in the `_partners/` directory with the following front matter:
 ```yaml
 ---
 name: <name> # The name of the partner
-summary: <summary> # A brief description of the partner (optional)
+excerpt: <excerpt> # A brief description of the partner (optional)
 location: <location> # The location of the partner (optional)
 lang: <language_code> # The language code of the partner's page (e.g., "en", "fr", etc.)
 ---
@@ -206,11 +206,11 @@ lang: <language_code> # The language code of the partner's page (e.g., "en", "fr
 Contains information about upcoming events and news.
 - Each event or news item is represented by a Markdown file in the `_events/` or `_news/` directory, respectively.
 - The file needs to follow a naming convention of `YYYY-MM-DD-event-name.md` to ensure correct sorting by date.
-- The front matter of each file includes fields `title`, `author`, `summary`, `lang` and `categories`.
+- The front matter of each file includes fields `title`, `author`, `excerpt`, `lang` and `categories`.
 - The `lang` field is used to specify the language of the event or news page and display the correct flag icon.
 - The `categories` field is used to filter events or news by language, such as `fr` for French events or `en` for English events.
-- The `summary` field is used to provide a brief description of the event or news item, which is displayed on the Events or News page.
-  - If not provided, the first paragraph of the content will be used as the summary.
+- The `excerpt` field is used to provide a brief description of the event or news item, which is displayed on the Events or News page.
+  - If not provided, the first paragraph of the content will be used as the excerpt.
 - The events and news items are displayed on their respective pages, sorted by date.
 - The first 5 events or news items are displayed on the Home page, sorted by date.
 
@@ -219,7 +219,7 @@ To add a new event or news item, create a new Markdown file in the `_events/` or
 ---
 title: <title> # The title of the event or news item
 author: <author> # The author of the event or news item (optional)
-summary: <summary> # A brief description of the event or news item (optional)
+excerpt: <excerpt> # A brief description of the event or news item (optional)
 lang: <language_code> # The language code of the event or news item (e.g., "en", "fr", etc.)
 categories: <language_code> # The language code to filter the event or news item by language (e.g., "fr", "en", etc.)
 ---

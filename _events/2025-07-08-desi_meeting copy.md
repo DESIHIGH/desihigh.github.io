@@ -1,7 +1,7 @@
 ---
 title: "DESI Meeting in Berkeley, CA"
 author: "DESI Team"
-summary: "Join us for the DESI meeting in Berkeley, CA on July 8, 2025. Discuss the latest developments in the DESI project."
+excerpt: "Join us for the DESI meeting in Berkeley, CA on July 8, 2025. Discuss the latest developments in the DESI project."
 lang: en
 categories: en
 ---
