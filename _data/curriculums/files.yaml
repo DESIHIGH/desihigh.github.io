@@ -4,11 +4,6 @@ introduction-to-python:
     url: 
       github: https://github.com/DESIHIGH/desihigh/blob/minimal/notebooks/English/PythonTutorial.ipynb
       open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/English/PythonTutorial.ipynb
-  fr:
-    name: Introduction à Python
-    url:
-      github: https://github.com/DESIHIGH/desihigh/notebooks/French/
-      open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/French/
 
 python-cheatsheet:
   en:
@@ -49,12 +44,39 @@ matplotlib-cheatsheet:
   fr:
     name: Cheatsheet Matplotlib
     url:
+      github: https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/French/cheatsheets/Matplotlib.pdf
       open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/French/cheatsheets/Matplotlib.pdf
 
 introduction-to-numpy:
   en:
     name: Introduction to Numpy
     url:
+
+desi-survey-overview:
+  en:
+    name: DESI Survey Overview
+
+galaxy-spectra:
+  en:
+    name: Galaxy Spectra
+
+redshift-and-distance:
+  en:
+    name: Redshift and Distance
+
+dark-energy:
+  en:
+    name: Dark Energy
+
+observations-of-our-universe:
+  en:
+    name: Observations of Our Universe
+
+cosmological-models:
+  en:
+    name: Cosmological Models
+    url:
+
 
 distance-measurements:
   en:
@@ -63,30 +85,10 @@ distance-measurements:
       github: https://github.com/DESIHIGH/desihigh/blob/minimal/notebooks/English/DistanceMeasures.ipynb
       open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/English/DistanceMeasures.ipynb
 
-observations-of-our-universe-and-dark-energy:
-  en:
-    name: Observations of Our Universe and Dark Energy
-    url:
-
-cosmological-models:
-  en:
-    name: Cosmological Models
-    url:
-
 cosmological-inference:
   en:
     name: Cosmological Inference
     url:
       github: https://github.com/DESIHIGH/desihigh/blob/minimal/notebooks/English/CosmologicalInference.ipynb
       open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/English/CosmologicalInference.ipynb
-
-desi-survey-overview:
-  en:
-    name: DESI Survey Overview
-    url:
-
-redshift-and-distance:
-  en:
-    name: Redshift and Distance
-    url:
 
