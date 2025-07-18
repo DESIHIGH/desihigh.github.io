@@ -78,8 +78,9 @@ pagination:
                 <div class="media-content">
                     <div class="content">
                         {% if member.content.size > member.excerpt.size %}
-                        <h3>    
-                            <a href="{{ member.url }}" class="underlined_on_hover">
+                        <h3>
+                            {% assign url = member.url | remove_first: "/" %}
+                            <a href="{{ url }}" class="underlined_on_hover">
                                 <p class="title is-4">{{ member.name }}</p>
                             </a>
                             <p class="subtitle is-7">{{ member.location }}</p>
