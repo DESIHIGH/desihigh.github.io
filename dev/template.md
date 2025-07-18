@@ -155,14 +155,17 @@ question: <question> # The question to display
 ### Team
 Contains information about the team members, including their names, images, and bios.
 - Each team member is represented by a Markdown file in the `_team/` directory.
-- The front matter of each file includes fields `name`, `image`, `email`, and `social` links.
+- The front matter of each file includes fields `name`, `image`, `email`, `location`, and `social` links.
   - Any field is optional and will not be displayed if not provided.
   - The `image` field should contain the filename of the team member's image, which should be stored in the `assets/img/team/` directory. For display consistency, the image should be a square PNG file.
   - The `social` field is a yaml object containing links to the team member's social media profiles, such as GitHub, Twitter, and LinkedIn. The `name` key should be provided if the icon is included in font-awesome brand icons. Otherwise, provide the `icon` key with the font-awesome class of the icon to use.
 - The `tags` field is used to mark retired team members. If set to `active`, the member will be displayed on the About page, but if set to `legacy`, the member will be displayed on the Legacy page.
   - If the `tags` field is not provided, the member will not be displayed!
 - The team members are displayed on the About page, sorted by name.
-- Translation of the team members' bios is handled through the `assets/lang/` files, in the `team` key with slugified keys for each member.
+- The displayed excerpt is the first paragraph of the content, which is used as a short bio. If the content is longer than the excerpt, the full content will be displayed on the team member's page.
+  - The link is only displayed if the content is longer than the excerpt.
+- Translation of the team members' **excerpts** is handled through the `assets/lang/` files, in the `team` key with slugified keys for each member.
+  - Full bio translation is not supported, as the content is stored in the Markdown file and not in the language files. (see [Translations](#translations))
 - The Legacy page is a separate page that lists all retired team members, allowing them to be acknowledged for their contributions.
 
 To add a new team member, create a new Markdown file in the `_team/` directory with the following front matter:
@@ -171,6 +174,7 @@ To add a new team member, create a new Markdown file in the `_team/` directory w
 name: <name> # The name of the team member
 image: <image> # The filename of the team member's image (stored in assets/img/team/)
 email: <email> # The email address of the team member (optional)
+location: <location> # The location of the team member (optional)
 social: # A yaml object containing links to the team member's social media profiles
   github: <github_url> # GitHub profile URL
   twitter: <twitter_url> # Twitter profile URL
