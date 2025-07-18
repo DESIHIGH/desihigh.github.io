@@ -13,4 +13,4 @@ social:
     url: https://www.instagram.com/desisurvey/
 tags: legacy
 ---
-This Bao Ban is old and retired to the Arizona mountains, we wish him the best !
+This Bao Ban is old and retired to the Arizona mountains, we wish him the best!

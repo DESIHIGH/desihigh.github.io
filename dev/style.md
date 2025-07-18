@@ -25,7 +25,7 @@ This document provides a style guide for the DESI High website, including design
 - Primary color : Bulma warning yellow
 
 ## Ideas
-- "You've got mail !": A notification that shows up on the home page with a link to Saul's letter.
+- "You've got mail!": A notification that shows up on the home page with a link to Saul's letter.
   - Link to fix
 - Contact form : see [form subscription tools](https://stackoverflow.com/questions/24348223/send-email-from-static-page-hosted-on-github-pages)
   - [x] Create form style

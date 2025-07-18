@@ -38,7 +38,7 @@ This document outlines the structure and organization of the DESIHIGH website.
 - <span class="tag is-danger">Design</span>
   <span class="tag is-danger">Content</span>
   **Quickstart Page**: A guide to help users get started with DESIHIGH, linking to the curriculum and other resources.
-    - Include Saul Perlmutter's letter here !!
+    - Include Saul Perlmutter's letter here!!
 
 ## Secondary Pages (in the website footer if not in the header)
 

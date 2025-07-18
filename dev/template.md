@@ -29,8 +29,8 @@ The page header style is defined in `_includes/navbar.html`. The navigations tab
 - name: New tab
   url: new_tab.html
 ```
-> The URL needs to perfectly match the target in order for the is-active effect to appear !
-> e.g. if the target is new-tab/ instead of new-tab.html, the effect will not appear !
+> The URL needs to perfectly match the target in order for the is-active effect to appear!
+> e.g. if the target is new-tab/ instead of new-tab.html, the effect will not appear!
 > (Also, avoid leading slashes in the links, see [References](#references))
 
 ### Footer
@@ -45,7 +45,7 @@ The page footer contains 3 parts:
   url: new_social.html
   icon: fa-brand
 ```
-> The icon is taken from font-awsome-5 *brand* icons ! Only add `fa-<brand-name>` to add it.
+> The icon is taken from font-awsome-5 *brand* icons! Only add `fa-<brand-name>` to add it.
 
 **To add a navigation link**, add its name and url to the `footer_nav.yaml` file.
 ```yml
@@ -59,7 +59,7 @@ It contains navigation tabs, defined in `_data/home_tabs.yml`. To add new naviga
 ```yml
 - name: New tab
   url: new_tab.html
-  icon: fas fa-icon # Full Font Awesome class !
+  icon: fas fa-icon # Full Font Awesome class!
 ```
 
 ### References
@@ -69,7 +69,7 @@ This means that every reference, such as `href`, `src` and others should not sta
 
 **To change the base of the website**, add or edit the following line in `_config.yml`:
 ```yml
-base_homepage: /repository/ # Leading and trailing slashes are important here !
+base_homepage: /repository/ # Leading and trailing slashes are important here!
 ```
 
 ## Includes
@@ -160,7 +160,7 @@ Contains information about the team members, including their names, images, and 
   - The `image` field should contain the filename of the team member's image, which should be stored in the `assets/img/team/` directory. For display consistency, the image should be a square PNG file.
   - The `social` field is a yaml object containing links to the team member's social media profiles, such as GitHub, Twitter, and LinkedIn. The `name` key should be provided if the icon is included in font-awesome brand icons. Otherwise, provide the `icon` key with the font-awesome class of the icon to use.
 - The `tags` field is used to mark retired team members. If set to `active`, the member will be displayed on the About page, but if set to `legacy`, the member will be displayed on the Legacy page.
-  - If the `tags` field is not provided, the member will not be displayed !
+  - If the `tags` field is not provided, the member will not be displayed!
 - The team members are displayed on the About page, sorted by name.
 - Translation of the team members' bios is handled through the `assets/lang/` files, in the `team` key with slugified keys for each member.
 - The Legacy page is a separate page that lists all retired team members, allowing them to be acknowledged for their contributions.
