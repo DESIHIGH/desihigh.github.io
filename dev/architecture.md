@@ -25,7 +25,7 @@ This document outlines the structure and organization of the DESIHIGH website.
 - <span class="tag is-success">Design</span>
   <span class="tag is-success">Content</span>
   **Partners section**: Information about the partners involved with DESIHIGH.
-  <span class="tag is-danger">sections</span>
+  <span class="tag is-success">sections</span>
   - Each partner has a dedicated page.
 - <span class="tag is-success">Design</span>
   <span class="tag is-success">Content</span>
@@ -35,9 +35,9 @@ This document outlines the structure and organization of the DESIHIGH website.
   <span class="tag is-success">Content</span>
   **Terms Page**: The code of conduct and terms of use for the website and its resources. Also includes the privacy policy.
     - <span class="tag is-danger">Content</span> Privacy Policy
-- <span class="tag is-danger">Design</span>
-  <span class="tag is-danger">Content</span>
-  **Quickstart Page**: A guide to help users get started with DESIHIGH, linking to the curriculum and other resources.
+- <span class="tag is-success">Design</span>
+  <span class="tag is-warning">Content</span>
+  **Introduction/Welcome Page**: A guide to help users get started with DESIHIGH, linking to the curriculum and other resources.
     - Include Saul Perlmutter's letter here!!
 
 ## Secondary Pages (in the website footer if not in the header)
@@ -59,7 +59,7 @@ This document outlines the structure and organization of the DESIHIGH website.
 - <span class="tag is-success">Design</span>
   <span class="tag is-success">Content</span>
   **Curriculum Page**: The main page for the curriculum, providing an overview and links to the notebooks.
-  <span class="tag is-danger">sections</span>
+  <span class="tag is-danger">Notebooks</span>
 - <span class="tag is-success">Design</span>
   <span class="tag is-success">Content</span>
   **News section**: A section for news and updates related to DESIHIGH, including blog posts and announcements.

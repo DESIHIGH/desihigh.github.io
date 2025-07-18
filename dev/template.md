@@ -272,6 +272,8 @@ Each curriculum is defined in `_data/curriculums/curriculums.yml` as a key with 
 
 The curriculum names and excerpts are provided in English, but the curriculum cards will display the translated name and excerpt in the page language (see [Translations](#translations)) if provided in the key `Curriculums/<curriculum_name>` and `Curriculums/<curriculum_name>-excerpt` in the language files.
 
+The excerpt is a brief description of the curriculum, which will be displayed in the curriculum card on the Curriculum page. It should not exceed one sentence.
+
 ## Translations
 The data in the website is translated in 2 different ways :
 - For usual HTML content, the website is written in english with data-i18n keys in the translated HTML elements. A javascript function will then replace the HTML content with the translation from the associated keys in the `assets/lang/` JSON files.

@@ -24,9 +24,7 @@ This document provides a style guide for the DESI High website, including design
 ### Colors
 - Primary color : Bulma warning yellow
 
-## Ideas
-- "You've got mail!": A notification that shows up on the home page with a link to Saul's letter.
-  - Link to fix
+## TODO
 - Contact form : see [form subscription tools](https://stackoverflow.com/questions/24348223/send-email-from-static-page-hosted-on-github-pages)
   - [x] Create form style
   - [x] Add notification message for forum link
@@ -35,9 +33,7 @@ This document provides a style guide for the DESI High website, including design
   - [ ] Confirmation message to be displayed after successful form submission.
   - [ ] Add backend form processing to handle form submissions and send emails.
 
-## Open questions
-- Add Curriculum descriptions?
-  - 1 sentence max
+## Open questions and random ideas
 - What order for the team members?
   - Alphabetical order by first name
   - Alphabetical order by last name (Need new fields and tweak the template)
