@@ -237,11 +237,40 @@ Contains the Code of Conduct and Privacy Policy. This collection is used to allo
 <hr>
 
 ## Curriculums
-TODO
-Notebooks
-Curriculums
-How to add
-tags
+Curriculums are combinations of notebooks, listed in the curriculum page. They are provided in several languages.
+
+### Notebooks (and other files)
+Each notebook is defined in `_data/curriculums/files.yml` as a key with the following structure:
+```yaml
+<notebook_name>: # The english name of the notebook
+  <language_code>: # e.g. "en" for English, "fr" for French, etc.
+    title: "Notebook Title" # (in the language of the notebook)
+    url: 
+      github: <github_url> # URL to the notebook on GitHub
+      open: <url> # URL to the notebook on Binder
+  <language_code>: ...
+```
+
+For each notebook, the `language_code` is used to specify the language of the notebook, such as `en` for English or `fr` for French. The `title` field is used to provide the title of the notebook in the specified language and the `url` field contains the URLs to access the translated notebook on GitHub and Binder.
+
+If the notebook is not available in a specific language, it will be displayed in the curriculum page in the english version (with a little english flag besides the name).
+
+> The english version of the notebook being used as a fallback if the notebook is not available in the requested language, it requires that the notebook is available in English. If not, the notebook will not be displayed in the curriculum page.
+
+### Curriculums courses
+Each curriculum is defined in `_data/curriculums/curriculums.yml` as a key with the following structure:
+```yaml
+- name: <curriculum_name> # The english name of the curriculum
+  excerpt: "Curriculum description" # A brief description of the curriculum (in the language of the curriculum)
+  color: <color> # The Bulma class color of the curriculum (e.g. is-danger, is-success, is-warning, etc.) Defaults to yellow
+  files: 
+  - tag: <notebook_name> # The english name of the notebook (will be used to find the matching notebook in the files.yml file)
+    icon: <icon> # The Font Awesome icon to display in the curriculum card
+    level: <level> # The estimated level of the notebook in the curriculum (Easy, Medium or Hard)
+  - tag: ...
+```
+
+The curriculum names and excerpts are provided in English, but the curriculum cards will display the translated name and excerpt in the page language (see [Translations](#translations)) if provided in the key `Curriculums/<curriculum_name>` and `Curriculums/<curriculum_name>-excerpt` in the language files.
 
 ## Translations
 The data in the website is translated in 2 different ways :
