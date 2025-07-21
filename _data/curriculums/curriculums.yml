@@ -1,3 +1,16 @@
+- name: The DESI Survey
+  excerpt: "Explore the DESI survey, its goals, and how it maps the universe."
+  color: "is-success"
+  files:
+    - tag: DESI Survey Overview
+      level: Easy
+    - tag: Galaxy Spectra
+      level: Easy
+    - tag: Redshift and Distance
+      level: Medium
+    - tag: Mapping the Universe
+      level: Medium
+
 - name: Code 101
   excerpt: "Learn the basics of Python and Numpy, essential tools for data analysis in astronomy."
   color: "is-gray"
@@ -16,19 +29,6 @@
       icon: fa-solid fa-file-pdf
     - tag: Matplotlib Cheatsheet
       icon: fa-solid fa-file-pdf
-
-- name: The DESI Survey
-  excerpt: "Explore the DESI survey, its goals, and how it maps the universe."
-  color: "is-success"
-  files:
-    - tag: DESI Survey Overview
-      level: Easy
-    - tag: Galaxy Spectra
-      level: Easy
-    - tag: Redshift and Distance
-      level: Medium
-    - tag: Mapping the Universe
-      level: Medium
 
 - name: Cosmology Crash Course 
   excerpt: "Dive into cosmological models, dark energy, and the universe's expansion."
