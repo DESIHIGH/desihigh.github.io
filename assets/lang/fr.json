@@ -1,0 +1,146 @@
+{
+    "FAQ": "FAQ",
+    "Teachers": "Enseignants",
+    "Partners": "Partenaires",
+    "About": "À propos",
+    "Code of Conduct": "Code de conduite",
+    "Let's start!": "C'est parti !",
+    "Forum": "Forum",
+    "Language": "Langue",
+
+    "Filter": "Filtrer",
+
+    "Previous": "Précédent",
+    "Next": "Suivant",
+
+    "Terms & Privacy": "Conditions & Confidentialité",
+    "Contact": "Contact",
+    "Credits": "Crédits",
+
+    "Welcome to DESI High!": "Bienvenue à DESI High !",
+    "School of the Dark Universe": "L'école de l'Univers Sombre",
+    "Courses": "Cours",
+    "News": "Actualités",
+    "Events": "Événements",
+    "Resources": "Ressources",
+    "Contact us!": "Contactez-nous !",
+
+    "Latest News": "Dernières nouvelles",
+    "See more": "Voir plus",
+    "Upcoming Events": "Événements à venir",
+
+    "Read more": "Lire la suite",
+
+    "Welcome intro": "<strong>Bienvenue à DESI High !</strong>\n<p>Vous avez trouvé la page d'accueil du Dark Energy Spectroscopic Instrument (DESI) pour les lycéens. Rejoignez-nous pour réaliser vos propres expériences avec les données sorties tout droit du télescope 🔭 Pour découvrir DESI, regardez cette <a href=\"https://www.youtube.com/watch?v=kPXx9tqyzY\" target=\"_blank\">vidéo</a>, visitez notre <a href=\"https://www.desi.lbl.gov/\" target=\"_blank\">site web</a>, et rejoignez-nous sur nos <a href=\"#social-icons\">réseaux sociaux</a> !</p>\n<p>Si vous ne conaissez pas Python 🐍, pas d'inquiétude ! Vous vous ferez la main rapidement. Nous vous fournirons des nootebooks d'introduction pour vous aider à comprendre les bases. Tout notre contenu est écrit dans des <a href=\"https://jupyter.org\"  target=\"_blank\">Jupyter notebooks</a>, qui rendent Python et l'analyse de données plus abordables.</p>\n<p><strong>Prêts à commencer ?</strong></p>",
+
+    "Teachers intro":"🏫 Vous avez une classe pleine d'élèves intéressés par DESI High ? Nous avons une équipe de scientifiques d'élite aux quatre coins du monde prête à vous aider à démarrer !",
+    "Teachers intro 2":"📎Ou, consultez nos ressources et pages pour enseignants pour découvrir comment commencer avec votre classe.",
+
+    "Mail info 1": "📬 Vous avez du courrier !",
+    "Mail info 2": "👉 Cliquez ici pour lire la lettre de bienvenue aux étudiants de DESI High.",
+    "Read": "✉️ Lire",
+
+    "Summary": "Sommaire",
+    "Intro": {
+        "origins": "Origines de DESI : Le mystère de l'énergie noire",
+        "origins 1": "Notre univers est en expansion. Les observations astronomiques nous indiquent que l'espace entre les galaxies s'agrandit avec le temps, tandis que les galaxies elles-mêmes restent de la même taille. Cette expansion est bien comprise et est expliquée par la théorie de la relativité générale d'Albert Einstein. Lorsque l'univers a commencé avec le Big Bang, il était petit, chaud et dense, et il s'est depuis étendu jusqu'à nos jours.",
+        "origins 2": "L'illustration ci-dessus montre une chronologie de l'expansion de l'univers et des changements dans ses conditions physiques à différents moments de son histoire (<strong>Crédit :</strong> NASA).",
+        "origins 3": "La surprise vient du fait que l'expansion de l'univers s'accélère. Lorsque cette expansion accélérée a été découverte pour la première fois en 1998 et 1999, sa cause était inconnue. En fait, on en sait encore très peu sur la cause physique de cette accélération, attribuée à une forme mystérieuse d'énergie appelée \"énergie noire\". Comprendre l'énergie noire est l'un des plus grands défis de la physique moderne.",
+        "origins 4": "🤓☝️ Apprenez-en plus sur l'énergie noire dans notre <a href=\"curriculum.html\">notebook sur l'énergie noire</a> !",
+        "DESI": "Introduction à DESI",
+        "DESI 1": "Une manière d'étudier l'énergie noire est de créer une immense carte en trois dimensions de l'univers. L'histoire de l'expansion de l'univers est encodée dans les positions des galaxies. En cartographiant les distances de millions de galaxies éloignées, nous pouvons en apprendre davantage sur la façon dont l'énergie noire a affecté l'expansion de l'univers au fil du temps.",
+        "DESI 2": "L'illustration ci-dessus montre une coupe transversale de la carte 3D créée par la collaboration DESI, chaque point lumineux représentant l'une des millions de galaxies observées par DESI <br>(<strong>Crédit :</strong> Claire Lamman et la collaboration DESI).",
+        "DESI 3": "🤓☝️ Apprenez-en plus sur le relevé DESI dans notre <a href=\"curriculum.html\">notebook sur le relevé DESI</a> !",
+        "principal": "Rencontrez le principal",
+        "principal 1": "L'existence de l'énergie noire a été confirmée de manière irréfutable par <a href=\"https://en.wikipedia.org/wiki/Saul_Perlmutter\">Saul Perlmutter</a>, Brian Schmidt et Adam Reiss du Lawrence Berkeley Lab en 1998, lorsqu'ils ont découvert que l'expansion de l'univers s'accélérait. Ils ont reçu le <a href=\"https://www.nobelprize.org/prizes/physics/2011/summary/\">Prix Nobel de Physique en 2011</a> pour leur travail.",
+        "principal 2": "En tant que principal honoraire de DESI High, Saul a un discours d'ouverture spécial pour tous les étudiants, y compris vous !",
+        "principal 3": "🤓☝️ Découvrez l'expérience de Saul dans notre <a href=\"curriculum.html\">notebook sur l'énergie noire</a> !",
+        "tutorial": "Comment ça marche ?",
+        "tutorial 1": "Pour commencer avec DESI High, choisissez un <i class=\"has-text-warning\">curriculum</i> qui vous intéresse. Les notebooks s'ouvriront dans <a href=\"https://mybinder.org\" target=\"_blank\">Binder</a> dans un nouvel onglet. Apprenez-en plus sur les cours, les notebooks et comment les utiliser en cliquant sur le bouton ci-dessous. Ensuite, choisissez un notebook et commencez à explorer l'univers !",
+        "tutorial 2": "Si vous suivez ce cours avec un enseignant ou un mentor de DESI High, suivez leurs instructions sur la façon de procéder. N'hésitez pas à poser des questions et à demander de l'aide si nécessaire !",
+        "tutorial 3": "🤓☝️ Si vous ne conaissez pas Python, le cours <code>Code 101</code> est un bon endroit pour commencer. Il vous apprendra les bases de programmation en Python, qui est le language utilisé pour analyser les données de DESI.",
+        "pro tips 1": "Si vous êtes bloqué avec Python, faites comme les pros: demandez à <a href=\"https://www.google.com\" target=\"_blank\">Google</a> ou à <a href=\"https://stackoverflow.com\" target=\"_blank\">Stack Overflow</a> ! La plupart du temps, vous trouverez la réponse à votre question là-bas.",
+        "pro tips 2": "Si vous avez une question scientifique, laissez-nous un message sur le <a href=\"https://github.com/DESIHIGH/desihigh/discussions\">forum</a> et nous vous répondrons dès que possible."
+    },
+    "Pro tips:": "Astuces de pro :",
+    "Saul Perlmutter's welcome letter": "<object data=\"assets/pdf/saul_perlmutter_welcome_fr.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0\" type=\"application/pdf\" width=\"100%\" height=\"100%\" style=\"background-color: #f5f5f5;\">\n<div class=\"has-background-black-bis\">\n<a href=\"assets/pdf/saul_perlmutter_welcome_fr.pdf\">Lisez la lettre ici !</a>\n</div>\n</object>",
+
+    "Contact intro": "Nous adorerions avoir de vos nouvelles ! Que vous ayez des questions, des suggestions ou que vous souhaitiez simplement dire bonjour, n'hésitez pas à nous contacter.",
+    "Contact content": "Si vous avez des questions ou avez besoin d'aide, veuillez nous contacter via le formulaire ci-dessous.",
+    "disabled": "Ce formulaire de contact est actuellement désactivé. Veuillez utiliser le forum pour toute question ou suggestion.",
+    "From": "De",
+    "Subject": "Sujet",
+    "Message": "Message",
+    "Submit": "Envoyer",
+    "Cancel": "Annuler",
+    "Contact warning": "<strong>Note :</strong> Pour les questions, suggestions ou problèmes, veillez nous contacter via le forum. Nous répondrons dès que possible.",
+
+    "FAQ title": "Questions Fréquemment Posées (FAQ)",
+    "FAQ intro": "Vous trouverez ici des réponses aux questions courantes sur DESI High.",
+    "Ask a question": "Poser une question",
+    "faq_1": {
+        "question": "Qu'est-ce que DESI High ?",
+        "answer": "DESI High est une plateforme en ligne gratuite conçue pour aider les lycéens à apprendre l'astronomie et la science des données grâce à une expérience pratique avec de vraies données astronomiques."
+    },
+    "faq_2": {
+        "question": "Comment puis-je m'inscrire ?",
+        "answer": "Vous pouvez vous inscrire en remplissant le formulaire d'inscription sur notre page d'accueil. Une fois inscrit, vous aurez accès à tous nos cours et ressources."
+    },
+
+    "About DESI": "À propos de DESI",
+    "About DESI 1": "Le <strong>Dark Energy Spectroscopic Instrument (DESI)</strong> est un projet cherche à cartographier la structure à grande échelle de l'univers et à comprendre la nature de l'énergie noire. Il mesurera les spectres de millions de galaxies et de quasars, que les scientifiques de DESI analyseront pour contraindre les modèles cosmologiques qui décrivent l'évolution de l'univers.",
+    "About DESI 2": "DESI est une collaboration de scientifiques et d'ingénieurs du monde entier, travaillant ensemble pour construire et exploiter un spectrographe de pointe au télescope Mayall en Arizona.",
+    "Learn more about DESI": "En savoir plus sur DESI",
+    "About DESI High": "À propos de DESI High",
+    "About DESI High 1": "<strong>DESI High</strong> est une initiative visant faire découvrir l'astronomie et la science des données aux lycéens (et plus) du monde entier. Elle fournit des ressources, incluant des notebooks, des vidéos et d'autres supports pour aider les étudiants à en apprendre plus sur l'univers et la science derrière DESI. En utilisant les données réelles de DESI, les étudiants peuvent explorer l'univers, apprendre à analyser des données astronomiques et développer des compétences en programmation.",
+    "Meet the team!": "Rencontrez l'équipe !",
+    "Legacy members": "Anciens membres",
+    "Legacy members 1": "Cette page liste les anciens membres de l'équipe DESI High qui ont contribué à la création de cette plateforme. Bien qu'ils ne soient plus actifs, leur travail a été essentiel pour construire DESI High et nous les remercions pour leurs contributions !",
+    "team": {
+        "bao-ban": "Bao Ban est un éducateur passionné et un défenseur de la communication scientifique. Fort d'une formation en physique et d'un vif intérêt pour la vulgarisation, Bao a consacré sa carrière à rendre accessibles au public des concepts scientifiques complexes. Son objectif principal est de mobiliser les jeunes apprenants et d'inspirer la prochaine génération de scientifiques.",
+        "retired-bao-ban": "Ce Bao Ban est vieux et est parti se retirer dans les montagnes de l'Arizona. Nous lui souhaitons le meilleur !",
+        "simon-bouchard": "Salut ! Je suis Simon, un doctorant au LPNHE à Paris. Je travaille sur le clustering des galaxies et l'analyse de l'échantillon BGS de DESI. J'adore partager mes connaissances en astronomie et en science des données avec les étudiants. En dehors de la science, je suis également magicien 🃏."
+    },
+
+    "Partners intro": "Découvrez nos établissements partenaires ! 🌍 Nous sommes fiers de collaborer avec des institutions qui partagent notre passion pour l'éducation et la science à travers le monde.",
+    "Location": "Localisation",
+    "Lowell":{
+        "location": "Lowell, Massachusetts, USA",
+        "excerpt": "Située à San Francisco, Lowell High School est la plus ancienne école publique secondaire à l'ouest du fleuve Mississippi."
+    },
+    "Become partner": "Si vous souhaitez devenir partenaire de DESI High, veuillez nous <a href=\"contact.html\">contacter</a> pour plus d'informations.",
+
+    "News intro": "Restez à jour avec les dernières actualités de DESI High ! Pour plus d'actualités de DESI, suivez-nous sur les <a href=\"#social-icons\">réseaux sociaux</a> !",
+    "Events intro": "Cette section contient les informations sur les projets en cours et les évènements à venir dans DESI High.",
+
+    "Curriculums intro": "<h1>Curriculums</h1>\n<p>Les curriculums sont des parcours structurés pour explorer nos notebooks à travers divers sujets liés au projet DESI et à l'étude de l'univers. Chaque curriculum est conçu pour fournir un aperçu complet d'un sujet spécifique, avec des exercices pratiques et des applications concrètes.</p>\n<p>Chaque curriculum est composé d'une série de notebooks Jupyter, qui sont des documents interactifs contenant du code, des visualisations et des explications. Vous pouvez exécuter le code dans votre navigateur, grâce à <a href=\"https://mybinder.org/\" target=\"_blank\">Binder</a>: cliquez simplement sur le notebook et il s'ouvrira dans un nouvel onglet, où vous pourrez lire son contenu et exécuter le code. Ces notebooks sont conçus pour être interactifs, vous permettant d'expérimenter avec le code et de voir comment il fonctionne !</p>\n<p>Chaque curriculum peut être suivi de manière autonome, mais vous pouvez également choisir de suivre les curriculums dans l'ordre qui vous convient le mieux, ou simplement choisir le notebook qui vous intéresse le plus. Un niveau de difficulté est indiqué pour chaque notebook, vous permettant de choisir ceux qui correspondent à votre niveau et vos compétences.</p>",
+    "Curriculums Overview": "Liste des curriculums",
+    "Curriculums update": "⚠️ <strong>Note:</strong> Nos curriculums sont en cours de développements. N'hésitez pas à revenir régulièrement pour découvrir les nouveautés !",
+    "Curriculums lost": "<strong>🤔 Vous êtes perdus ?</strong> Consultez <a href=\"intro.html\">l'introduction</a> pour savoir par où commencer.",
+    "Curriculums": {
+        "Code 101": "Introduction au code",
+        "Code 101-excerpt": "Apprenez les bases de Python et Numpy, des outils essentiels pour l'analyse de données en astronomie.",
+        "Cosmology Crash Course": "Introduction à la cosmologie",
+        "Cosmology Crash Course-excerpt": "Plongez dans les modèles cosmologiques, l'énergie noire et l'expansion de l'univers.",
+        "The DESI Survey": "Le relevé DESI",
+        "The DESI Survey-excerpt": "Explorez le relevé DESI, ses objectifs et comment il cartographie l'univers."
+    },
+
+    "Easy": "Facile",
+    "Medium": "Moyen",
+    "Hard": "Difficile",
+
+    "Credits intro": "Nous aimerions remercier les personnes et ressources suivantes pour leurs contributions au site web <i>DESI High</i> :",
+    "Contributors": {
+        "title 1": "Contributeurs",
+        "website": "Conception et développement du site web",
+        "logo": "Conception du logo",
+        "background": "Image des traînées d'étoiles Mayall",
+        "title 2": "Contributions",
+        "Multi-language": "Site web multilingue inspiré par",
+        "Cache bug fix": "Correction du bug de cache de Jekyll Paginate V2",
+        "Cache bug quick-fix": "Correction rapide du bug de cache de Jekyll Paginate V2"
+    },
+
+    "(tmp) For later": "\n<p>Si vous suivez ce cours avec un enseignant ou un mentor de DESI High, suivez leurs instructions sur la façon de procéder. N'hésitez pas à poser des questions et à demander de l'aide si nécessaire !</p>"
+}

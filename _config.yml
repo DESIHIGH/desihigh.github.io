@@ -1,0 +1,63 @@
+collections:
+  faq:
+  team:
+    output: true
+    permalink: team/:path/
+  terms:
+    sort_by: lang
+  partners:
+    output: true
+    permalink: partners/:path/
+  events:
+    output: true
+    permalink: events/:path/
+  news:
+    output: true
+    permalink: news/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "partners"
+    values:
+      layout: "partner"
+  - scope:
+      path: ""
+      type: "team"
+    values:
+      layout: "team"
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "news"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Use this if you deploy to a subdirectory, e.g. /desihigh_website/
+base_homepage: /desihigh_website/ 
+
+# Set to true to show notebooks that are not translated in the selected language in the curriculum page.
+show_untranslated_notebooks: true 
+
+# Useful links
+links:
+  forum: https://github.com/DESIHIGH/desihigh/discussions
+  github: https://github.com/desihigh/desihigh
+
+plugins:
+  - jekyll-paginate-v2
+
+pagination:
+  enabled: true
+  per_page: 5
+  sort_reverse: true
+  permalink: /:num/
+  title: ':title - page :num of :max'

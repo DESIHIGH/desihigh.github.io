@@ -1,0 +1,98 @@
+Introduction to Python:
+  en:
+    name: Introduction to Python
+    url: 
+      github: https://github.com/DESIHIGH/desihigh/blob/minimal/notebooks/English/PythonTutorial.ipynb
+      open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/English/PythonTutorial.ipynb
+
+Introduction to Numpy:
+  en:
+    name: Introduction to Numpy
+    url:
+
+Python Cheatsheet:
+  en:
+    name: Python Cheatsheet
+    url:
+      github: https://github.com/DESIHIGH/desihigh/tree/minimal/notebooks/English/cheatsheets/Python.pdf
+      open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/English/cheatsheets/Python.pdf
+  fr:
+    name: Cheatsheet Python
+    url:
+      github: https://github.com/DESIHIGH/desihigh/tree/minimal/notebooks/French/cheatsheets/Python.pdf
+      open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/French/cheatsheets/Python.pdf
+
+Numpy Cheatsheet:
+  en:
+    name: Numpy Cheatsheet
+    url:
+      github: https://github.com/DESIHIGH/desihigh/tree/minimal/notebooks/English/cheatsheets/Numpy.pdf
+      open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/English/cheatsheets/Numpy.pdf
+  fr:
+    name: Cheatsheet Numpy
+    url:
+      github: https://github.com/DESIHIGH/desihigh/tree/minimal/notebooks/French/cheatsheets/Numpy.pdf
+      open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/French/cheatsheets/Numpy.pdf
+
+Jupyter Cheatsheet:
+  en:
+    name: Jupyter Cheatsheet
+    url:
+      github: https://github.com/DESIHIGH/desihigh/tree/minimal/notebooks/English/cheatsheets/Jupyter.pdf
+      open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/English/cheatsheets/Jupyter.pdf
+
+Matplotlib Cheatsheet:
+  en:
+    name: Matplotlib Cheatsheet
+    url:
+      open: https://matplotlib.org/cheatsheets/
+  fr:
+    name: Cheatsheet Matplotlib
+    url:
+      github: https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/French/cheatsheets/Matplotlib.pdf
+      open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/minimal/notebooks/French/cheatsheets/Matplotlib.pdf
+
+DESI Survey Overview:
+  en:
+    name: DESI Survey Overview
+
+Galaxy Spectra:
+  en:
+    name: Galaxy Spectra
+
+Redshift and Distance:
+  en:
+    name: Redshift and Distance
+
+Mapping the Universe:
+  en:
+    name: Mapping the Universe
+
+Dark Energy:
+  en:
+    name: Dark Energy
+
+Observations of Our Universe:
+  en:
+    name: Observations of Our Universe
+
+Cosmological Models:
+  en:
+    name: Cosmological Models
+    url:
+
+
+Distance Measurements:
+  en:
+    name: Distance Measurements
+    url:
+      github: https://github.com/DESIHIGH/desihigh/blob/minimal/notebooks/English/DistanceMeasures.ipynb
+      open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/English/DistanceMeasures.ipynb
+
+Cosmological Inference:
+  en:
+    name: Cosmological Inference
+    url:
+      github: https://github.com/DESIHIGH/desihigh/blob/minimal/notebooks/English/CosmologicalInference.ipynb
+      open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/minimal?urlpath=tree/notebooks/English/CosmologicalInference.ipynb
+

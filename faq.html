@@ -1,0 +1,78 @@
+---
+title: FAQ
+layout: default
+---
+
+<section class="section">
+    <div class="container">
+        <div class="content">
+            <h1 data-i18n="FAQ title">Frequently Asked Questions (FAQ)</h1>
+            <p  data-i18n="FAQ intro">Here you can find answers to common questions about DESI High.</p>
+        </div>
+
+        {% for faq in site.faq %}
+        <hr>
+        <a class="level js-modal-trigger" data-target="modal-{{ forloop.index }}">
+            <div class="level-left">
+                <div class="level-item">
+                    <p class="title is-4" data-i18n="{{ faq.tag }}/question">{{ faq.question }}</p>
+                
+                    <span class="icon is-large is-hidden-desktop">
+                        <i class="fas fa-lg fa-chevron-right"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="level-right is-hidden-mobile">
+                <div class="level-item">
+                    <span class="icon is-large">
+                        <i class="fas fa-lg fa-chevron-right"></i>
+                    </span>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+        <hr>
+
+        <a class="button is-info is-outlined" href="https://github.com/DESIHIGH/desihigh/discussions" target="_blank" >
+            <span class="icon is-small">
+                <i class="fas fa-question"></i>
+            </span>
+            <span data-i18n="Ask a question">Ask a question</span>
+        </a>
+    </div>
+</section>
+
+{% for faq in site.faq %}
+ <div class="modal" id="modal-{{ forloop.index }}">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title" data-i18n="{{ faq.tag }}/question">{{ faq.question }}</p>
+            <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <div data-i18n="{{ faq.tag }}/answer">
+                {{ faq.content | markdownify }}
+            </div>
+        </section>
+    </div>
+</div>
+{% endfor %}
+
+
+
+
+<!-- <h2>What is DESI High?</h2>
+<p>DESI High is an educational initiative that allows high school students to engage with real astronomical data from the Dark Energy Spectroscopic Instrument (DESI).</p>
+
+<h2>How can I get started?</h2>
+<p>You can start by visiting our <a href="quickstart.html">Quickstart Guide</a>, which will walk you through the basics of using DESI data.</p>
+
+<h2>Do I need prior experience in programming?</h2>
+<p>No prior experience is required! We provide introductory materials to help you learn Python and data analysis techniques.</p>
+
+<h2>Who can participate?</h2>
+<p>DESI High is open to all high school students interested in astronomy and data science.</p>
+
+<h2>How can teachers get involved?</h2>
+<p>Teachers can find resources and contact us through our <a href="contact.html">Contact Page</a>.</p> -->

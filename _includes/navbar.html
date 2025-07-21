@@ -1,0 +1,62 @@
+{% assign url = page.url | remove_first: '/' | remove: "index.html" %}
+{% if include.page_number %}
+    {% assign to_remove = include.page_number | append: "/" %}
+    {% assign url = url | replace: to_remove, "" %}
+{% endif %}
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item is-family-monospace has-text-weight-bold is-size-5" href="./">
+                <img class="navbar-logo" src="assets/img/logos/logo_dark.png" alt="DesiHigh Logo">
+                DESI High &nbsp;
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-divider"></div>
+
+        <div class="navbar-menu" id="navbarMenu">
+            <div class="navbar-start">
+                {% for item in site.data.header_nav %}
+                <a class="navbar-item {% if url == item.url %} has-text-warning {% endif %}" href="{{ item.url }}" data-i18n="{{ item.name }}">
+                    {{ item.name }}
+                </a>
+                {% endfor %}
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-warning" href="intro.html" data-i18n="Let's start!">Let's start!</a>
+                        <a class="button is-light" href="{{ site.links.forum }}" data-i18n="Forum">Forum</a>
+                    </div>
+                </div> 
+                <!-- Language selection menu (done later) -->
+                <hr class="is-hidden-desktop">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        <span class="icon-text">
+                            <span class="icon">
+                                <i class="fa-solid fa-lg fa-language"></i> 
+                            </span>
+                            <span class="is-hidden-desktop">
+                                &nbsp; <span data-i18n="Language">Language</span>
+                            </span>
+                        </span>
+                    </a>
+                    <div class="navbar-dropdown">
+                        {% for item in site.data.lang %}
+                        <a class="navbar-item" onclick="changeLanguage('{{ item.code }}')">{{ item.name }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

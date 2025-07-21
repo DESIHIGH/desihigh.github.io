@@ -1,0 +1,158 @@
+---
+title: Curriculum
+layout: default
+---
+
+{% include welcome_hero.html title="Welcome to DESI High!" subtitle="School of the Dark Universe" darken=0.3 blur=1 %}
+
+<section class="section">
+    <div class="container">
+
+        <div class="content">
+            <div class="notification is-danger">
+                <button class="delete"></button>
+                    <span data-i18n="Curriculums update">
+                    ⚠️ <strong>Note:</strong> The curriculums are in development. Please check back soon to see the latest updates!
+                </span>
+            </div>
+
+            <div class="notification is-warning is-light">
+                <button class="delete"></button>
+                <span data-i18n="Curriculums lost">
+                    <strong>🤔 Are you lost?</strong>
+                    Check out the <a href="intro.html">introduction</a> to know where to start.
+                </span>
+            </div>
+        </div>
+
+        <div class="content" data-i18n="Curriculums intro">
+            <h1>Curriculums</h1>
+            <p>Curriculums are structured paths to explore our notebooks through various topics related to the DESI project and the study of the universe.
+            Each curriculum is designed to provide a comprehensive overview of a specific topic, with hands-on exercises and practical applications.</p>
+            <p>Each curriculum is composed of a series of notebooks, which are interactive documents that combine code, text, and visualizations. 
+            You can run the code directly in your browser using <a href="https://mybinder.org/" target="_blank">Binder</a>: just click on the notebook 
+            and it will open in a new tab, where you can read the content and run the code cells. The notebooks are designed to be interactive, 
+            so you can experiment with the code and see how it works!</p>
+            <p>Each curriculum is self-contained, so you can work through the notebooks at your own pace. 
+            You can also choose to follow the curriculums in a specific order, or pick and choose the notebooks that interest you the most.
+            A level of difficulty is assigned to each notebook, allowing you to choose the ones that suit your current knowledge and skills.</p>
+        </div>
+
+        <hr>
+
+        <div class="content">
+            <h2 id="curriculums-overview" data-i18n="Curriculums Overview">Curriculums Overview</h2>
+            <ul>
+                {% for curriculum in site.data.curriculums.curriculums %}
+                <li>
+                    <a href="#{{ curriculum.name | slugify }}" data-i18n="Curriculums/{{ curriculum.name }}">{{ curriculum.name }}</a>
+                    -
+                    <span data-i18n="Curriculums/{{ curriculum.name }}-excerpt">{{ curriculum.excerpt }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="columns is-centered">
+            <div class="column is-three-quarters">
+                <!-- First, loop over curriculums to create the panels -->
+                {% for curriculum in site.data.curriculums.curriculums %}
+                {% assign color = curriculum.color | default: "is-warning" %}
+                <nav class="panel {{ color }}" id="{{ curriculum.name | slugify }}">
+                    <div class="panel-heading">
+                        <p data-i18n="Curriculums/{{ curriculum.name }}">{{ curriculum.name }}</p>
+                        <p class="is-size-6 has-text-weight-light" data-i18n="Curriculums/{{ curriculum.name }}-excerpt">{{ curriculum.excerpt }}</p>
+                    </div>
+
+                    <div class="panel-block is-hidden">
+                        <p class="control has-icons-left">
+                        <input class="input" type="text" placeholder="Search" />
+                        <span class="icon is-left">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </span>
+                        </p>
+                    </div>
+
+                    <!-- Then, loop over languages to create hidden div with panel-tabs for each language -->
+                    {% for active_lang in site.data.lang %}
+                    {% if active_lang.code != "en" %}
+                        {% assign hide_panel = "is-hidden" %}
+                    {% else %}
+                        {% assign hide_panel = "" %}
+                    {% endif %}
+                    <!-- TODO : hide/unmask them depending on the language with js eventListener -->
+                    <div class="{{ hide_panel }}" id="Panel-{{ active_lang.code }}"> 
+                        <p class="panel-tabs">
+                            {% for lang in site.data.lang %}
+                                {% if lang == active_lang %}
+                                <a class="panel-tab is-active">
+                                    {{ lang.name }}
+                                </a>
+                                {% else %}
+                                <a class="panel-tab" onclick="unhideElement('{{ curriculum.name | slugify }}', 'Panel-{{ lang.code }}', 'Panel-')">
+                                    {{ lang.name }}
+                                </a>
+                                {% endif %}
+                            {% endfor %}
+                        </p>
+
+                        <!-- Finally, loop over the files to fill the panel-tabs -->
+                        {% for nb in curriculum.files %}
+                            {% assign icon = nb.icon | default: "fas fa-book" %}
+                            {% if site.show_untranslated_notebooks%}
+                                {% assign default_nb_lang = site.data.curriculums.files[nb.tag]['en'] %}
+                            {% endif %}
+                            {% assign nb_lang = site.data.curriculums.files[nb.tag][active_lang.code] | default: default_nb_lang %}
+                            {% if nb_lang %}
+                                <a class="panel-block is-block" onclick="openFile('{{ nb_lang.url.open }}')">
+                                    <div class="container">
+                                        <nav class="level">
+                                            <div class="level-left">
+                                                <div class="level-item">
+                                                    <span class="panel-icon">
+                                                    <i class="{{ icon }}" aria-hidden="true"></i>
+                                                    </span>
+                                                    
+                                                    {{ nb_lang.name }} 
+                                                    
+                                                    <!-- If untranslated notebook, display english language flag besides -->
+                                                    {% if nb_lang == default_nb_lang and active_lang.code != "en" %}
+                                                        &nbsp; <img src="assets/img/lang/en.png" alt="Translated notebook" style="height: 1em;">
+                                                    {% endif %}
+                                                </div>
+                                                
+                                            </div>
+                                            
+
+                                            <div class="level-right">
+                                            {% if nb.level %}
+                                                {% assign level_class = "" %}
+                                                {% if nb.level == "Easy" %}
+                                                    {% assign level_class = "is-success" %}
+                                                {% elsif nb.level == "Medium" %}
+                                                    {% assign level_class = "is-warning" %}
+                                                {% elsif nb.level == "Hard" %}
+                                                    {% assign level_class = "is-danger" %}
+                                                {% endif %}
+                                                <div class="level-item">
+                                                    <span class="tag {{ level_class }}" data-i18n="{{ nb.level }}">{{ nb.level }}</span>
+                                                </div>
+                                            </div>
+                                            {% endif %}
+                                        </nav>
+
+                                    </div>
+                                    
+                                </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                </nav>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

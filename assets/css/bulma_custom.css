@@ -13,3 +13,11 @@
     height: 50px !important;
     max-height: 50px !important;
 }
+
+.hidden-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.underlined_on_hover:hover {
+    text-decoration: underline;
+}

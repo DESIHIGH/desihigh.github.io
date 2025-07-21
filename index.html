@@ -1,124 +1,38 @@
-<!DOCTYPE html>
-<html lang="en" class="has-navbar-fixed-top" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="./">
-    <title>DesiHigh - School of the Dark Universe</title>
-    <link rel="icon" type="image/png" href="assets/img/logo_dark.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-    <link rel="stylesheet" href="assets/css/bulma_custom.css">
-    <script src="assets/js/bulma.js"></script>
-</head>
+---
+title: "School of the Dark Universe"
+layout: default
+---
 
-<body>
-<!-- header -->
-<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-    <div class="container">
-        <div class="navbar-brand">
-            <a class="navbar-item is-family-monospace has-text-weight-bold is-size-5" href="./">
-                <img class="navbar-logo" src="assets/img/logo_dark.png" alt="DesiHigh Logo">
-                DESI High &nbsp;
-            </a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-
-        <div class="navbar-divider"></div>
-
-        <div class="navbar-menu" id="navbarMenu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="faq.html">FAQ</a>
-                <a class="navbar-item" href="teachers.html">Teachers</a>
-                <a class="navbar-item" href="partners">Partners</a>
-                <a class="navbar-item" href="about.html">About</a>
-                <a class="navbar-item" href="terms.html">Code of Conduct</a>
-            </div>
-
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-warning" href="quickstart.html">Let's start !</a>
-                        <a class="button is-light" href="https://github.com/DESIHIGH/desihigh/discussions">Forum</a>
-                    </div>
-                </div> 
-                <!-- Language selection menu (done later) -->
-                <hr class="is-hidden-desktop">
-                <div class="navbar-item has-dropdown is-hoverable is-hidden">
-                    <a class="navbar-link">
-                        <span class="icon-text">
-                            <span class="icon">
-                                <i class="fa-solid fa-lg fa-language"></i> 
-                            </span>
-                            <span class="is-hidden-desktop">
-                                &nbsp; Language
-                            </span>
-                        </span>
-                    </a>
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item" href="/en">English</a>
-                        <a class="navbar-item" href="/fr">Français</a>
-                        <a class="navbar-item" href="/es">Español</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</nav>
-<!-- header end -->
-
-<!-- https://github.com/jgthms/bulma/issues/1007#issuecomment-1722779908 -->
-<div class="hero is-large" style="background-image: url('https://raw.githubusercontent.com/DESIHIGH/desihigh/refs/heads/main/desihigh/images/Mayall-Star-Trails.jpg'); background-position: center top; background-size: contain;">
-    <div class="hero-body">
-        <div class="container has-text-centered has-text-top">
-            <h1 class="title is-2 has-text-warning">Welcome to DESI High !</h1>
-            <h2 class="subtitle is-3">School of the Dark Universe</h2>
-        </div>
-    </div>
-    <div class="hero-foot">
-        <nav class="tabs is-boxed">
-            <div class="container">
-                <ul>
-                    <li><a href="curriculum.html">Courses</a></li>
-                    <li><a href="news">News</a></li>
-                    <li><a href="events">Events</a></li>
-                    <li><a href="resources">Resources</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-</div>
+{% include welcome_hero.html hero_size="is-large" title="Welcome to DESI High!" subtitle="School of the Dark Universe" darken=0.3 blur=1 %}
 
 <!-- <section class="section"> -->
     <div class="container">
         <div class="content">
             <div class="notification is-warning">
-                <strong>Welcome to DESI High !</strong>
+                <div class="content" data-i18n="Welcome intro">
+                    <strong>Welcome to DESI High!</strong>
+                    <p>
+                        You've found the landing page of the the Dark Energy Spectroscopic Instrument (DESI) for high schoolers.
+                        Here you can join us and run your own experiments with hot-off-the-telescope DESI data 🔭 
+                        For a great introduction to the DESI project, start with this 
+                        <a href="https://www.youtube.com/watch?v=kPXx9tqyzYg" target="_blank">video</a>, 
+                        try our <a href="https://www.desi.lbl.gov/" target="_blank">website</a>,
+                        and follow us on our <a href="#social-icons">social media channels</a>!
+                    </p>
+                    <p>
+                        If you're new to python 🐍, don't worry! You'll pick it up quickly. 
+                        We will provide you with introductory notebooks
+                        to help you learn the basics.
+                        Everything here is written in <a href="https://jupyter.org"  target="_blank">Jupyter notebooks</a>, 
+                        which makes all things easy when it comes python and data science.
+                    </p>
+                    <p>
+                        <strong>Ready to dive in?</strong>
+                    </p>
+                </div>
+
                 <p>
-                    You've found the landing page of the the Dark Energy Spectroscopic Instrument (DESI) for high schoolers.
-                    Here you can join us and run your own experiments with hot-off-the-telescope DESI data 🔭 
-                    For a great introduction to the DESI project, start with this 
-                    <a href="https://www.youtube.com/watch?v=kPXx9tqyzYg" target="_blank">video</a>, 
-                    try our <a href="https://www.desi.lbl.gov/" target="_blank">website</a>,
-                    and follow us on our <a href="#social-icons">social media channels</a> !
-                </p>
-                <p>
-                    If you're new to python 🐍, don't worry! You'll pick it up quickly. 
-                    We will provide you with introductory notebooks
-                    to help you learn the basics of python and data analysis.
-                    Everything here is written in <a href="https://jupyter.org"  target="_blank">Jupyter notebooks</a>, 
-                    which makes all things easy when it comes python and data science.
-                </p>
-                <p>
-                    <strong>Ready to dive in?</strong>
-                </p>
-                <p>
-                    <a class="button is-light is-outlined" href="quickstart.html">Let's start !</a>
+                    <a class="button is-light is-outlined" href="intro.html" data-i18n="Let's start!">Let's start!</a>
                 </p>
             </div>
         </div>
@@ -129,146 +43,40 @@
     <div class="container">
         <div class="content">
             <div class="notification is-info">
+                <div class="content">
+                    <strong>Teachers</strong>
+                    <p data-i18n="Teachers intro">
+                        🏫 Have a classroom full of students potentially interested in DESI High? 
+                        We have an elite team of scientists from across the globe ready to get things started for you! 
+                    </p>
+                </div>
                 <p>
-                    <strong>Teachers</strong><br>
-                    🏫 Have a classroom full of students potentially interested in DESI High? 
-                    We have an elite team of scientists from across the globe ready to get things started for you! 
+                    <a class="button is-light is-outlined" href="contact.html" data-i18n="Contact us!">Contact us!</a>
                 </p>
 
-                <p>
-                    <a class="button is-light is-outlined" href="contact.html">Contact us !</a>
-                </p>
-
-                <p>
-                    📎Or, check our ressources and teachers pages to find out how to get started with your class.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <h2 class="title">Latest News</h2>
-        <div class="columns ismultiline">
-            <div class="column is-one-third">
-                <div class="card">
-                    <div class="card-content">
-                        <p class="title">New Course: Dark Matter Physics</p>
-                        <p class="subtitle">Join our latest course on the mysteries of dark matter and its implications in the universe.</p>
-                    </div>
+                <div class="content">
+                    <p data-i18n="Teachers intro 2">
+                        📎Or, check our ressources and teachers pages to find out how to get started with your class.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section">
-    <div class="container">
-        <h2 class="title">Upcoming Events</h2>
-        <div class="columns is-multiline">
-            <div class="column is-one-third">
-                <div class="card">
-                    <div class="card-content">
-                        <p class="title">Dark Universe Symposium</p>
-                        <p class="subtitle">
-                            Join us for a symposium discussing the latest research in dark universe studies.</p>
-                    </div>
-                </div>
-            </div>
+{% include post_carousel.html posts=site.news title="Latest News" reverse=true permalink="news/" %}
+
+{% include post_carousel.html posts=site.events title="Upcoming Events" reverse=true permalink="events/" %}
+
+<div style="position: fixed; bottom: 2%; right: 1%; z-index: 1000; max-width: 450px;">
+    <div class="notification is-warning is-light">
+        <button class="delete"></button>
+        <div class="content">
+            <p><strong data-i18n="Mail info 1"> 📬 You've got mail!</strong></p>
+            <p data-i18n="Mail info 2">👉 Click here to read the welcome letter to DESI High students.</p>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <a class="button is-dark" href="intro.html#saul-letter" data-i18n="Read">✉️ Read</a>
         </div>
     </div>
-</section>
-
-<!-- footer -->
-<footer class="footer">
-    <!-- <div class="container"> -->
-        <div class="level">
-            <div class="level-left">
-                <div class="level-item">
-                    <a href="https://www.desi.lbl.gov/" target="_blank">
-                        <img src="assets/img/desi_logo_dark.png" alt="Desi Logo" width="150px">
-                    </a>
-                    <p class="subtitle is-7">© 2023 Desi Collaboration. All rights reserved.</p>
-                </div>
-            </div>
-
-            <div class="level-item" id="social-icons">
-                <div class="level-item"> 
-                    <span class="icon is-medium">
-                        <a class="has-text-text" href="https://www.facebook.com/desisurvey/" target="_blank">
-                            <i class="fa-brands fa-lg fa-facebook"></i>
-                        </a>
-                    </span>    
-                </div>
-                <!-- Insert other icons here if needed -->
-                <div class="level-item"> 
-                    <span class="icon is-medium">
-                        <a class="has-text-text" href="https://twitter.com/desisurvey/" target="_blank">
-                            <i class="fa-brands fa-lg fa-twitter"></i>
-                        </a>
-                    </span>    
-                </div>
-
-                <div class="level-item"> 
-                    <span class="icon is-medium">
-                        <a class="has-text-text" href="https://www.instagram.com/desisurvey/" target="_blank">
-                            <i class="fa-brands fa-lg fa-instagram"></i>
-                        </a>
-                    </span>    
-                </div>
-
-                <!-- TODO : Add TikTok link -->
-                <div class="level-item"> 
-                    <span class="icon is-medium">
-                        <a class="has-text-text" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-                            <i class="fa-brands fa-lg fa-tiktok"></i>
-                        </a>
-                    </span>    
-                </div>
-
-                <div class="level-item"> 
-                    <span class="icon is-medium">
-                        <a class="has-text-text" href="https://www.linkedin.com/in/dark-energy-spectroscopic-survey-4700b1318/" target="_blank">
-                            <i class="fa-brands fa-lg fa-linkedin"></i>
-                        </a>
-                    </span>    
-                </div>
-
-                <div class="level-item"> 
-                    <span class="icon is-medium">
-                        <a class="has-text-text" href="https://github.com/DESIHIGH/desihigh/" target="_blank">
-                            <i class="fa-brands fa-lg fa-github"></i>
-                        </a>
-                    </span>    
-                </div>
-            </div>
-
-            <div class="level-right">
-                <div class="level-item">
-                    <nav class="level">                        
-                        <div class="level-item">
-                            <a class="has-text-text" href="terms.html">Terms & privacy</a>
-                        </div>
-                        <div class="level-item">
-                            <a class="has-text-text" href="about.html">About</a>
-                        </div>
-                        <div class="level-item">
-                            <a class="has-text-text" href="contact.html">Contact</a>
-                        </div>
-                        <div class="level-item">
-                            <a class="has-text-text" href="credits.html">Credits</a>
-                        </div>
-                    </nav>
-                </div>
-                <span class="is-hidden-touch"> &nbsp;</span>
-                <a href="https://opensource.org/license/bsd-3-clause" target="_blank" class="level-item">
-                    <img src="assets/img/copyright.png" alt="BSD 3-Clause License" width="100px">
-                </a>
-            </div>
-        </div>
-    <!-- </div> -->
-</footer>
-<!-- footer end -->
-</body>
-</html>
+</div>
