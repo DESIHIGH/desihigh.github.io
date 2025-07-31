@@ -10,6 +10,7 @@ lang: en
 - [Origins of DESI: The Mystery of Dark Energy](#origins-of-desi-the-mystery-of-dark-energy)
 - [Introduction to DESI](#introduction-to-desi)
 - [Meet the principal](#meet-the-principal)
+- [Meet the principal](#meet-the-principal-1)
 - [How does this works?](#how-does-this-works)
 
 ### Origins of DESI: The Mystery of Dark Energy
@@ -36,6 +37,13 @@ One way that we can study dark energy is by making a giant, three-dimensional ma
 <small>
     🤓☝️ Learn more about how we map the universe in our <a href="curriculum.html">Observations</a> and <a href="curriculum.html">Distances</a> notebooks !
 </small>
+
+{% include static_translations.html name="About DESI" markdownify=true %}
+
+### Meet the principal
+The existence of dark energy was irrefutably confirmed by Lawrence Berkeley Lab's very own <a href="https://en.wikipedia.org/wiki/Saul_Perlmutter">Saul Perlmutter</a>, Brian Schmidt and Adam Reiss in 1998, when they discovered that the universe's expansion was accelerating. They were awarded the <a href="https://www.nobelprize.org/prizes/physics/2011/summary/">Nobel Prize in Physics in 2011</a> for their work.
+
+As honorary principal at DESI High, Saul has a special opening address to all the students, including you!
 
 <div class="columns is-centered is-vcentered" id="saul-letter">
     <div class="column is-three-quarters-desktop is-full-touch has-text-centered" style="height: 500px;">
