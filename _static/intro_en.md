@@ -37,6 +37,13 @@ One way that we can study dark energy is by making a giant, three-dimensional ma
     🤓☝️ Learn more about how we map the universe in our <a href="curriculum.html">Observations</a> and <a href="curriculum.html">Distances</a> notebooks !
 </small>
 
+{% include static_translations.html name="About DESI" markdownify=true %}
+
+### Meet the principal
+The existence of dark energy was irrefutably confirmed by Lawrence Berkeley Lab's very own <a href="https://en.wikipedia.org/wiki/Saul_Perlmutter">Saul Perlmutter</a>, Brian Schmidt and Adam Reiss in 1998, when they discovered that the universe's expansion was accelerating. They were awarded the <a href="https://www.nobelprize.org/prizes/physics/2011/summary/">Nobel Prize in Physics in 2011</a> for their work.
+
+As honorary principal at DESI High, Saul has a special opening address to all the students, including you!
+
 <div class="columns is-centered is-vcentered" id="saul-letter">
     <div class="column is-three-quarters-desktop is-full-touch has-text-centered" style="height: 500px;">
         <object data="assets/pdf/saul_perlmutter_welcome.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="100%" style="background-color: #f5f5f5;">
@@ -46,13 +53,6 @@ One way that we can study dark energy is by making a giant, three-dimensional ma
         </object>
     </div>
 </div>
-
-### Meet the principal
-The existence of dark energy was irrefutably confirmed by Lawrence Berkeley Lab's very own <a href="https://en.wikipedia.org/wiki/Saul_Perlmutter">Saul Perlmutter</a>, Brian Schmidt and Adam Reiss in 1998, when they discovered that the universe's expansion was accelerating. They were awarded the <a href="https://www.nobelprize.org/prizes/physics/2011/summary/">Nobel Prize in Physics in 2011</a> for their work.
-
-As honorary principal at DESI High, Saul has a special opening address to all the students, including you!
-
-{% include static_translations.html name="Saul Perlmutter's welcome letter" %}
 
 <small>
     🤓☝️ Take a hands-on look at Saul's experiment in our <a href="curriculum.html">Dark Energy</a> notebook!
