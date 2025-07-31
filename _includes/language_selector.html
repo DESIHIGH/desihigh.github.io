@@ -2,8 +2,26 @@
 {% assign button_class = include.button_class | default: "button" %}
 {% assign button_text = include.button_text | default: "Filter" %}
 {% assign button_i18n = include.button_i18n | default: "Filter" %}
-{% assign url = page.url | remove_first: '/' | remove: "index.html" %} 
+{% assign url = page.url | remove: "index.html" %}
 
+<!-- Remove leading slash -->
+{% assign url_0 = url | slice: 0 %}
+{% if url_0 == "/" %}
+    {% assign url = url | remove_first: "/" %}
+{% endif %}
+
+<!-- Remove provided string ? -->
+{% if include.to_remove %}
+    {% assign url = url | replace: include.to_remove "" %}
+{% endif %}
+
+<!-- Remove date if provided -->
+{% if include.date %}
+    {% assign to_remove = include.date | replace: "-", "/" | append: "/" %}
+    {% assign url = url | replace: to_remove "" %}
+{% endif %}
+
+<!-- Remove page number if provided -->
 {% assign page_number = include.page_number | default: false %}
 {% if page_number == 1 %}
     {% assign page_number = false %}
@@ -14,14 +32,20 @@
     {% assign url = url | replace: to_remove "" %}
 {% endif %}
 
+<!-- Remove all language codes in website -->
 {% for lang in site.data.lang %}
     {% assign to_remove = lang.code | append: "/" %}
     {% assign url = url | replace: to_remove "" %}
 {% endfor %}
 
+<!-- Add trailing slash if removed -->
+{% assign url_last = url | slice: -1 %}
+{% unless url_last == "/" %}
+    {% assign url = url | append: "/" %}
+{% endunless %}
+
 <div class="dropdown is-right is-hidden-mobile">
     <div class="dropdown-trigger">
-        <!-- TODO -->
         <button class="{{ button_class }}" id="Dropdown">
             <span class="icon-text">
                 <span class="icon">

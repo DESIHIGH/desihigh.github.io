@@ -1,0 +1,6 @@
+- name: Let's start!
+  url: intro.html
+  color: is-primary
+- name: Forum
+  url: https://github.com/DESIHIGH/desihigh/discussions
+  color: is-light

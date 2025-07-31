@@ -1,19 +1,82 @@
+# Site configuration
+title: DESI High
+
+# navbar/footer configuration
+navbar_title: "DESI High"
+show_language_switcher: true
+language_switcher_list: true # Set to false to display language as a modal
+show_theme_switcher: false # Disable to fix the theme to light or dark
+footer: "© 2023 DESI Collaboration. All rights reserved."
+license: "https://opensource.org/license/bsd-3-clause"
+# Redefine navbar height in assets/css/bulma_custom.css if needed
+
+# Set to true to show notebooks that are not translated in the selected language in the curriculum page.
+show_untranslated_notebooks: true 
+
+# Use this to set the website color theme (light or dark)
+css_theme: dark
+# Redefine primary colors in assets/css/bulma_custom.css if needed
+
+# Useful links
+links:
+  forum: https://github.com/DESIHIGH/desihigh/discussions
+  github: https://github.com/desihigh/desihigh
+
+# Use this if you deploy to a subdirectory, e.g. /desi_template, with no trailing slash
+# baseurl: /
+
+# Pagination & Collections setup
 collections:
   faq:
   team:
     output: true
     permalink: team/:path/
-  terms:
+  static:
     sort_by: lang
   partners:
     output: true
     permalink: partners/:path/
   events:
     output: true
-    permalink: events/:path/
+    permalink: :collection/:year/:month/:day/:title/
   news:
     output: true
-    permalink: news/:path/
+    permalink: :collection/:year/:month/:day/:title/
+
+pagination:
+  enabled: true
+  per_page: 5
+  sort_reverse: true
+  permalink: /:num/
+  title: ':title - page :num of :max'
+
+# Use this to have the archives plugin generate archives for posts, news, and events
+# Unfortunately, not compatible with jekyll-paginate-v2
+jekyll-archives:
+  news:
+    enabled:
+      - year
+      - month
+      - day
+      - categories
+    layout: archive
+    permalinks:
+      year: :collection/:year/
+      month: :collection/:year/:month/
+      day: :collection/:year/:month/:day/
+      categories: :collection/:name/
+  events:
+    enabled:
+      - year
+      - month
+      - day
+      - categories
+    layout: archive
+    permalinks:
+      year: :collection/:year/
+      month: :collection/:year/:month/
+      day: :collection/:year/:month/:day/
+      categories: :collection/:name/
 
 defaults:
   - scope:
@@ -30,34 +93,23 @@ defaults:
       path: ""
       type: "events"
     values:
-      layout: "event"
+      layout: "post"
   - scope:
       path: ""
       type: "news"
     values:
-      layout: "news"
+      layout: "post"
   - scope:
       path: ""
     values:
       layout: "default"
 
-# Use this if you deploy to a subdirectory, e.g. /desihigh_website/
-base_homepage: /
 
-# Set to true to show notebooks that are not translated in the selected language in the curriculum page.
-show_untranslated_notebooks: true 
-
-# Useful links
-links:
-  forum: https://github.com/DESIHIGH/desihigh/discussions
-  github: https://github.com/desihigh/desihigh
-
+# Jekyll setup
 plugins:
   - jekyll-paginate-v2
+  - jekyll-archives-v2
 
-pagination:
-  enabled: true
-  per_page: 5
-  sort_reverse: true
-  permalink: /:num/
-  title: ':title - page :num of :max'
+exclude:
+  - Readme.md
+  - LICENSE
