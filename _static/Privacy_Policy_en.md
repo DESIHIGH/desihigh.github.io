@@ -1,5 +1,5 @@
 ---
-type: privacy
+name: Privacy Policy
 lang: en
 ---
 

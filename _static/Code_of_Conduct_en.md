@@ -1,6 +1,6 @@
 ---
+name: Code of Conduct
 lang: en
-type: code
 ---
 
 ## Code of Conduct

@@ -12,34 +12,11 @@ layout: default
         
         <hr>
 
-        {% for lang in site.data.lang %}
-        <div class="content" id="hide-{{ lang.code }}">
-            <!-- In theory, only 1 term per language -->
-            {% assign term = site.terms | where: "lang", lang.code | where: "type", "code" | first %}
-            {% if term %}
-                {{ term.content | markdownify }}
-            {% else %}
-                {% assign code_of_conduct = site.terms | where: "lang", "en" | where: "type", "code" | first %}
-                <!-- Fallback to English code of conduct if not found in the current language -->
-                {{ code_of_conduct.content | markdownify }}
-            {% endif %}
-        </div>
-        {% endfor %}
+        {% include static_translations.html name="Code of Conduct" %}
 
         <hr>
 
-        {% for lang in site.data.lang %}
-        <div class="content" id="hide-{{ lang.code }}">
-            <!-- In theory, only 1 term per language -->
-            {% assign term = site.terms | where: "lang", lang.code | where: "type", "privacy" | first %}
-            {% if term %}
-                {{ term.content | markdownify }}
-            {% else %}
-                {% assign privacy_policy = site.terms | where: "lang", "en" | where: "type", "privacy" | first %}
-                <!-- Fallback to English privacy policy if not found in the current language -->
-                {{ privacy_policy.content | markdownify }}
-            {% endif %}
-        </div>
-        {% endfor %}
+        {% include static_translations.html name="Privacy Policy" %}
+
     </div>
 </section>
