@@ -24,11 +24,16 @@ pagination:
         <div class="content">            
             {% assign placeholder_img = "https://bulma.io/assets/images/placeholders/128x128.png" %}
             {% for member in paginator.posts %}
+            {% if member.surname %}
+                {% assign name = member.surname | append: " " | append: member.name %}
+            {% else %}
+                {% assign name = member.name %}
+            {% endif %}
             <hr>
             <article class="media">
                 <div class="media-left">
                     <figure class="image is-64x64">
-                        <img class="is-rounded" src="{{ member.image | default: placeholder_img }}" alt="{{ member.name }}" style="max-width: 64px; max-height: 64px; object-fit: cover;">
+                        <img class="is-rounded" src="{{ member.image | default: placeholder_img }}" alt="{{ name }}" style="max-width: 64px; max-height: 64px; object-fit: cover;">
                     </figure>
                 </div>
                 <div class="media-content">
@@ -36,17 +41,17 @@ pagination:
                         {% if member.content.size > member.excerpt.size %}
                         <h3>    
                             <a href="{{ member.url }}" class="underlined_on_hover">
-                                <p class="title is-4">{{ member.name }}</p>
+                                <p class="title is-4">{{ name }}</p>
                             </a>
                             <p class="subtitle is-7">{{ member.location }}</p>
                         </h3>
                         {% else %}
                             <h3>
-                                <p class="title is-4">{{ member.name }}</p>
+                                <p class="title is-4">{{ name }}</p>
                                 <p class="subtitle is-7">{{ member.location }}</p>
                             </h3>
                         {% endif %}
-                        <div data-i18n="team/{{ member.name | slugify }}">
+                        <div data-i18n="team/{{ name }}">
                             {{ member.excerpt | markdownify }}
                         </div>
                     </div>
