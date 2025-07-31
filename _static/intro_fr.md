@@ -44,7 +44,15 @@ L'existence de l'énergie noire a été confirmée de manière irréfutable par 
 
 En tant que principal honoraire de DESI High, Saul a un discours d'ouverture spécial pour tous les étudiants, y compris vous !
 
-{% include static_translations.html name="Saul Perlmutter's welcome letter" %}
+<div class="columns is-centered is-vcentered" id="saul-letter">
+    <div class="column is-three-quarters-desktop is-full-touch has-text-centered" style="height: 500px;">
+        <object data="assets/pdf/saul_perlmutter_welcome.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="100%" style="background-color: #f5f5f5;">
+            <div class="has-background-black-bis">
+                <a href="assets/pdf/saul_perlmutter_welcome.pdf">Read the letter here !</a>
+            </div>
+        </object>
+    </div>
+</div>
 
 <small>
     🤓☝️ Découvrez l'expérience de Saul dans notre <a href="curriculum.html">notebook sur l'énergie noire</a> !
