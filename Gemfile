@@ -6,5 +6,5 @@ source "https://rubygems.org"
 gem "jekyll"
 
 # Plugins
-# gem "jekyll-paginate-v2"
 gem 'jekyll-paginate-v2', git: 'https://github.com/mohkale/jekyll-paginate-v2.git', branch: 'liquid-cache-bypass'
+gem 'jekyll-archives-v2'

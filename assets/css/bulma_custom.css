@@ -1,6 +1,14 @@
+
+:root {
+  --bulma-primary: var(--bulma-warning);
+  --bulma-primary-h: var(--bulma-warning-h);
+  --bulma-primary-s: var(--bulma-warning-s);
+  --bulma-primary-l: var(--bulma-warning-l);
+}
+
 .navbar {
-    --bulma-navbar-burger-color: var(--bulma-warning);
-    --bulma-navbar-dropdown-arrow: var(--bulma-warning);
+    --bulma-navbar-burger-color: var(--bulma-primary);
+    --bulma-navbar-dropdown-arrow: var(--bulma-primary);
 }
 
 .navbar-brand .navbar-item {
@@ -9,9 +17,9 @@
 }
 
 .navbar-logo {
-    width: 50px !important;
-    height: 50px !important;
-    max-height: 50px !important;
+    width: auto !important;
+    height: var(--bulma-navbar-height) !important;
+    max-height: var(--bulma-navbar-height) !important;
 }
 
 .hidden-scroll::-webkit-scrollbar {

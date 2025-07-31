@@ -1,5 +1,5 @@
 {% assign title = include.title %}
-{% assign posts = include.posts | default: site.posts %}
+{% assign posts = include.posts %}
 {% assign post_nb = include.post_nb | default: 5 %}
 {% assign permalink = include.permalink %}
 {% assign sort = include.sort | default: "date" %}
@@ -29,7 +29,7 @@
                                 {% endif %}
                             </div>
                         </div>
-                        <p class="subtitle is-6">{{ post.date | date_to_string }} - {{ post.author }}</p>
+                        <p class="subtitle is-6">{{ post.date | date_to_string }} {% if post.author %} - {{ post.author }}{% endif %}</p>
                         <p class="content">{{ post.excerpt }}</p>
                     </div>
                     <a href="{{ url }}">
@@ -47,7 +47,10 @@
                     <div class="card">
                         <div class="card-content has-text-centered">
                             <div class="content">
-                                <p class="has-text-link has-background-dark" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%;">
+                                <p class="has-text-link has-background-dark only-on-dark" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%;">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </p>
+                                <p class="has-text-link has-background-light only-on-light" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%;">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </p>
                                 <p class="title is-5" data-i18n="See more">See more</p>
