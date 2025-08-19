@@ -168,6 +168,7 @@ Provide an excerpt if the first paragraph of the post is too long, contains some
 <a id="categorie-tags"></a>
 > Categories are used to generate the blog archive pages, so they should be used to categorize posts (including the translation filter). The `lang` label is used to display the correct language flag in the blog page.
 
+
 #### Static
 See [Translations](#languages--translations) for more information on how this collection is used to translate large sections of static content.
 
