@@ -14,4 +14,3 @@ social:
 tags: active
 ---
 I’m Hernan, a PhD student at the University of Rochester in the United States. I study the emptiest regions of the universe known as cosmic voids where there are relatively few galaxies. I enjoy giving public talks about DESI science and giving tours of my university’s local astronomical observatory. In my free time, I write short stories and novels.
-
