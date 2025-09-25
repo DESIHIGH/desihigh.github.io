@@ -4,8 +4,7 @@ image: assets/img/team/hernan_rincon.jpg
 email: hrincon@ur.rochester.edu
 location: Rochester, United States
 social:
-    - name: globe
-      icon: fa-solid fa-globe
+    - name: linkedin
       url: https://www.linkedin.com/in/hernan-rincon-82b8a4206/
     - name: github
       url: https://github.com/hbrincon
