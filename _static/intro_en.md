@@ -3,7 +3,13 @@ name: Introduction content
 lang: en
 ---
 
-[Introductory text to write]
+DESI High is a place where you can carry out your own science experiments and learn about the mysteries of our universe. DESI High’s online notebooks teach lessons in science and computer programming that will let you experience working with and analyzing real scientific data. Through DESI High, you will become familiar with the ongoing Dark Energy Spectroscopic Instrument Survey that is mapping the locations of tens of millions of galaxies in our night sky.
+
+Read on to learn more about the DESI Survey and the science behind it, and then get ready to jump in and begin your own work as a DESI High scientist!
+
+<small>
+    🤓☝️ DESI High is designed for high school students, but it is also suitable for undergraduate and masters-level students as well. 
+</small>
 
 <!-- omit in toc -->
 ## Summary
