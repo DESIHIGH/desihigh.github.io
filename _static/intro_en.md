@@ -33,7 +33,7 @@ One surprising observation is that the universe's expansion is getting faster. W
 </small>
 
 ### Introduction to DESI
-One way that we can study dark energy is by making a giant, three-dimensional map of the universe. The universe's expansion history is encoded in the positions of galaxies. By mapping the distances to millions of galaxies far away from our own, we can learn [title](link)more about how dark energy has affected the universe's expansion over time.
+One way that we can study dark energy is by making a giant, three-dimensional map of the universe. The universe's expansion history is encoded in the positions of galaxies. By mapping the distances to millions of galaxies far away from our own, we can learn more about how dark energy has affected the universe's expansion over time.
 
 ![DESI DR1 Map](assets/img/intro/DESI-map.png)
 <p class="notification is-info is-light">
@@ -64,7 +64,7 @@ As honorary principal at DESI High, Saul has a special opening address to all th
     🤓☝️ Take a hands-on look at Saul's experiment in our <a href="curriculum.html">Dark Energy</a> notebook!
 </small>
 
-### How does this works?
+### How does this work?
 To start with DESI High, pick a <i class="has-text-warning">curriculum</i> that interests you. The notebooks will open in <a href="https://mybinder.org" target="_blank">Binder</a> in a new tab. Learn more about the courses, notebooks and how to use them by clicking on the button below. Then, pick a notebook and start exploring the universe!
 
 If you follow this course with a teacher or a DESI High mentor, follow their instructions on how to proceed. Do not hesitate to ask questions and seek help when needed!
