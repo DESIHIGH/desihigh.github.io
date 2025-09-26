@@ -8,7 +8,7 @@ DESI High is a place where you can carry out your own science experiments and le
 Read on to learn more about the DESI Survey and the science behind it, and then get ready to jump in and begin your own work as a DESI High scientist!
 
 <small>
-    🤓☝️ DESI High is designed for high school students, but it is also suitable for undergraduate and masters-level students as well. 
+    🤓☝️ DESI High is designed for high school students, but it is also suitable for undergraduate and postgraduate students as well. 
 </small>
 
 <!-- omit in toc -->
