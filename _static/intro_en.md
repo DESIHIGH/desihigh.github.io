@@ -16,7 +16,7 @@ Read on to learn more about the DESI Survey and the science behind it, and then 
 - [Origins of DESI: The Mystery of Dark Energy](#origins-of-desi-the-mystery-of-dark-energy)
 - [Introduction to DESI](#introduction-to-desi)
 - [Meet the principal](#meet-the-principal)
-- [How does this works?](#how-does-this-works)
+- [How does DESI High work?](#how-does-desi-high-work)
 
 ### Origins of DESI: The Mystery of Dark Energy
 Our universe is expanding. Astronomical observations tell us that the space between galaxies is getting larger over time, while the galaxies themselves stay the same size. This expansion is well understood and is explained by Albert Einstein's theory of General Relativity. When the universe started with the Big Bang, it was small, hot, and dense, and it has since expanded up until the present day.
