@@ -7,7 +7,7 @@ social:
     icon: fas fa-globe
     url: https://www.desi.lbl.gov/
   - name: twitter
-    url: https://twitter.com/baoban
+    url: https://twitter.com/desisurvey/
   - name: facebook
     url: https://www.facebook.com/desisurvey/
   - name: instagram
