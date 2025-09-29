@@ -3,14 +3,20 @@ name: Introduction content
 lang: fr
 ---
 
-[Texte d'introduction à écrire]
+DESI High est un endroit où vous pourrez mener vos propres expériences scientifiques et apprendre les mystères de notre univers. Les notebooks en ligne de DESI High contiennent des leçons de science et de programmation informatique qui vous permettront d'analyser et de travailler avec de vraies données scientifiques. Au travers de à DESI High, vous vous familiariserez avec le relevé en cours du Dark Energy Spectroscopic Instrument qui cartographie les emplacements de dizaines de millions de galaxies dans notre ciel nocturne.
+
+Lisez la suite pour en apprendre plus sur le relevé DESI et la science qui le sous-tend, puis préparez-vous à y plonger et à commencer votre propre travail en tant que scientifique de DESI High !
+
+<small>
+    🤓☝️ DESI High est conçu pour les lycéens, mais il convient également aux étudiants de premier et de deuxième cycle universitaire.
+</small>
 
 <!-- omit in toc -->
 ## Sommaire
 - [Origines de DESI : Le mystère de l'énergie noire](#origines-de-desi--le-mystère-de-lénergie-noire)
 - [Introduction à DESI](#introduction-à-desi)
 - [Rencontrez le principal](#rencontrez-le-principal)
-- [Comment ça marche ?](#comment-ça-marche-)
+- [Comment fonctionne DESI High ?](#comment-fonctionne-desi-high-)
 
 ### Origines de DESI : Le mystère de l'énergie noire
 Notre univers est en expansion. Les observations astronomiques nous indiquent que l'espace entre les galaxies s'agrandit avec le temps, tandis que les galaxies elles-mêmes restent de la même taille. Cette expansion est bien comprise et est expliquée par la théorie de la relativité générale d'Albert Einstein. Lorsque l'univers a commencé avec le Big Bang, il était petit, chaud et dense, et il s'est depuis étendu jusqu'à nos jours.
@@ -58,7 +64,7 @@ En tant que principal honoraire de DESI High, Saul a un discours d'ouverture sp�
     🤓☝️ Découvrez l'expérience de Saul dans notre <a href="curriculum.html">notebook sur l'énergie noire</a> !
 </small>
 
-### Comment ça marche ?
+### Comment fonctionne DESI High ?
 Pour commencer avec DESI High, choisissez un <i class="has-text-warning">curriculum</i> qui vous intéresse. Les notebooks s'ouvriront dans <a href="https://mybinder.org" target="_blank">Binder</a> dans un nouvel onglet. Apprenez-en plus sur les cours, les notebooks et comment les utiliser en cliquant sur le bouton ci-dessous. Ensuite, choisissez un notebook et commencez à explorer l'univers !
 
 Si vous suivez ce cours avec un enseignant ou un mentor de DESI High, suivez leurs instructions sur la façon de procéder. N'hésitez pas à poser des questions et à demander de l'aide si nécessaire !
