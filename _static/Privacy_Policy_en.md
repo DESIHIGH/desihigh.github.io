@@ -7,10 +7,10 @@ lang: en
 
 We do not use any cookies or trackers on this website. We do not collect any personal information from users.
 
-The notebooks we provide are hosted on Binder and are subject to their privacy policy. The notebooks may collect data such as IP addresses, but this is not stored by us and is subject to the privacy policy of the Binder service.
+Contacts through the contact form are sent to an email address managed by the DESI High team. We do not store or share this information with any third parties.
 
-The website is hosted on GitHub Pages, which may collect data such as IP addresses and user agent information. This data is not stored by us and is subject to the privacy policy of GitHub.
+The notebooks we provide are hosted on [Binder](https://mybinder.org/) and are subject to their privacy policy. The notebooks may collect data such as IP addresses, but this is not stored by us and is subject to the privacy policy of the Binder service.
 
-The forum is hosted on GitHub Discussions, which may collect data such as IP addresses and user agent information. This data is not stored by us and is subject to the privacy policy of GitHub.
+The website is hosted on [GitHub](https://github.com/) Pages, which may collect data such as IP addresses and user information. This data is not stored by us and is subject to the privacy policy of GitHub.
 
-> Contact form ??
+The forum is hosted on [GitHub](https://github.com/) Discussions, which may collect data such as IP addresses and user information. This data is not stored by us and is subject to the privacy policy of GitHub.
