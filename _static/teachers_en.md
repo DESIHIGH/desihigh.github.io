@@ -3,7 +3,7 @@ name: Teachers
 lang: en
 ---
 
-Welcome to the DESI High **Teachers' Guide**! This page is here to help you get a hold of the tools and ressources available through DESI High.
+Welcome to the DESI High **Teachers' Guide**! This page is here to help you get a hold of the tools and resources available through DESI High.
 Whether you want to learn more about the DESI High program, need help getting started with the notebooks, or are looking for additional support, we've got you covered.
 
 <div class="notification is-danger is-dark">
@@ -19,19 +19,19 @@ Whether you want to learn more about the DESI High program, need help getting st
 
 
 ### Curriculums and notebooks
-Our [curriculums](curriculum.html) are designed as a suite of notebooks, each focusing on specific topics or skills. You can pick one and follow the noteboooks inside, or you can pick the notebook(s) that you are interested in to tailor the learning experience to your students' needs.
+Our [curriculums](curriculum.html) are designed as a suite of notebooks, each focusing on specific topics or skills. You can pick one and follow the notebooks inside, or you can pick the notebook(s) that you are interested in to tailor the learning experience to your students' needs.
 
 Each notebook is self-contained, enabling independent exploration or integration into a broader series. With interactive exercises and practical applications, students can engage deeply with the material.
 
 <span class="icon has-text-info">
   <i class="fas fa-info-circle"></i>
 </span>
-*The solution to the exercises are provided at the bottom of each notebook in a collapsed section.*
+*The solutions to the exercises are provided at the bottom of each notebook in a collapsed section.*
 
-Each notebook includes an introduction section that outlines the learning objectives, and prerequisites to complete the activities.
+Each notebook includes an introduction section that outlines the learning objectives and the prerequisites to complete the activities.
 **We encourage you to test the exercises** (with or without the solutions) before assigning them to your students, to make sure they are adapted to your students' level and the time you have available.
 
-Besides each notebook on the curriculum page, you will find a tag indicating the esimated **difficulty level**:
+Besides each notebook on the curriculum page, you will find a tag indicating the estimated **difficulty level**:
 - <span class="tag is-success">Easy</span> Estimated **High school level**: Suitable for beginners with little to no prior experience. 
 - <span class="tag is-warning">Medium</span> Estimated **Undergraduate level**: Requires some prior knowledge or experience.
 - <span class="tag is-danger">Hard</span> Estimated **Graduate level**: Designed for those with a strong background in the subject.
@@ -52,7 +52,7 @@ We use [Binder](https://mybinder.org/) to provide a cloud-based environment for 
 <span class="icon has-text-primary">
   <i class="fas fa-bookmark"></i>
 </span>
-*You can look out the Binder user policies [here](https://mybinder.readthedocs.io/en/latest/about/user-guidelines.html).*
+*You can read the Binder user policies [here](https://mybinder.readthedocs.io/en/latest/about/user-guidelines.html).*
 
 
 ### Package and environments
@@ -72,7 +72,7 @@ The notebooks, data and package are available on [GitHub](https://github.com/DES
 
 
 ### You are not alone!
-If you need further assistance, our team is here to help. Whether you're interested in an in-person intervention, a remote session, or training from a DESI High team member, we encourage you to reach out. 
+If you need further assistance, our team is here to help. Whether you're interested in an in-person meeting, a remote session, or training from a DESI High team member, we encourage you to reach out. 
 
 We're also open to feedback and contributions, so don't hesitate to share your ideas or suggestions to help us improve. You can contact us through our [contact page](contact.html) or the [forum]({{ site.links.forum }}).
 
