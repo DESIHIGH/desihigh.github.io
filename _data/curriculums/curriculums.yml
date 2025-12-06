@@ -18,7 +18,7 @@
     - tag: Introduction to Python
       icon: fa-solid fa-wrench
       level: Easy
-    - tag: Introduction to Numpy
+    - tag: Introduction to Python Packages
       icon: fa-solid fa-wrench
       level: Easy
     - tag: Python Cheatsheet
@@ -42,7 +42,22 @@
       level: Medium
     - tag: Redshift and Distance
       level: Medium
-    - tag: Distance Measurements
+    - tag: Measuring Distances in Cosmology
       level: Hard
     - tag: Cosmological Inference
       level: Medium
+
+- name: The Cosmological Probes
+  excerpt: "Understand the key cosmological probes used to study the universe."
+  color: "is-warning"
+  files:
+    - tag: Cosmic Microwave Background
+      level: Medium
+    - tag: Two Point Correlation Function
+      level: Medium
+    - tag: Baryon Acoustic Oscillations
+      level: Medium
+    - tag: Type Ia Supernovae
+      level: Medium
+    - tag: Weak Gravitational Lensing
+      level: Hard
