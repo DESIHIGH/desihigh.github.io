@@ -1,6 +1,9 @@
 - name: English
+  name_en: English
   code: en
 - name: Français
+  name_en: French
   code: fr
 - name: Español
+  name_en: Spanish
   code: es

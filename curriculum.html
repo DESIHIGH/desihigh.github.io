@@ -1,6 +1,9 @@
 ---
 title: Curriculum
 layout: default
+root: https://mybinder.org/v2/gh/DESIHIGH/desihigh/
+branch: main
+extra: ?urlpath=tree/
 ---
 
 {% include welcome_hero.html title="Welcome to DESI High!" subtitle="School of the Dark Universe" darken=0.3 blur=1 %}
@@ -64,57 +67,74 @@ layout: default
                         </p>
                     </div>
 
-                    <!-- Then, loop over languages to create hidden div with panel-tabs for each language -->
-                    {% for active_lang in site.data.lang %}
-                    {% if active_lang.code != "en" %}
-                        {% assign hide_panel = "is-hidden" %}
-                    {% else %}
-                        {% assign hide_panel = "" %}
-                    {% endif %}
-                    <!-- TODO : hide/unmask them depending on the language with js eventListener -->
-                    <div class="{{ hide_panel }}" id="Panel-{{ active_lang.code }}"> 
+                    {% assign panels = "Exercises, Solutions" | split: ", " %}
+                    {% for panel in panels %}
+                    <div id="Panel-{{ panel }}" class="{% unless panel == panels[0] %}is-hidden{% endunless %}">
                         <p class="panel-tabs">
-                            {% for lang in site.data.lang %}
-                                {% if lang == active_lang %}
-                                <a class="panel-tab is-active">
-                                    {{ lang.name }}
+                            {% for p in panels %}
+                                {% if panel == p %}
+                                <a class="panel-tab is-active" data-i18n="{{ p }}">
+                                    {{ p }}
                                 </a>
                                 {% else %}
-                                <a class="panel-tab" onclick="unhideElement('{{ curriculum.name | slugify }}', 'Panel-{{ lang.code }}', 'Panel-')">
-                                    {{ lang.name }}
+                                <a class="panel-tab" data-i18n="{{ p }}" onclick="unhideElement('{{ curriculum.name | slugify }}', 'Panel-{{ p }}', 'Panel-')">
+                                    {{ p }}
                                 </a>
                                 {% endif %}
                             {% endfor %}
                         </p>
 
-                        <!-- Finally, loop over the files to fill the panel-tabs -->
-                        {% for nb in curriculum.files %}
-                            {% assign icon = nb.icon | default: "fas fa-book" %}
-                            {% if site.show_untranslated_notebooks%}
-                                {% assign default_nb_lang = site.data.curriculums.files[nb.tag]['en'] %}
-                            {% endif %}
-                            {% assign nb_lang = site.data.curriculums.files[nb.tag][active_lang.code] | default: default_nb_lang %}
-                            {% if nb_lang %}
-                                <a class="panel-block is-block" onclick="openFile('{{ nb_lang.url.open }}')">
+                        <!-- Then, loop over languages to create hidden div with panel-tabs for each language -->
+                        {% for lang in site.data.lang %}
+                        <div id="hide-{{ lang.code }}">
+                            {% for nb in curriculum.files %}
+                                <!-- Notebook files logic -->
+                                {% assign icon = nb.icon | default: "fas fa-book" %}
+                                {% assign filetype = nb.type | default: "notebooks" | append: "/" %}
+                                {% assign file = site.data.curriculums.files[nb.tag] %}
+                                {% assign filename = file.filename %}
+
+                                <!-- Language logic: Open folder in root unless if an url is given -->
+                                {% if site.show_untranslated_notebooks and file[lang.code] %}
+                                    {% assign nb_lang = lang.name_en | append: "/" %}
+                                    {% assign code = lang.code %}
+                                {% else %}
+                                    {% assign nb_lang = "English/" %}
+                                    {% assign code = "en" %}
+                                {% endif %}
+                                {% assign name = file[code].name %}
+                                {% assign folder = panel | downcase | strip | append: "/" %}
+                                {% unless file[code].url %}
+                                    {% if filename %}
+                                        {% assign url = page.root | append: page.branch | append: page.extra | append: filetype | append: nb_lang | append: folder | append: filename %}
+                                    {% else %}
+                                        {% assign url = "" %}
+                                    {% endif %}
+                                {% else %}
+                                    {% assign url = file[code].url %}
+                                {% endunless %}
+                                
+                                <a class="panel-block is-block" onclick="openFile('{{ url }}')">
                                     <div class="container">
                                         <nav class="level">
                                             <div class="level-left">
                                                 <div class="level-item">
                                                     <span class="panel-icon">
-                                                    <i class="{{ icon }}" aria-hidden="true"></i>
+                                                        <i class="{{ icon }}" aria-hidden="true"></i>
                                                     </span>
-                                                    
-                                                    {{ nb_lang.name }} 
-                                                    
+                                                    {{ name }}
+                                                    <!-- If no link, display broken link icon -->
+                                                    {% if url == "" %}
+                                                        <span class="icon has-text-danger" title="No link available">
+                                                            &nbsp; <i class="fas fa-unlink"></i>
+                                                        </span>
+                                                    {% endif %}
                                                     <!-- If untranslated notebook, display english language flag besides -->
-                                                    {% if nb_lang == default_nb_lang and active_lang.code != "en" %}
+                                                    {% if code == "en" and lang.code != "en" %}
                                                         &nbsp; <img src="assets/img/lang/en.png" alt="Translated notebook" style="height: 1em;">
                                                     {% endif %}
                                                 </div>
-                                                
                                             </div>
-                                            
-
                                             <div class="level-right">
                                             {% if nb.level %}
                                                 {% assign level_class = "" %}
@@ -128,14 +148,14 @@ layout: default
                                                 <div class="level-item">
                                                     <span class="tag {{ level_class }}" data-i18n="{{ nb.level }}">{{ nb.level }}</span>
                                                 </div>
-                                            </div>
                                             {% endif %}
+                                            </div>
                                         </nav>
-
                                     </div>
-                                    
                                 </a>
-                            {% endif %}
+
+                            {% endfor %}
+                        </div>
                         {% endfor %}
                     </div>
                     {% endfor %}

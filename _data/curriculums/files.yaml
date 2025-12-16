@@ -1,86 +1,63 @@
 # Code 101
 Introduction to Python:
-  en:
+  filename: PythonTutorial.ipynb
+  en: 
     name: Introduction to Python
-    url: 
-      github: https://github.com/DESIHIGH/desihigh/tree/main/notebooks/English/PythonTutorial.ipynb
-      open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/main?urlpath=tree/notebooks/English/PythonTutorial.ipynb
 
 Introduction to Python Packages:
+  filename: PythonPackages.ipynb
   en:
     name: Introduction to Python Packages
-    url:
-      github: https://github.com/DESIHIGH/desihigh/tree/main/notebooks/English/PythonPackages.ipynb
-      open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/main?urlpath=tree/notebooks/English/PythonPackages.ipynb
 
 Python Cheatsheet:
   en:
     name: Python Cheatsheet
-    url:
-      github: https://github.com/DESIHIGH/desihigh/tree/main/notebooks/English/cheatsheets/Python.pdf
-      open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/main/notebooks/English/cheatsheets/Python.pdf
+    url: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/main/notebooks/English/cheatsheets/Python.pdf
   fr:
     name: Cheatsheet Python
-    url:
-      github: https://github.com/DESIHIGH/desihigh/tree/main/notebooks/French/cheatsheets/Python.pdf
-      open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/main/notebooks/French/cheatsheets/Python.pdf
+    url: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/main/notebooks/French/cheatsheets/Python.pdf
 
 Numpy Cheatsheet:
   en:
     name: Numpy Cheatsheet
-    url:
-      github: https://github.com/DESIHIGH/desihigh/tree/main/notebooks/English/cheatsheets/Numpy.pdf
-      open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/main/notebooks/English/cheatsheets/Numpy.pdf
+    url: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/main/notebooks/English/cheatsheets/Numpy.pdf
   fr:
     name: Cheatsheet Numpy
-    url:
-      github: https://github.com/DESIHIGH/desihigh/tree/main/notebooks/French/cheatsheets/Numpy.pdf
-      open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/main/notebooks/French/cheatsheets/Numpy.pdf
+    url: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/main/notebooks/French/cheatsheets/Numpy.pdf
 
 Jupyter Cheatsheet:
   en:
     name: Jupyter Cheatsheet
-    url:
-      github: https://github.com/DESIHIGH/desihigh/tree/main/notebooks/English/cheatsheets/Jupyter.pdf
-      open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/main/notebooks/English/cheatsheets/Jupyter.pdf
+    url: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/main/notebooks/English/cheatsheets/Jupyter.pdf
 
 Matplotlib Cheatsheet:
   en:
     name: Matplotlib Cheatsheet
-    url:
-      open: https://matplotlib.org/cheatsheets/
+    url: https://matplotlib.org/cheatsheets/
   fr:
     name: Cheatsheet Matplotlib
-    url:
-      github: https://github.com/DESIHIGH/desihigh/raw/main/notebooks/French/cheatsheets/Matplotlib.pdf
-      open: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/main/notebooks/French/cheatsheets/Matplotlib.pdf
+    url: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/main/notebooks/French/cheatsheets/Matplotlib.pdf
 
 # Introduction to DESI
 DESI Survey Overview:
+  filename: DESI_SurveyOverview.ipynb
   en:
     name: DESI Survey Overview
-    url:
-      github: https://github.com/DESIHIGH/desihigh/tree/main/notebooks/English/DESI_SurveyOverview.ipynb
-      open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/main?urlpath=tree/notebooks/English/DESI_SurveyOverview.ipynb
-
+    
 Galaxy Spectra:
   en:
     name: Galaxy Spectra
 
 Redshift and Distance:
+  filename: RedshiftAndDistances.ipynb
   en:
     name: Redshift and Distance
-    url:
-      github: https://github.com/DESIHIGH/desihigh/tree/main/notebooks/English/RedshiftAndDistances.ipynb
-      open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/main?urlpath=tree/notebooks/English/RedshiftAndDistances.ipynb
 
 Mapping the Universe:
+  filename: MappingTheUniverse.ipynb
   en:
     name: Mapping the Universe
-    url:
-      github: https://github.com/DESIHIGH/desihigh/tree/main/notebooks/English/MappingTheUniverse.ipynb
-      open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/main?urlpath=tree/notebooks/English/MappingTheUniverse.ipynb
-
+    
 # Cosmology Crash Course
 Observations of Our Universe:
   en:
@@ -98,19 +75,15 @@ Cosmological Models:
     url:
 
 Measuring Distances in Cosmology:
+  filename: DistanceMeasures.ipynb
   en:
     name: Measuring Distances in Cosmology
-    url:
-      github: https://github.com/DESIHIGH/desihigh/tree/main/notebooks/English/DistanceMeasures.ipynb
-      open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/main?urlpath=tree/notebooks/English/DistanceMeasures.ipynb
 
 Cosmological Inference:
+  filename: CosmologicalInference.ipynb
   en:
     name: Cosmological Inference
-    url:
-      github: https://github.com/DESIHIGH/desihigh/tree/main/notebooks/English/CosmologicalInference.ipynb
-      open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/main?urlpath=tree/notebooks/English/CosmologicalInference.ipynb
-
+    
 # Cosmological Probes
 Cosmic Microwave Background:
   en:
@@ -118,11 +91,9 @@ Cosmic Microwave Background:
     url:
 
 Two Point Correlation Function:
+  filename: CorrelationFunction.ipynb
   en:
     name: Two Point Correlation Function
-    url:
-      github: https://github.com/DESIHIGH/desihigh/tree/main/notebooks/English/CorrelationFunction.ipynb
-      open: https://mybinder.org/v2/gh/DESIHIGH/desihigh/main?urlpath=tree/notebooks/English/CorrelationFunction.ipynb
 
 Baryon Acoustic Oscillations:
   en:
