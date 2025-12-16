@@ -3,11 +3,13 @@ Introduction to Python:
   filename: PythonTutorial.ipynb
   en: 
     name: Introduction to Python
+    url: https://mybinder.org/v2/gh/DESIHIGH/desihigh/main?urlpath=tree/notebooks/English/PythonTutorial.ipynb
 
 Introduction to Python Packages:
   filename: PythonPackages.ipynb
   en:
     name: Introduction to Python Packages
+    url: https://mybinder.org/v2/gh/DESIHIGH/desihigh/main?urlpath=tree/notebooks/English/PythonPackages.ipynb
 
 Python Cheatsheet:
   en:
@@ -43,6 +45,7 @@ DESI Survey Overview:
   filename: DESI_SurveyOverview.ipynb
   en:
     name: DESI Survey Overview
+    url: https://mybinder.org/v2/gh/DESIHIGH/desihigh/main?urlpath=tree/notebooks/English/DESI_SurveyOverview.ipynb
     
 Galaxy Spectra:
   en:
@@ -52,11 +55,13 @@ Redshift and Distance:
   filename: RedshiftAndDistances.ipynb
   en:
     name: Redshift and Distance
+    url: https://mybinder.org/v2/gh/DESIHIGH/desihigh/main?urlpath=tree/notebooks/English/RedshiftAndDistances.ipynb
 
 Mapping the Universe:
   filename: MappingTheUniverse.ipynb
   en:
     name: Mapping the Universe
+    url: https://mybinder.org/v2/gh/DESIHIGH/desihigh/main?urlpath=tree/notebooks/English/MappingTheUniverse.ipynb
     
 # Cosmology Crash Course
 Observations of Our Universe:
@@ -78,11 +83,13 @@ Measuring Distances in Cosmology:
   filename: DistanceMeasures.ipynb
   en:
     name: Measuring Distances in Cosmology
+    url: https://mybinder.org/v2/gh/DESIHIGH/desihigh/main?urlpath=tree/notebooks/English/DistanceMeasures.ipynb
 
 Cosmological Inference:
   filename: CosmologicalInference.ipynb
   en:
     name: Cosmological Inference
+    url: https://mybinder.org/v2/gh/DESIHIGH/desihigh/main?urlpath=tree/notebooks/English/CosmologicalInference.ipynb
     
 # Cosmological Probes
 Cosmic Microwave Background:
@@ -94,6 +101,7 @@ Two Point Correlation Function:
   filename: CorrelationFunction.ipynb
   en:
     name: Two Point Correlation Function
+    url: https://mybinder.org/v2/gh/DESIHIGH/desihigh/main?urlpath=tree/notebooks/English/CorrelationFunction.ipynb
 
 Baryon Acoustic Oscillations:
   en:
