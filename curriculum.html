@@ -125,13 +125,13 @@ extra: ?urlpath=tree/
                                                     {{ name }}
                                                     <!-- If no link, display broken link icon -->
                                                     {% if url == "" %}
-                                                        <span class="icon has-text-danger" title="No link available">
-                                                            &nbsp; <i class="fas fa-unlink"></i>
+                                                        <span class="ml-1 icon has-text-danger" title="No link available">
+                                                            <i class="fas fa-unlink"></i>
                                                         </span>
                                                     {% endif %}
                                                     <!-- If untranslated notebook, display english language flag besides -->
                                                     {% if code == "en" and lang.code != "en" %}
-                                                        &nbsp; <img src="assets/img/lang/en.png" alt="Translated notebook" style="height: 1em;">
+                                                        <img class="ml-2" src="assets/img/lang/en.png" alt="Untranslated" title="File only available in English" style="height: 1em;">
                                                     {% endif %}
                                                 </div>
                                             </div>
