@@ -38,6 +38,16 @@ Matplotlib Cheatsheet:
     name: Cheatsheet Matplotlib
     url: https://docs.google.com/viewer?url=https://github.com/DESIHIGH/desihigh/raw/main/notebooks/French/cheatsheets/Matplotlib.pdf
 
+# Physics 101
+Angular Coordinates on the Celestial Sphere:
+  filename: AngularCoordinates.ipynb
+  en:
+    name: Angular Coordinates on the Celestial Sphere
+
+Wave Physics:
+  en:
+    name: Wave Physics
+
 # Introduction to DESI
 DESI Survey Overview:
   filename: DESI_SurveyOverview.ipynb
