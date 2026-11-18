@@ -7,3 +7,6 @@
 - name: Español
   name_en: Spanish
   code: es
+- name: Italiano
+  name_en: Italian
+  code: it
