@@ -1,0 +1,123 @@
+{
+    "FAQ": "FAQ",
+    "Teachers": "Insegnanti",
+    "Partners": "Collaboratori",
+    "About": "A proposito",
+    "Code of Conduct": "Codice di condotta",
+    "Let's start!": "Cominciamo!",
+    "Forum": "Forum",
+    "Language": "Lingua",
+
+    "Filter": "Filtro",
+
+    "Previous": "Precedente",
+    "Next": "Prossimo",
+    "Back": "Indietro",
+
+    "Terms & Privacy": "Termini & Condizioni",
+    "Contact": "Contatti",
+
+    "Welcome to DESI High!": "Benvenuti a DESI Labs!",
+    "School of the Dark Universe": "La scuola dell'Universo Oscuro",
+    "Courses": "Lezioni",
+    "News": "News",
+    "Events": "Eventi",
+    "Resources": "Risorse",
+    "Contact us!": "Contattaci!",
+
+    "Latest News": "Ultime novità",
+    "See more": "Vedi di più",
+    "Upcoming Events": "Prossimi eventi",
+
+    "Read more": "Leggi di più",
+
+    "Teachers intro":"🏫 Avete una classe piena di allievi interessati all'Universo? Noi abbiamo una squadra di scienziati in tutto il mondo pronti ad aiutarvi!",
+    "Teachers intro 2":"📎 Oppure, potete consultare le nostre risorse e le nostre pagine dedicate agli insegnanti per scoprire come cominciare con le lezioni.",
+
+    "Mail info 1": "📬 Nuova email!",
+    "Mail info 2": "👉 Clicca qui per leggere la lettera di benvenuto agli studenti di DESI Labs.",
+    "Read": "✉️ Leggere",
+  
+
+    "Contact intro": "A noi piacerebbe molto ricevere vostre notizie! Contattateci se avete domande, suggerimenti o semplicemente per salutarci e scambiare due chiacchiere.",
+    "Contact content": "Se avete domande o bisogno d'aiuto, contattateci attraverso il formulario qui sotto.",
+    "disabled": "Questo formulario di contatto è attualmente disattivato. Potete usare il forum per tutte le vostre domande e suggerimento.",
+    "From": "Da",
+    "Subject": "Soggetto",
+    "Message": "Messaggio",
+    "Submit": "Inviare",
+    "Cancel": "Annullare",
+    "Contact warning": "<strong>Avviso :</strong> Per le domande, suggerimenti o problemi, contattateci attrverso il forum. Risponderemo il prima possibile.",
+
+    "FAQ title": "Domande frequenti (FAQ)",
+    "FAQ intro": "Troverete qui le risposte alle domande più recenti su DESI Labs.",
+    "Ask a question": "Fai una domanda",
+    "faq_1": {
+        "question": "Che cos'e DESI Labs ?",
+        "answer": "DESI Labs è una piattaforma online gratuita costruita per aiutare gli studenti ad imparare l'astronomia e grazie ad un'esperienza pratica attraverso dei veri dati astronomici."
+    },
+    "faq_2": {
+        "question": "Come mi posso iscrivere ?",
+        "answer": "Puoi iscriverti riempiendo il formulario d'iscrizione sulla nostra home-page. Una volta iscritto, avrai accesso a tutti i nostri corsi e le nostre risorse."
+    },
+
+    "About DESI": "A proposito di DESI",
+    "Meet the team!": "Incontra il team !",
+    "Legacy members": "Membri passati",
+    "Legacy members 1": "Questa pagina elenca i nomi dei membri di DESI Labs che hanno contribuito alla creazione di questa piattaforma. Seppure non siano più attivi, il loro lavoro è stato essenziale per costruire DESI Labs e li ringraziamo per il loro contributo!",
+    "team": {
+        "Bao Ban": "Bao Ban è un appassionato insegnante e comunicatore scientifico. Grazie alla sua formazione in fisica e al suo vivo interesse per la divulgazione, Bao ha dedicato la sua carriera a rendere accessibili al pubblico concetti scientifici complessi. Il suo obiettivo principale è coinvolgere i giovani studenti e ispirare la prossima generazione di scienziati.",
+        "Retired Bao Ban": "Ce Bao Ban est vieux et est parti se retirer dans les montagnes de l'Arizona. Nous lui souhaitons le meilleur !",
+        "Simon Bouchard": "Ciao! Sono Simon, dottorando presso il LPNHE di Parigi. Mi occupo di clustering delle galassie e dell'analisi del campione BGS di DESI. Adoro condividere le mie conoscenze di astronomia e scienza dei dati con gli studenti. Oltre alla scienza, sono anche un mago 🃏.",
+        "Hernan Rincon": "Mi chiamo Hernan e sono uno studente di dottorato presso l’Università di Rochester, negli Stati Uniti. Mi occupo dello studio delle regioni più vuote dell’universo, note come “vuoti cosmici”, dove la presenza di galassie è relativamente scarsa. Mi piace tenere conferenze pubbliche sulla scienza del progetto DESI e guidare visite guidate all’osservatorio astronomico locale della mia università. Nel tempo libero scrivo racconti e romanzi.",
+        "Otávio Alves":"Ciao! Mi chiamo Otávio Alves e sono uno studente di dottorato presso l’Università del Michigan, negli Stati Uniti. Mi occupo di calcolare le incertezze delle grandezze osservabili del DESI (matrici di covarianza!), che fanno parte dell’analisi dell’aggregazione delle galassie. Mi piace moltissimo sviluppare strumenti interattivi che consentano a chiunque, a prescindere dal proprio livello di competenza, di avvicinarsi alla scienza. Oltre alla ricerca, dedico il mio tempo alla musica, alla lettura e alla progettazione di gadget elettronici.",
+        "Tanveer Karim":"Sono un ricercatore post-dottorato presso l’Università di Toronto. I miei interessi di ricerca si collocano all’intersezione tra lo studio della radiazione cosmica di fondo, i censimenti galattici e l’astrostatistica. Mi piace tenere conferenze di divulgazione astronomica e trasmettere agli studenti la mia passione per l’astronomia e la fisica attraverso programmi come DESI Labs.",
+        "Giulia Degni": "Ciao ragazzi! Mi chiamo Giulia e sono una ricercatrice PostDoc al CPPM a Marsiglia, in Francia. Nella mia ricerca mi occupo di studiare le proprietà di come si organizzano le strutture cosmiche nell'Universo, e in particolare la mia missione è provare a capire tramite i vuoti cosmici quali sono gli ingredienti dell'Universo. Oltre alla ricerca mi piacciono molto la musica e la corsa. "
+    },
+
+    "Partners intro": "Scoprite le nostre istituzioni partner! 🌍 Siamo orgogliosi di collaborare con istituzioni che condividono la nostra passione per l'istruzione e la scienza in tutto il mondo.",
+    "Location": "Posizione",
+    "Lowell":{
+        "location": "Lowell, Massachusetts, USA",
+        "excerpt": "Situata a San Francisco, Lowell High School è la scuola pubblica secondaria più antica a ovest del fiume Mississippi."
+    },
+    "Become partner": "Se volete diventare partner di DESI Labs <a href=\"contact.html\">contattateci</a> per più informazioni.",
+
+    "News intro": "Rimanete aggiornati con le novità di DESI Labs! Per seguire ancora meglio cosa succede in DESI, seguiteci sui <a href=\"#social-icons\">social</a> !",
+    "Events intro": "Questa sezione contiene le informazioni sui progetti in corso e sui prossimi eventi in DESI Labs.",
+
+    "Curriculums Overview": "Lista dei corsi",
+    "Curriculums update": "⚠️ <strong>Nota:</strong> I nostri corsi sono in costruzione. Non esitate e tornare regolarmente sul sito per scoprire le novità!",
+    "Curriculums lost": "<strong>🤔 Siete persi ?</strong> Consultate <a href=\"intro.html\">l'intrudizione </a> per sapere da dove cominciare.",
+    "Curriculums": {
+        "Code 101": "Introduzione alla programmazione",
+        "Code 101-excerpt": "Impara le basi di Python e Numpy: strumenti necessari per l'analisi dei dati in astronomia.",
+        "Cosmology Crash Course": "Introduzione alla cosmologia",
+        "Cosmology Crash Course-excerpt": "Immergiti nei modelli cosmologici, l'energia oscura e l'espansione dell'Universo.",
+        "The DESI Survey": "I dati DESI",
+        "The DESI Survey-excerpt": "Esplora i dati DESI, i suoi obiettivi e come sonda l'Universo."
+    },
+
+    "Exercises": "Esercizi",
+    "Solutions": "Soluzioni",
+
+    "Easy": "Facile",
+    "Medium": "Medio",
+    "Hard": "Difficile",
+
+    "News archive": "Archivio notizie",
+    "Events archive": "Archivio eventi",
+    "Tags:": "Tags :",
+
+    "Credits intro": "Vorremmo ringraziare le persone e le risorse seguenti per il loro contributo al sito web <i>DESI Labs</i> :",
+    "Contributors": {
+        "title 1": "Collaboratori",
+        "website": "Progettazione e sviluppo del sito web",
+        "logo": "Idea del logo",
+        "background": "Immagine delle scie stellari di Mayall",
+        "title 2": "Collaboratori",
+        "Multi-language": "Sito web multilingue ispirato a",
+        "Cache bug fix": "Correzione del bug relativo alla cache di Jekyll Paginate V2",
+        "Cache bug quick-fix": "Correzione rapida del bug relativo alla cache di Jekyll Paginate V2"
+    }
+}
